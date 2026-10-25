@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "units": "mm",
+  "bed_mm": [
+    220,
+    220,
+    250
+  ],
+  "parts": [
+    {
+      "sku": "H01",
+      "name": "fold_base",
+      "label": "Base de plegado y atado",
+      "file": "stl/fold_base.stl",
+      "quantities": {
+        "minimum": 1,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Plano inferior; soportes locales bajo orejas de índice"
+    },
+    {
+      "sku": "H02N",
+      "name": "fold_wing_north",
+      "label": "Ala norte con brazo de indexado",
+      "file": "stl/fold_wing_north.stl",
+      "quantities": {
+        "minimum": 1,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Cara amplia ya apoyada; revisar puentes de bisagra"
+    },
+    {
+      "sku": "H02S",
+      "name": "fold_wing_south",
+      "label": "Ala sur con brazo de indexado",
+      "file": "stl/fold_wing_south.stl",
+      "quantities": {
+        "minimum": 1,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Cara amplia ya apoyada; revisar puentes de bisagra"
+    },
+    {
+      "sku": "H03",
+      "name": "hinge_axle",
+      "label": "Eje de bisagra con cara plana",
+      "file": "stl/hinge_axle.stl",
+      "quantities": {
+        "minimum": 2,
+        "standard": 2,
+        "full": 2
+      },
+      "orientation": "Plano D hacia cama; brim 2 mm"
+    },
+    {
+      "sku": "H04",
+      "name": "lock_key",
+      "label": "Chaveta de retención",
+      "file": "stl/lock_key.stl",
+      "quantities": {
+        "minimum": 3,
+        "standard": 3,
+        "full": 5
+      },
+      "orientation": "Vertical, base pequeña; brim 3 mm"
+    },
+    {
+      "sku": "H05",
+      "name": "index_pin",
+      "label": "Pasador de posición 0/70/100°",
+      "file": "stl/index_pin.stl",
+      "quantities": {
+        "minimum": 2,
+        "standard": 2,
+        "full": 2
+      },
+      "orientation": "Cabeza a cama"
+    },
+    {
+      "sku": "R01",
+      "name": "roller_body",
+      "label": "Cuerpo de rodillo 200 mm",
+      "file": "stl/roller_body.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Vertical; brim 5 mm"
+    },
+    {
+      "sku": "R02",
+      "name": "roller_axle",
+      "label": "Eje de rodillo retenido",
+      "file": "stl/roller_axle.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Diagonal en cama ya aplicada; brim 2 mm"
+    },
+    {
+      "sku": "R03",
+      "name": "roller_grip",
+      "label": "Mango del rodillo",
+      "file": "stl/roller_grip.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 2,
+        "full": 2
+      },
+      "orientation": "Base circular"
+    },
+    {
+      "sku": "R04",
+      "name": "roller_washer",
+      "label": "Arandela de retención",
+      "file": "stl/roller_washer.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Plana"
+    },
+    {
+      "sku": "R05A",
+      "name": "ring_3mm",
+      "label": "Aro de espesor 3 mm",
+      "file": "stl/ring_3mm.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 2
+      },
+      "orientation": "Plano"
+    },
+    {
+      "sku": "R05B",
+      "name": "ring_4mm",
+      "label": "Aro de espesor 4 mm",
+      "file": "stl/ring_4mm.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 2,
+        "full": 2
+      },
+      "orientation": "Plano"
+    },
+    {
+      "sku": "R05C",
+      "name": "ring_5mm",
+      "label": "Aro de espesor 5 mm",
+      "file": "stl/ring_5mm.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 2
+      },
+      "orientation": "Plano"
+    },
+    {
+      "sku": "B01",
+      "name": "board_tile",
+      "label": "Baldosa plana 180 mm",
+      "file": "stl/board_tile.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 4,
+        "full": 4
+      },
+      "orientation": "Cara plana a cama"
+    },
+    {
+      "sku": "B02",
+      "name": "board_key",
+      "label": "Llave mariposa de unión",
+      "file": "stl/board_key.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 8,
+        "full": 8
+      },
+      "orientation": "Plana"
+    },
+    {
+      "sku": "D01A",
+      "name": "dose_60ml",
+      "label": "Dosificador de masa 60 ml",
+      "file": "stl/dose_60ml.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1
+      },
+      "orientation": "Aro abierto; usar forro"
+    },
+    {
+      "sku": "D01B",
+      "name": "dose_80ml",
+      "label": "Dosificador de masa 80 ml",
+      "file": "stl/dose_80ml.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Aro abierto; usar forro"
+    },
+    {
+      "sku": "D01C",
+      "name": "dose_100ml",
+      "label": "Dosificador de masa 100 ml",
+      "file": "stl/dose_100ml.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1
+      },
+      "orientation": "Aro abierto; usar forro"
+    },
+    {
+      "sku": "D02",
+      "name": "dose_plunger",
+      "label": "Empujador común",
+      "file": "stl/dose_plunger.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Disco a cama; cubrir con barrera"
+    },
+    {
+      "sku": "G01A",
+      "name": "guiso_40ml",
+      "label": "Medida de guiso 40 ml",
+      "file": "stl/guiso_40ml.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1
+      },
+      "orientation": "Base a cama; usar forro"
+    },
+    {
+      "sku": "G01B",
+      "name": "guiso_60ml",
+      "label": "Medida de guiso 60 ml",
+      "file": "stl/guiso_60ml.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Base a cama; usar forro"
+    },
+    {
+      "sku": "O01",
+      "name": "ingredient_caddy",
+      "label": "Organizador de seis recipientes",
+      "file": "stl/ingredient_caddy.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Base a cama"
+    },
+    {
+      "sku": "O02",
+      "name": "ingredient_cup",
+      "label": "Recipiente desmontable",
+      "file": "stl/ingredient_cup.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 6,
+        "full": 6
+      },
+      "orientation": "Base a cama; usar forro"
+    },
+    {
+      "sku": "O03",
+      "name": "ingredient_lid",
+      "label": "Tapa de protección sin sello",
+      "file": "stl/ingredient_lid.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 6
+      },
+      "orientation": "Cara cerrada a cama; invertir en laminador"
+    },
+    {
+      "sku": "M01",
+      "name": "knead_tray",
+      "label": "Bandeja de amasado en bolsa",
+      "file": "stl/knead_tray.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1
+      },
+      "orientation": "Base a cama"
+    },
+    {
+      "sku": "T01",
+      "name": "thread_needle",
+      "label": "Aguja roma para pabilo",
+      "file": "stl/thread_needle.stl",
+      "quantities": {
+        "minimum": 1,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Plana; brim 2 mm"
+    },
+    {
+      "sku": "T02",
+      "name": "cord_gauge",
+      "label": "Medidor de pabilo",
+      "file": "stl/cord_gauge.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Base a cama"
+    },
+    {
+      "sku": "T03",
+      "name": "end_paddle",
+      "label": "Pala para extremos de hoja",
+      "file": "stl/end_paddle.stl",
+      "quantities": {
+        "minimum": 1,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Plana"
+    },
+    {
+      "sku": "T04",
+      "name": "cord_cleat",
+      "label": "Cuña de ayuda al nudo",
+      "file": "stl/cord_cleat.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1
+      },
+      "orientation": "Base a cama"
+    },
+    {
+      "sku": "C01",
+      "name": "fit_coupon",
+      "label": "Cupón de diámetros",
+      "file": "stl/fit_coupon.stl",
+      "quantities": {
+        "minimum": 1,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Plano"
+    },
+    {
+      "sku": "C02",
+      "name": "key_coupon",
+      "label": "Cupón de chavetas",
+      "file": "stl/key_coupon.stl",
+      "quantities": {
+        "minimum": 1,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Plano"
+    },
+    {
+      "sku": "C03",
+      "name": "rule",
+      "label": "Regla de 200 mm",
+      "file": "stl/rule.stl",
+      "quantities": {
+        "minimum": 0,
+        "standard": 1,
+        "full": 1
+      },
+      "orientation": "Plana"
+    }
+  ]
+}

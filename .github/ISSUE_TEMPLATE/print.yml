@@ -1,0 +1,31 @@
+name: Impresión o ensayo
+description: Reportar impresión, encaje o prueba con hoja.
+title: '[Ensayo] '
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versión y pieza / SKU
+    validations:
+      required: true
+  - type: textarea
+    id: printer
+    attributes:
+      label: Impresora, filamento y perfil
+      description: Boquilla, capa, orientación, soportes y ajustes del CAD.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Qué observaste
+      description: Medidas, fotos con escala, pasos para repetir y qué esperabas.
+    validations:
+      required: true
+  - type: checkboxes
+    id: physical
+    attributes:
+      label: Tipo de evidencia
+      options:
+        - label: Es una impresión física
+        - label: Es solo una observación de CAD o laminador

@@ -1,0 +1,616 @@
+{
+  "version": "0.2.0",
+  "cad_sha256": "fb98e87d4d8ff9433e94ade3e72163eac3ac80a1346d91b0ecf2dca6bb74fbdb",
+  "manifest_sha256": "483e34eb4311eeb721a9d9bfc2793e380421112b91af0780211585d6cb1d25e6",
+  "method": "STL vertices welded at 0.0001 mm; directed/undirected edge and component audit",
+  "parts": [
+    {
+      "name": "fold_base",
+      "sku": "H01",
+      "sha256": "c086f5560327a1f2ef0b5b56565568b884443219c0d25f20de22268d57c8f913",
+      "triangles": 5628,
+      "vertices": 2788,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 270.637183,
+      "surface_cm2": 761.7493,
+      "bbox_mm": [
+        200.0,
+        164.0,
+        37.6658
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "fold_wing_north",
+      "sku": "H02N",
+      "sha256": "18d6e56eec7a86d3e61494fc11922d051c1172b66df395cba8561f80da061a45",
+      "triangles": 2674,
+      "vertices": 1327,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 103.041548,
+      "surface_cm2": 516.7046,
+      "bbox_mm": [
+        194.7,
+        137.0,
+        20.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "fold_wing_south",
+      "sku": "H02S",
+      "sha256": "92372cba0ad0c566a0b20f00213cda81f61c06251cec337133c8e6c55f633c0f",
+      "triangles": 2674,
+      "vertices": 1327,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 103.04155,
+      "surface_cm2": 516.7046,
+      "bbox_mm": [
+        194.7,
+        137.0,
+        20.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "hinge_axle",
+      "sku": "H03",
+      "sha256": "1f76ee64384d4d96092be0422b5759b39454c94f884023e1274a06c8256dc6c3",
+      "triangles": 444,
+      "vertices": 222,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 10.149901,
+      "surface_cm2": 55.3954,
+      "bbox_mm": [
+        212.0,
+        12.0,
+        9.2
+      ],
+      "min_z_mm": -0.0
+    },
+    {
+      "name": "lock_key",
+      "sku": "H04",
+      "sha256": "bfd5e53d216d97d1474dca310bfd4c14cf65a6802e89914ff8e631e38f6aa060",
+      "triangles": 284,
+      "vertices": 144,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.170304,
+      "surface_cm2": 2.5192,
+      "bbox_mm": [
+        6.0,
+        6.0,
+        14.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "index_pin",
+      "sku": "H05",
+      "sha256": "8ecb8e41d1cb9ed1136a3ca7040779a59e9f8629334d38c03629efb1bd7c9bc4",
+      "triangles": 508,
+      "vertices": 256,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.239946,
+      "surface_cm2": 2.8411,
+      "bbox_mm": [
+        7.0,
+        7.0,
+        15.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "roller_body",
+      "sku": "R01",
+      "sha256": "31480972b3c34fc8631337f7c6b82b74125dac95839d962d8448ed57d9c1b7d4",
+      "triangles": 1536,
+      "vertices": 768,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 225.971305,
+      "surface_cm2": 353.6449,
+      "bbox_mm": [
+        40.0,
+        40.0,
+        200.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "roller_axle",
+      "sku": "R02",
+      "sha256": "f288e02eb87a0912fe0ec6c79ece6c4b0e46fc4dc86634d7d024cd4cb6e2868f",
+      "triangles": 444,
+      "vertices": 222,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 29.284507,
+      "surface_cm2": 105.7405,
+      "bbox_mm": [
+        197.9899,
+        197.9899,
+        15.2
+      ],
+      "min_z_mm": -0.0
+    },
+    {
+      "name": "roller_grip",
+      "sku": "R03",
+      "sha256": "de72e8032f7b3d8dd8adf374ea920904bd846872b996cfaec32bb231deaffcd1",
+      "triangles": 1600,
+      "vertices": 800,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 12.013632,
+      "surface_cm2": 41.383,
+      "bbox_mm": [
+        29.0,
+        29.0,
+        24.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "roller_washer",
+      "sku": "R04",
+      "sha256": "7dd3fdf84edc95506362805d2ede1f087d80f6b7f5856b8bdb393d034b347b16",
+      "triangles": 512,
+      "vertices": 256,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.446566,
+      "surface_cm2": 6.5697,
+      "bbox_mm": [
+        21.0,
+        21.0,
+        2.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "ring_3mm",
+      "sku": "R05A",
+      "sha256": "ef61df40983f6da061cf645bcaf24145cc54b575309975f848b2acdbb0ee688b",
+      "triangles": 508,
+      "vertices": 256,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 2.467903,
+      "surface_cm2": 23.7301,
+      "bbox_mm": [
+        46.0,
+        45.9017,
+        5.6
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "ring_4mm",
+      "sku": "R05B",
+      "sha256": "4b38b65d49695b508938f2091b04aea502e0b4f97dc9b7031e7659da1bfe6804",
+      "triangles": 508,
+      "vertices": 256,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 3.271043,
+      "surface_cm2": 27.0622,
+      "bbox_mm": [
+        48.0,
+        47.9017,
+        5.6
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "ring_5mm",
+      "sku": "R05C",
+      "sha256": "6d2215480d341e5120c16680e8e08e6c04f0021f40cc108014d2356de1df50b8",
+      "triangles": 508,
+      "vertices": 256,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 4.109312,
+      "surface_cm2": 30.5197,
+      "bbox_mm": [
+        50.0,
+        49.9017,
+        5.6
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "board_tile",
+      "sku": "B01",
+      "sha256": "39dcfbded5fae83745f2cb1c65ba7bfca5ef704dfbd414ebdd5fdcf4d87c5480",
+      "triangles": 396,
+      "vertices": 200,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 187.44955,
+      "surface_cm2": 682.8458,
+      "bbox_mm": [
+        180.0,
+        180.0,
+        6.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "board_key",
+      "sku": "B02",
+      "sha256": "cf8d7af56a7aff9854a182593d51bfc484d8a99c92e235938d90f2eb83e6a636",
+      "triangles": 20,
+      "vertices": 12,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 1.5312,
+      "surface_cm2": 9.7737,
+      "bbox_mm": [
+        24.0,
+        14.0,
+        5.8
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dose_60ml",
+      "sku": "D01A",
+      "sha256": "5a25ee817b491a214c6bae1a99c02f0d21463a06b4fba24dc1cea93bc36d47dd",
+      "triangles": 1620,
+      "vertices": 810,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 19.198195,
+      "surface_cm2": 113.9409,
+      "bbox_mm": [
+        88.0,
+        68.0,
+        21.2207
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dose_80ml",
+      "sku": "D01B",
+      "sha256": "0c0f5b27c9c0780dd15f0f2f29b5633c03feab9125201d83c8bddb144997d4e4",
+      "triangles": 1648,
+      "vertices": 824,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 24.87868,
+      "surface_cm2": 142.3683,
+      "bbox_mm": [
+        88.0,
+        68.0,
+        28.2942
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dose_100ml",
+      "sku": "D01C",
+      "sha256": "9a0e80436c48fe8d82fad6d4753a144fb839dd6bfefbfd62192a65e231154514",
+      "triangles": 1780,
+      "vertices": 890,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 30.564634,
+      "surface_cm2": 170.8834,
+      "bbox_mm": [
+        88.0,
+        68.0,
+        35.3678
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dose_plunger",
+      "sku": "D02",
+      "sha256": "c38db12ae808ccd9d03a847397d2771fd5a402bf3c9868141c075ee0fe99e58a",
+      "triangles": 764,
+      "vertices": 384,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 22.424438,
+      "surface_cm2": 94.061,
+      "bbox_mm": [
+        59.0,
+        59.0,
+        42.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "guiso_40ml",
+      "sku": "G01A",
+      "sha256": "22a9c125714068a9660cd7802952af3adef3e464ae5b7a94c737574dfa469e99",
+      "triangles": 1308,
+      "vertices": 656,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 25.46311,
+      "surface_cm2": 146.2496,
+      "bbox_mm": [
+        95.0,
+        58.0,
+        23.3718
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "guiso_60ml",
+      "sku": "G01B",
+      "sha256": "fc7c875ea2fa37734676a6571cd8187f936326e63332413cc920c603b9f1fbba",
+      "triangles": 2120,
+      "vertices": 1062,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 32.365228,
+      "surface_cm2": 180.8104,
+      "bbox_mm": [
+        95.0,
+        58.0,
+        33.5577
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "ingredient_caddy",
+      "sku": "O01",
+      "sha256": "797b939ea6ff031754223eace3decb3317ee04b89f725beb167259bd19bde978",
+      "triangles": 1900,
+      "vertices": 952,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 82.148763,
+      "surface_cm2": 626.3352,
+      "bbox_mm": [
+        194.0,
+        128.0,
+        8.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "ingredient_cup",
+      "sku": "O02",
+      "sha256": "e6a3dedd39db0caf7f98c2bba625d3dae01d06216c4536dad7b591fce74fcc6e",
+      "triangles": 540,
+      "vertices": 272,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 35.017735,
+      "surface_cm2": 238.5678,
+      "bbox_mm": [
+        56.0,
+        56.0,
+        44.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "ingredient_lid",
+      "sku": "O03",
+      "sha256": "5f7f46526127db295b03eb6d1985cfe1a10eaae1b1bdbaab185d08d09ff0b07d",
+      "triangles": 540,
+      "vertices": 272,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 7.080968,
+      "surface_cm2": 90.5515,
+      "bbox_mm": [
+        60.0,
+        60.0,
+        5.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "knead_tray",
+      "sku": "M01",
+      "sha256": "91334b036981fb7aaedbb5cd3bfac73d7439f93c168d408dec4081c894270d6d",
+      "triangles": 540,
+      "vertices": 272,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 265.436893,
+      "surface_cm2": 1353.0788,
+      "bbox_mm": [
+        194.0,
+        174.0,
+        50.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "thread_needle",
+      "sku": "T01",
+      "sha256": "c289bcc5a2bdbbd986493b175e46d046b5379efd510b03b2aa7633a1d9d547fa",
+      "triangles": 528,
+      "vertices": 264,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 2.972355,
+      "surface_cm2": 35.6569,
+      "bbox_mm": [
+        212.0,
+        6.0,
+        2.4
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cord_gauge",
+      "sku": "T02",
+      "sha256": "27fc898852c336f6bda91ecb05a14cef41a0ee897f17d1f545ddd8b1dcd62cc6",
+      "triangles": 2224,
+      "vertices": 1114,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 41.598443,
+      "surface_cm2": 186.475,
+      "bbox_mm": [
+        200.0,
+        36.0,
+        30.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "end_paddle",
+      "sku": "T03",
+      "sha256": "b10e31eed57149995cf0e87f1f7801ae11aa97ad9a2fb843102b15287e2e57b5",
+      "triangles": 548,
+      "vertices": 276,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 30.596088,
+      "surface_cm2": 193.8546,
+      "bbox_mm": [
+        100.0,
+        130.0,
+        5.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cord_cleat",
+      "sku": "T04",
+      "sha256": "2ed0c8583e6f0249fe9b5de8a52cea8bc00703b88aeee7070bd229650598cc78",
+      "triangles": 280,
+      "vertices": 142,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 14.66114,
+      "surface_cm2": 46.7864,
+      "bbox_mm": [
+        50.0,
+        30.0,
+        12.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "fit_coupon",
+      "sku": "C01",
+      "sha256": "4fc5e920bb7caed88824bea2f813032d4cf033541615fdc56802263f7b030371",
+      "triangles": 3388,
+      "vertices": 1672,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 58.967087,
+      "surface_cm2": 217.8464,
+      "bbox_mm": [
+        118.0,
+        78.0,
+        7.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "key_coupon",
+      "sku": "C02",
+      "sha256": "791a9576b0da5d14f1fdb0c07d3ace4891cfd308ea8e3afb5158fc8fd4c4c5a6",
+      "triangles": 328,
+      "vertices": 160,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 15.860313,
+      "surface_cm2": 61.6421,
+      "bbox_mm": [
+        64.0,
+        36.0,
+        7.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "rule",
+      "sku": "C03",
+      "sha256": "a37f7ca403e924d443da8e8725cb6c5c4046c7018b56182e27072fd7633a52a9",
+      "triangles": 2836,
+      "vertices": 1420,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 14.298819,
+      "surface_cm2": 112.6187,
+      "bbox_mm": [
+        200.0,
+        24.0,
+        3.5
+      ],
+      "min_z_mm": 0.0
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "method": "OpenSCAD CGAL intersection at 48 facets; samples only",
+  "results": [
+    {
+      "pair": "collision_base_wing",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_base_wing",
+      "angle_deg": 10,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_base_wing",
+      "angle_deg": 30,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_base_wing",
+      "angle_deg": 50,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_base_wing",
+      "angle_deg": 70,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_base_wing",
+      "angle_deg": 90,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_base_wing",
+      "angle_deg": 100,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_wings",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_wings",
+      "angle_deg": 10,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_wings",
+      "angle_deg": 30,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_wings",
+      "angle_deg": 50,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_wings",
+      "angle_deg": 70,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_wings",
+      "angle_deg": 90,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_wings",
+      "angle_deg": 100,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_needle_paths",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "collision_roller_rings",
+      "angle_deg": 0,
+      "intersection_empty": false,
+      "passed": true,
+      "volume_cm3": 0.133406,
+      "expected": "Open rings have intentional 0.2 mm diametral interference with seats; elastic fit not simulated"
+    }
+  ],
+  "cad_sha256": "fb98e87d4d8ff9433e94ade3e72163eac3ac80a1346d91b0ecf2dca6bb74fbdb"
+}

@@ -1,0 +1,33 @@
+sku,part,description,minimum,standard,full,bbox_mm,orientation
+H01,fold_base,Base de plegado y atado,1,1,1,200 × 164 × 37.6658,Plano inferior; soportes locales bajo orejas de índice
+H02N,fold_wing_north,Ala norte con brazo de indexado,1,1,1,194.7 × 137 × 20,Cara amplia ya apoyada; revisar puentes de bisagra
+H02S,fold_wing_south,Ala sur con brazo de indexado,1,1,1,194.7 × 137 × 20,Cara amplia ya apoyada; revisar puentes de bisagra
+H03,hinge_axle,Eje de bisagra con cara plana,2,2,2,212 × 12 × 9.2,Plano D hacia cama; brim 2 mm
+H04,lock_key,Chaveta de retención,3,3,5,6 × 6 × 14,"Vertical, base pequeña; brim 3 mm"
+H05,index_pin,Pasador de posición 0/70/100°,2,2,2,7 × 7 × 15,Cabeza a cama
+R01,roller_body,Cuerpo de rodillo 200 mm,0,1,1,40 × 40 × 200,Vertical; brim 5 mm
+R02,roller_axle,Eje de rodillo retenido,0,1,1,197.99 × 197.99 × 15.2,Diagonal en cama ya aplicada; brim 2 mm
+R03,roller_grip,Mango del rodillo,0,2,2,29 × 29 × 24,Base circular
+R04,roller_washer,Arandela de retención,0,1,1,21 × 21 × 2,Plana
+R05A,ring_3mm,Aro de espesor 3 mm,0,0,2,46 × 45.9017 × 5.6,Plano
+R05B,ring_4mm,Aro de espesor 4 mm,0,2,2,48 × 47.9017 × 5.6,Plano
+R05C,ring_5mm,Aro de espesor 5 mm,0,0,2,50 × 49.9017 × 5.6,Plano
+B01,board_tile,Baldosa plana 180 mm,0,4,4,180 × 180 × 6,Cara plana a cama
+B02,board_key,Llave mariposa de unión,0,8,8,24 × 14 × 5.8,Plana
+D01A,dose_60ml,Dosificador de masa 60 ml,0,0,1,88 × 68 × 21.2207,Aro abierto; usar forro
+D01B,dose_80ml,Dosificador de masa 80 ml,0,1,1,88 × 68 × 28.2942,Aro abierto; usar forro
+D01C,dose_100ml,Dosificador de masa 100 ml,0,0,1,88 × 68 × 35.3678,Aro abierto; usar forro
+D02,dose_plunger,Empujador común,0,1,1,59 × 59 × 42,Disco a cama; cubrir con barrera
+G01A,guiso_40ml,Medida de guiso 40 ml,0,0,1,95 × 58 × 23.3718,Base a cama; usar forro
+G01B,guiso_60ml,Medida de guiso 60 ml,0,1,1,95 × 58 × 33.5577,Base a cama; usar forro
+O01,ingredient_caddy,Organizador de seis recipientes,0,1,1,194 × 128 × 8,Base a cama
+O02,ingredient_cup,Recipiente desmontable,0,6,6,56 × 56 × 44,Base a cama; usar forro
+O03,ingredient_lid,Tapa de protección sin sello,0,0,6,60 × 60 × 5,Cara cerrada a cama; invertir en laminador
+M01,knead_tray,Bandeja de amasado en bolsa,0,0,1,194 × 174 × 50,Base a cama
+T01,thread_needle,Aguja roma para pabilo,1,1,1,212 × 6 × 2.4,Plana; brim 2 mm
+T02,cord_gauge,Medidor de pabilo,0,1,1,200 × 36 × 30,Base a cama
+T03,end_paddle,Pala para extremos de hoja,1,1,1,100 × 130 × 5,Plana
+T04,cord_cleat,Cuña de ayuda al nudo,0,0,1,50 × 30 × 12,Base a cama
+C01,fit_coupon,Cupón de diámetros,1,1,1,118 × 78 × 7,Plano
+C02,key_coupon,Cupón de chavetas,1,1,1,64 × 36 × 7,Plano
+C03,rule,Regla de 200 mm,0,1,1,200 × 24 × 3.5,Plana
