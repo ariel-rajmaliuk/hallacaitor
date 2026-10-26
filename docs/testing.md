@@ -28,7 +28,7 @@
 
 ## Extensión Familiar 0.3
 
-Las muestras nuevas comprueban base/alas a 0/30/70/100°, copa/soportes y copa/eje a 0/45/90/135°, acople de camisas, solape de eje, adaptadores y abrazaderas. La aguja del Familiar y el apilado tienen comprobaciones propias. Las caras de apoyo con espesor y volumen exactamente nulos se registran como contacto plano intencional, no como choque. Consultar los pares y ángulos exactos en el JSON; no confundir esta lista con cobertura de todas las combinaciones.
+Las muestras nuevas comprueban base/alas a 0/30/70/100°, copa/soportes y copa/eje a 0/45/90/135°, acople de camisas, solape de eje, adaptadores y abrazaderas. La aguja del Familiar, el apilado y la separación entre cabeza de chaveta/arandela de ambos rodillos tienen comprobaciones propias. Las caras de apoyo con espesor y volumen exactamente nulos se registran como contacto plano intencional, no como choque. Consultar los pares y ángulos exactos en el JSON; no confundir esta lista con cobertura de todas las combinaciones.
 
 El constructor del sitio verifica los destinos locales de todas las páginas y que cada pieza tenga ficha, imagen y STL. La revisión de interfaz cubre búsqueda, filtro, calculadora, lectura de una ficha y lista de lectura. No demuestra compatibilidad con todos los navegadores o impresoras.
 

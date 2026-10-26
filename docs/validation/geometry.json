@@ -1,11 +1,11 @@
 {
   "sources_sha256": {
-    "modular.scad": "c1a04c7550693a333974cacd8f5a4fa64a05ac9e1b955ee0ca5bcf904fdfffda",
-    "hallacaitor.scad": "07eea9ec678920fb3aa2f200697a510dac7bbc55b82c112bfec93a02a35e7abf"
+    "modular.scad": "7a093385361e8630ee044907fd97e1346e78a2e64f34eda651062dde2cb32dce",
+    "hallacaitor.scad": "9e6cf043fae85eaa2ea328d3a83176297fea8acca987dd5cbbb28368babc9fa3"
   },
   "version": "0.3.0",
-  "cad_sha256": "07eea9ec678920fb3aa2f200697a510dac7bbc55b82c112bfec93a02a35e7abf",
-  "manifest_sha256": "760f8bf3844279bf50aa022067bbea26cad4ac74ecb8a585179aac98ebb8b6a9",
+  "cad_sha256": "9e6cf043fae85eaa2ea328d3a83176297fea8acca987dd5cbbb28368babc9fa3",
+  "manifest_sha256": "63413820b2312527b14a9f91c87333b781f5ad5a1ae35d06613cb11267c66ce5",
   "method": "STL vertices welded at 0.0001 mm; directed/undirected edge and component audit",
   "parts": [
     {
@@ -87,17 +87,17 @@
     {
       "name": "lock_key",
       "sku": "H04",
-      "sha256": "bfd5e53d216d97d1474dca310bfd4c14cf65a6802e89914ff8e631e38f6aa060",
+      "sha256": "59eee582ee727c952407e9e5831b421595fc1511827cbd912b9dc6764e12ed65",
       "triangles": 284,
       "vertices": 144,
       "nonmanifold_edges": 0,
       "orientation_errors": 0,
       "degenerate_triangles": 0,
       "components": 1,
-      "volume_cm3": 0.170304,
-      "surface_cm2": 2.5192,
+      "volume_cm3": 0.135677,
+      "surface_cm2": 2.0791,
       "bbox_mm": [
-        6.0,
+        3.2,
         6.0,
         14.0
       ],

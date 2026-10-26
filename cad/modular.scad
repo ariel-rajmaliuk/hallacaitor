@@ -160,4 +160,6 @@ else if(part=="check_tipper_clips")intersection(){union(){adapter_native("tipper
 else if(part=="check_stack_posts")intersection(){union(){translate([0,0,8])dock_tile();translate([0,0,120])dock_tile();}for(x=[20,180],y=[20,180])translate([x,y,12])stack_post();}
 else if(part=="check_family_needle")intersection(){union(){family_fold();wing_pose(1,0,64);wing_pose(-1,0,64);}union(){for(x=[59,91,123])translate([x+3,-106,10])rotate([0,0,90])thread_needle();for(y=[-30,0,30])translate([-11,y-3,10])thread_needle();}}
 else if(part=="check_wide_axle_drum")intersection(){union(){wide_axle_left();translate([160,0,0])wide_axle_right();}union(){translate([28.6,0,5.2])rotate([0,90,0])wide_roller_left();translate([168.6,0,5.2])rotate([0,90,0])wide_roller_right_native();}}
+else if(part=="check_wide_key_washer")intersection(){translate([334.2,0,5.2])rotate([0,90,0])roller_washer();translate([338.5,0,-.7])lock_key();}
+else if(part=="check_compact_key_washer")intersection(){translate([254.2,0,5.2])rotate([0,90,0])roller_washer();translate([258.5,0,-.7])lock_key();}
 else modular_part();

@@ -75,7 +75,7 @@ module shaft_native(d=8,l=212,head=12,slot=207){
 }
 module lock_key(){union(){
  linear_extrude(height=12,scale=[1.08,1.08])square([2.5,3],center=true);
- translate([-3,-3,11.9])round_rect(6,6,1,2.1);
+ translate([-1.6,-3,11.9])round_rect(3.2,6,.8,2.1);
  }}
 module index_pin(){union(){cylinder(d=7,h=2);translate([0,0,1.9])cylinder(d=4,h=13.1);}}
 module folding_assembly(a=angle,hw=40,hy=54,ty=[-25,0,25]){

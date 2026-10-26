@@ -11,6 +11,8 @@ def norm(s):return ''.join(c for c in unicodedata.normalize('NFD',s.lower()) if 
 def main():
  ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--output',type=Path,default=R/'build/site');a=ap.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
  m=json.loads((R/'config/parts.json').read_text());stations=json.loads((R/'config/stations.json').read_text());geo={p['name']:p for p in json.loads((R/'docs/validation/geometry.json').read_text())['parts']};content=json.loads((R/'web/content.json').read_text());refs=json.loads((R/'config/references.json').read_text())
+ for f in (R/'docs/assets/v3').glob('*.png'):
+  raw=f.read_bytes();assert len(raw)>24 and raw[:8]==b'\x89PNG\r\n\x1a\n' and raw[12:16]==b'IHDR',f'Invalid PNG: {f}'
  shutil.copytree(R/'docs/assets/v3',out/'assets',dirs_exist_ok=True);shutil.copytree(R/'stl',out/'stl',dirs_exist_ok=True)
  for f in ['style.css','app.js']:shutil.copyfile(R/'web'/f,out/f)
  shutil.copyfile(R/'LICENSE',out/'LICENSE.txt');(out/'downloads').mkdir(exist_ok=True)

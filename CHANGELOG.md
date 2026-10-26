@@ -10,6 +10,7 @@
 - Volcador de porción precargada con eje detrás de la cavidad; no cuenta ingredientes.
 - 29 tipos de pieza nuevos, 61 totales; manual estático de 72 páginas con catálogo ilustrado por pieza.
 - Fuentes primarias, PDF Familiar, perfiles propuestos, resolución de problemas y verificaciones ampliadas.
+- Cabeza de chaveta estrecha para evitar invasión de la arandela final en ambos rodillos; dos controles de retención añadidos.
 - Continúa sin impresión ni ensayo físico, alimentario o de productividad.
 
 # Cambios

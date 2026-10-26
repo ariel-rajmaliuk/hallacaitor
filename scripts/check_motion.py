@@ -29,7 +29,7 @@ def main():
         with tempfile.TemporaryDirectory() as td2:
             row=run_check(part,0,Path(td2)/'check.stl');results.append(row);print(row,flush=True)
     with tempfile.TemporaryDirectory() as td:
-        for part,angles in [('check_family_base_wing',[0,30,70,100]),('check_family_wings',[0,30,70,100]),('check_tipper_sides',[0,45,90,135]),('check_tipper_shaft_cup',[0,45,90,135]),('check_dock_adapter',[0]),('check_drum_coupling',[0]),('check_axle_lap',[0]),('check_tipper_mount',[0]),('check_family_mount',[0]),('check_tipper_clips',[0]),('check_stack_posts',[0]),('check_family_needle',[0]),('check_wide_axle_drum',[0])]:
+        for part,angles in [('check_family_base_wing',[0,30,70,100]),('check_family_wings',[0,30,70,100]),('check_tipper_sides',[0,45,90,135]),('check_tipper_shaft_cup',[0,45,90,135]),('check_dock_adapter',[0]),('check_drum_coupling',[0]),('check_axle_lap',[0]),('check_tipper_mount',[0]),('check_family_mount',[0]),('check_tipper_clips',[0]),('check_stack_posts',[0]),('check_family_needle',[0]),('check_wide_axle_drum',[0]),('check_wide_key_washer',[0]),('check_compact_key_washer',[0])]:
             for a in angles:
                 row=run_check(part,a,Path(td)/'modular.stl');results.append(row);print(row,flush=True)
     out=ROOT/'docs/validation/motion.json' ;out.parent.mkdir(parents=True,exist_ok=True)

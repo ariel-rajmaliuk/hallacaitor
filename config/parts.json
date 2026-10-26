@@ -110,7 +110,7 @@
       },
       "orientation": "Vertical, base pequeña; brim 3 mm",
       "source": "cad/hallacaitor.scad",
-      "purpose": "Chaveta rígida con cabeza para retener un eje; no es un clip elástico certificado.",
+      "purpose": "Chaveta rígida con cabeza estrecha de 3,2 × 6 mm, despejada de la arandela del rodillo.",
       "use": "Insertar por la ranura transversal del eje hasta que asiente la cabeza. Comprobar retención antes de cada tanda y después de mover el conjunto. Se usa en bisagras, final del rodillo y volcador; los kits incluyen una de repuesto.",
       "guide": "Plegador / rodillo / volcador",
       "supports": "no previstos; revisar puentes y primera capa",

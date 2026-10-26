@@ -3,7 +3,7 @@ H01,fold_base,Base de plegado y atado,0,0,1,1,200 × 164 × 37.6658,Plano inferi
 H02N,fold_wing_north,Ala norte con brazo de indexado,1,1,1,1,194.7 × 137 × 20,Cara amplia ya apoyada; revisar puentes de bisagra,no previstos; revisar puentes y primera capa
 H02S,fold_wing_south,Ala sur con brazo de indexado,1,1,1,1,194.7 × 137 × 20,Cara amplia ya apoyada; revisar puentes de bisagra,no previstos; revisar puentes y primera capa
 H03,hinge_axle,Eje de bisagra con cara plana,2,2,2,2,212 × 12 × 9.2,Plano D hacia cama; brim 2 mm,no previstos; revisar puentes y primera capa
-H04,lock_key,Chaveta de retención,4,5,3,3,6 × 6 × 14,"Vertical, base pequeña; brim 3 mm",no previstos; revisar puentes y primera capa
+H04,lock_key,Chaveta de retención,4,5,3,3,3.2 × 6 × 14,"Vertical, base pequeña; brim 3 mm",no previstos; revisar puentes y primera capa
 H05,index_pin,Pasador de posición 0/70/100°,2,2,2,2,7 × 7 × 15,Cabeza a cama,no previstos; revisar puentes y primera capa
 R01,roller_body,Cuerpo de rodillo 200 mm,0,0,0,1,40 × 40 × 200,Vertical; brim 5 mm,no previstos; revisar puentes y primera capa
 R02,roller_axle,Eje de rodillo retenido,0,0,0,1,197.99 × 197.99 × 15.2,Diagonal en cama ya aplicada; brim 2 mm,no previstos; revisar puentes y primera capa

@@ -27,6 +27,8 @@ Rodillo: cuerpo 280, 266 útiles entre límites de ranuras, dos mitades de 140 c
 
 Volcador: una porción precargada. Pivote y=-8, z=104 sobre referencia del adaptador. La copa queda por delante y el eje detrás de la cavidad alimentaria; dos soportes con pies y abrazaderas. No tiene tolva, conteo, temporización ni resorte. Muestreo de giro no simula comida ni estabilidad.
 
+La cabeza de H04 mide 3,2 × 6 mm: su ancho axial reducido deja 0,7 mm respecto de la arandela final en ambos rodillos. Se conserva el vástago y su encastre; la retención real se debe ensayar.
+
 ## Cálculos
 
 Disco ideal: `D = sqrt(4000 V / (pi t))`; 80/100 ml a 2,5 mm → 202/226 mm. No hay equivalencia universal ml/g. Con forro arrugado o masa no uniforme cambia el resultado.

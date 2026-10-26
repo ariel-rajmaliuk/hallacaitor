@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Original graphics from the shipped meshes; no downloaded recipe images."""
-import json,math
+import json,math,os
 from pathlib import Path
 import numpy as np
 from illustrate import render,M,rot,tx,wing_n,wing_s,shaft_h,font
@@ -35,14 +35,16 @@ def tipper(a=0):
  for x in [44,140]:out.append((tx(M['tipper_foot_clip'],rot('z',180),[x+16,204,-3]),G))
  return out
 
+def safe_save(im,path):
+ tmp=path.with_name(path.stem+'.tmp.png');im.save(tmp,optimize=True);os.replace(tmp,path)
 def card(name,title,parts,subtitle,size=(1200,740)):
  im=Image.new('RGB',size,BG);im.paste(render(parts,size=(size[0]-60,size[1]-180),bg=BG),(30,95));d=ImageDraw.Draw(im)
  d.text((32,20),title,font=font(30,True),fill='#203e35');d.text((32,size[1]-63),subtitle,font=font(17),fill='#455d54');d.text((32,size[1]-32),'CAD alpha · ilustración de geometría real · ensayo físico pendiente',font=font(15),fill='#62756c')
- im.save(A/(name+'.png'),optimize=True)
+ safe_save(im,A/(name+'.png'))
 def main():
  m=json.loads((R/'config/parts.json').read_text())
  for i,p in enumerate(m['parts']):
-  render([(M[p['name']],p['color'])],size=(520,380),bg=BG).save(A/(p['name']+'.png'),optimize=True)
+  safe_save(render([(M[p['name']],p['color'])],size=(520,380),bg=BG),A/(p['name']+'.png'))
  card('family','Plegador familiar / 70°',family(),'F01 + H02N + H02S + 2 H03 + 2 H04 + 2 H05')
  card('wide','Rodillo familiar / 266 mm útiles',wide(),'Dos camisas de 140 mm · eje partido de 344 mm · aros de 2,5 mm')
  card('wide-exploded','Unión del rodillo / separación ilustrativa',wide(50),'Acople D en camisas; solape de eje de 24 mm y pasador encerrado')
@@ -90,6 +92,6 @@ def main():
     for y in [275,330,385]:d.line((335,y,765,y),fill='#f1dec4',width=5)
     d.ellipse((538,318,562,342),outline='#f1dec4',width=4)
    else:d.text((370,480),'Segunda hoja + faja, según receta',font=font(20),fill='#203e35')
-  d.text((35,582),desc,font=font(18),fill='#203e35');im.save(A/f'use-{i+1}.png',optimize=True)
+  d.text((35,582),desc,font=font(18),fill='#203e35');safe_save(im,A/f'use-{i+1}.png')
  print(f'Generated {len(m["parts"])} part images + assemblies + 7 use diagrams')
 if __name__=='__main__':main()

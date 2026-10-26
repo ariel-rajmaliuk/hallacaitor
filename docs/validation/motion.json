@@ -1,10 +1,10 @@
 {
   "method": "OpenSCAD CGAL intersection at 48 facets; samples only",
   "sources_sha256": {
-    "modular.scad": "c1a04c7550693a333974cacd8f5a4fa64a05ac9e1b955ee0ca5bcf904fdfffda",
-    "hallacaitor.scad": "07eea9ec678920fb3aa2f200697a510dac7bbc55b82c112bfec93a02a35e7abf"
+    "modular.scad": "7a093385361e8630ee044907fd97e1346e78a2e64f34eda651062dde2cb32dce",
+    "hallacaitor.scad": "9e6cf043fae85eaa2ea328d3a83176297fea8acca987dd5cbbb28368babc9fa3"
   },
-  "cad_sha256": "07eea9ec678920fb3aa2f200697a510dac7bbc55b82c112bfec93a02a35e7abf",
+  "cad_sha256": "9e6cf043fae85eaa2ea328d3a83176297fea8acca987dd5cbbb28368babc9fa3",
   "results": [
     {
       "pair": "collision_base_wing",
@@ -288,6 +288,18 @@
         0.0
       ],
       "expected": "Intended planar seating contact; zero thickness and zero volume"
+    },
+    {
+      "pair": "check_wide_key_washer",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_compact_key_washer",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
     }
   ]
 }
