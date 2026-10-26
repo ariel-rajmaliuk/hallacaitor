@@ -1,5 +1,10 @@
 {
   "method": "OpenSCAD CGAL intersection at 48 facets; samples only",
+  "sources_sha256": {
+    "modular.scad": "c1a04c7550693a333974cacd8f5a4fa64a05ac9e1b955ee0ca5bcf904fdfffda",
+    "hallacaitor.scad": "07eea9ec678920fb3aa2f200697a510dac7bbc55b82c112bfec93a02a35e7abf"
+  },
+  "cad_sha256": "07eea9ec678920fb3aa2f200697a510dac7bbc55b82c112bfec93a02a35e7abf",
   "results": [
     {
       "pair": "collision_base_wing",
@@ -98,7 +103,191 @@
       "passed": true,
       "volume_cm3": 0.133406,
       "expected": "Open rings have intentional 0.2 mm diametral interference with seats; elastic fit not simulated"
+    },
+    {
+      "pair": "check_family_base_wing",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_base_wing",
+      "angle_deg": 30,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_base_wing",
+      "angle_deg": 70,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_base_wing",
+      "angle_deg": 100,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_wings",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_wings",
+      "angle_deg": 30,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_wings",
+      "angle_deg": 70,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_wings",
+      "angle_deg": 100,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_sides",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_sides",
+      "angle_deg": 45,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_sides",
+      "angle_deg": 90,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_sides",
+      "angle_deg": 135,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_shaft_cup",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_shaft_cup",
+      "angle_deg": 45,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_shaft_cup",
+      "angle_deg": 90,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_shaft_cup",
+      "angle_deg": 135,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_dock_adapter",
+      "angle_deg": 0,
+      "intersection_empty": false,
+      "passed": true,
+      "volume_cm3": -0.0,
+      "bbox_mm": [
+        200.0,
+        200.0,
+        0.0
+      ],
+      "expected": "Intended planar seating contact; zero thickness and zero volume"
+    },
+    {
+      "pair": "check_drum_coupling",
+      "angle_deg": 0,
+      "intersection_empty": false,
+      "passed": true,
+      "volume_cm3": -0.0,
+      "bbox_mm": [
+        40.0,
+        40.0,
+        0.0
+      ],
+      "expected": "Intended planar seating contact; zero thickness and zero volume"
+    },
+    {
+      "pair": "check_axle_lap",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_tipper_mount",
+      "angle_deg": 0,
+      "intersection_empty": false,
+      "passed": true,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        104.0,
+        56.0,
+        0.0
+      ],
+      "expected": "Intended planar seating contact; zero thickness and zero volume"
+    },
+    {
+      "pair": "check_tipper_clips",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_family_needle",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_wide_axle_drum",
+      "angle_deg": 0,
+      "intersection_empty": true,
+      "passed": true
+    },
+    {
+      "pair": "check_stack_posts",
+      "angle_deg": 0,
+      "intersection_empty": false,
+      "passed": true,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        178.0,
+        178.0,
+        96.0
+      ],
+      "expected": "Intended planar seating contact; zero thickness and zero volume"
+    },
+    {
+      "pair": "check_family_mount",
+      "angle_deg": 0,
+      "intersection_empty": false,
+      "passed": true,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        195.0,
+        128.0,
+        0.0
+      ],
+      "expected": "Intended planar seating contact; zero thickness and zero volume"
     }
-  ],
-  "cad_sha256": "fb98e87d4d8ff9433e94ade3e72163eac3ac80a1346d91b0ecf2dca6bb74fbdb"
+  ]
 }

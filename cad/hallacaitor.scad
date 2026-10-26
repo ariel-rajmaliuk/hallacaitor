@@ -24,26 +24,26 @@ module round_rect(w,l,r=3,h=1){ linear_extrude(height=h) hull(){for(x=[r,w-r],y=
 module side_disk(x,y,z,r,h){translate([x,y,z])x_cylinder(2*r,h);}
 module barrel(x,y,z,l){translate([x,y,z])difference(){x_cylinder(20,l);translate([-EPS,0,0])x_cylinder(8+clearance,l+2*EPS);}}
 // Fixed sector and bridge are beyond the moving wing, separated axially by 1.3 mm.
-module index_ear(s){
+module index_ear(s,hy=54){
  difference(){union(){
-  hull(){side_disk(196,s*hinge_y,10,7,4);for(a=index_angles)side_disk(196,s*(hinge_y+22*cos(a)),10+22*sin(a),6,4);}
-  translate([184,s==1?30:-38,0])cube([16,8,6]);
-  translate([196,s==1?35:-49,0])cube([4,14,14]);
+  hull(){side_disk(196,s*hy,10,7,4);for(a=index_angles)side_disk(196,s*(hy+22*cos(a)),10+22*sin(a),6,4);}
+  translate([184,s==1?hy-24:-hy+16,0])cube([16,8,6]);
+  translate([196,s==1?hy-19:-hy+5,0])cube([4,14,14]);
  }
- for(a=index_angles)translate([195.9,s*(hinge_y+22*cos(a)),10+22*sin(a)])x_cylinder(4+clearance,4.2);
- translate([195.9,s*hinge_y,10])x_cylinder(8+clearance,4.2);
+ for(a=index_angles)translate([195.9,s*(hy+22*cos(a)),10+22*sin(a)])x_cylinder(4+clearance,4.2);
+ translate([195.9,s*hy,10])x_cylinder(8+clearance,4.2);
  }
 }
-module fold_base(){difference(){union(){
- translate([0,-40,0])round_rect(190,80,3,20);
+module fold_base(hw=40,hy=54,ty=[-25,0,25]){difference(){union(){
+ translate([0,-hw,0])round_rect(190,2*hw,3,20);
  for(s=[-1,1]){
-  for(x=base_starts){translate([x,s==1?38:-54,0])cube([22,16,10]);barrel(x,s*hinge_y,10,22);}
-  index_ear(s);
+  for(x=base_starts){translate([x,s==1?hw-2:-hy,0])cube([22,hy-hw+2,10]);barrel(x,s*hy,10,22);}
+  index_ear(s,hy);
  }
  }
  // Channels align with axial GAPS in the hinge, so the needle can enter sideways.
- for(y=thread_y)translate([-EPS,y-5,8])cube([190+2*EPS,10,12+EPS]);
- for(x=thread_x)translate([x-5,-40-EPS,8])cube([10,80+2*EPS,12+EPS]);
+ for(y=ty)translate([-EPS,y-5,8])cube([190+2*EPS,10,12+EPS]);
+ for(x=thread_x)translate([x-5,-hw-EPS,8])cube([10,2*hw+2*EPS,12+EPS]);
  // No branding/lettering on the leaf support face.
  }}
 module wing_native(){difference(){union(){
@@ -59,9 +59,9 @@ module wing_native(){difference(){union(){
  translate([190.6,22,10])x_cylinder(4+clearance,4.2);
  translate([78,116,-EPS])round_rect(34,6,2,20+2*EPS);
  }}
-module wing_pose(s=1,a=angle){
- if(s==1)translate([0,hinge_y,10])rotate([a,0,0])translate([0,0,-10])wing_native();
- else translate([0,-hinge_y,10])mirror([0,1,0])rotate([a,0,0])translate([0,0,-10])wing_native();
+module wing_pose(s=1,a=angle,hy=54){
+ if(s==1)translate([0,hy,10])rotate([a,0,0])translate([0,0,-10])wing_native();
+ else translate([0,-hy,10])mirror([0,1,0])rotate([a,0,0])translate([0,0,-10])wing_native();
 }
 // Flat-backed shaft: axis z=d/2-.8. This avoids vertical, layer-weak long pins.
 module shaft_native(d=8,l=212,head=12,slot=207){
@@ -78,13 +78,13 @@ module lock_key(){union(){
  translate([-3,-3,11.9])round_rect(6,6,1,2.1);
  }}
 module index_pin(){union(){cylinder(d=7,h=2);translate([0,0,1.9])cylinder(d=4,h=13.1);}}
-module folding_assembly(a=angle){
- color("#355e53")fold_base();
+module folding_assembly(a=angle,hw=40,hy=54,ty=[-25,0,25]){
+ color("#355e53")fold_base(hw,hy,ty);
  for(s=[-1,1]){
- color("#dfad68")wing_pose(s,a);
- color("#a9bcb0")translate([-3,s*hinge_y,6.8])shaft_native();
- color("#cb6c48")translate([205.5,s*hinge_y,2.1])lock_key();
- color("#cb6c48")translate([202,s*(hinge_y+22*cos(a)),10+22*sin(a)])rotate([0,-90,0])index_pin();
+ color("#dfad68")wing_pose(s,a,hy);
+ color("#a9bcb0")translate([-3,s*hy,6.8])shaft_native();
+ color("#cb6c48")translate([205.5,s*hy,2.1])lock_key();
+ color("#cb6c48")translate([202,s*(hy+22*cos(a)),10+22*sin(a)])rotate([0,-90,0])index_pin();
  }
 }
 module roller_body(){difference(){

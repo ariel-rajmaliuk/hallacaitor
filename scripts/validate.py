@@ -18,7 +18,7 @@ def main():
         assert all(0<x<=b for x,b in zip(r['bbox_mm'],manifest['bed_mm'])),(p['name'],r)
         assert abs(r['min_z_mm'])<.001,(p['name'],r)
         rows.append(dict(name=p['name'],sku=p['sku'],sha256=sha(path),**r))
-    report=dict(version=manifest['version'],cad_sha256=sha(ROOT/'cad/hallacaitor.scad'),manifest_sha256=sha(ROOT/'config/parts.json'),method='STL vertices welded at 0.0001 mm; directed/undirected edge and component audit',parts=rows)
+    report=dict(sources_sha256={p.name:sha(p) for p in (ROOT/'cad').glob('*.scad')},version=manifest['version'],cad_sha256=sha(ROOT/'cad/hallacaitor.scad'),manifest_sha256=sha(ROOT/'config/parts.json'),method='STL vertices welded at 0.0001 mm; directed/undirected edge and component audit',parts=rows)
     if a.compare:
         prev=json.loads(a.compare.read_text());prev={p['name']:p for p in prev['parts']}
         for r in rows:

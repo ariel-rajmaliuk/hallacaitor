@@ -1,0 +1,312 @@
+{
+  "start": {
+    "title": "Empezá con un módulo, después armá la mesa",
+    "intro": "Hallacaitor es un sistema manual de útiles imprimibles. Esta versión 0.3 es un prototipo de CAD: todavía necesita impresiones y ensayos con hojas reales. No hace el guiso, cocina, recorta hojas ni anuda automáticamente. También podés descargar el manual PDF desde el inicio.",
+    "sections": [
+      {
+        "title": "1 · Elegí cómo trabajar",
+        "text": "Mesa única: todos los útiles reunidos en una mesa de 800 × 400 mm, para una o dos personas. Estaciones repartidas: preparación de 400 × 400 mm y cinco módulos separados; se pueden repartir entre tres o seis personas. Duplicá el volcador si querés dedicar uno a cada ingrediente.",
+        "image": "layout-hub.svg"
+      },
+      {
+        "title": "2 · No imprimas el kit entero todavía",
+        "text": "Leé impresión y contacto alimentario. Imprimí fit_coupon y key_coupon, luego un par de bisagra y chaveta. Probá con la misma orientación, material y perfil que usarás en las piezas finales. Un encastre que requiere martillo no pasó la prueba.",
+        "image": "fit_coupon.png"
+      },
+      {
+        "title": "3 · Probá el plegador Familiar",
+        "text": "Usá F01, H02N y H02S, dos H03, dos H04 y dos H05. No imprimas dos alas del mismo lado. Seguí el montaje ilustrado; ensayá con papel y un paquete blando simulado. Guardá la aguja y los pasadores fuera del alcance de niños pequeños.",
+        "image": "family.png"
+      },
+      {
+        "title": "4 · Probá hoja y masa por separado",
+        "text": "Primero hoja sin comida: comprobar que no se engancha en la bisagra. Después una prueba de masa con barreras alimentarias íntegras. Arrancá con 80 ml y 2,5 mm; el disco ideal tiene 202 mm. Ajustá a tu receta y medí el tamaño real, no conviertas ml a gramos sin medir densidad.",
+        "image": "use-2.png"
+      },
+      {
+        "title": "5 · Completá el sistema elegido",
+        "text": "Solo después de resolver encastres, estabilidad y cierre de prueba, imprimí las baldosas, rodillo ancho y bandejas. El catálogo muestra cantidades por configuración. La torre se reserva para guardar módulos cerrados y descargados; no se opera apilada.",
+        "image": "storage.png"
+      },
+      {
+        "title": "6 · Registrá qué pasó",
+        "text": "Anotá impresora, material, perfil, hoja, volumen, espesor, fuerzas observadas y tiempo de diez ciclos. Un fallo de cierre o rotura importa tanto como el tiempo. El repositorio incluye una planilla vacía; no hay resultados físicos cargados."
+      }
+    ]
+  },
+  "layouts": {
+    "title": "Una familia de piezas. Dos formas de producir.",
+    "intro": "Los mismos módulos se agrupan en una mesa única o se reparten entre personas. Los colores ayudan a ubicarse; cada estación lleva también un número S1–S6 y un nombre. Dock200 es una interfaz propia: no se afirma compatibilidad con Gridfinity ni Multiboard.",
+    "sections": [
+      {
+        "title": "A · Mesa única / 800 × 400 mm",
+        "text": "Ocho baldosas en matriz de cuatro por dos, con 20 llaves: dos por cada uno de los diez bordes internos. Las cuatro tapas de la izquierda forman 400 × 400 mm para hoja y rodillo. A la derecha están guiso, adornos, plegado/atado y hojas/útiles. El plegador tiene alas que sobresalen: dejar espacio libre alrededor. Levantar la hoja con ambas manos para pasarla de extendido a plegado. La base de plegado comparte la función de atado; no hace falta otra base de cuerda.",
+        "image": "layout-hub.svg"
+      },
+      {
+        "title": "B · Estaciones repartidas",
+        "text": "Nueve baldosas: cuatro para preparar/extender, una para guiso, una para seis adornos, una para el volcador, una para plegar y una para atar. Ocho llaves unen solamente la superficie de 400 × 400. El resto puede ubicarse a lo largo de la mesa o repartirse. Aumentar vasos/volcadores y adaptadores si se separa cada ingrediente.",
+        "image": "layout-team.svg"
+      },
+      {
+        "title": "Reparto para tres personas",
+        "text": "Persona A: hoja y masa (S1/S2). Persona B: guiso y adornos (S3/S4). Persona C: plegado y pabilo (S5/S6). Mantener una zona de paso limpia para transportar la hoja ya cargada sin doblar la masa antes de tiempo."
+      },
+      {
+        "title": "Reparto para seis personas",
+        "text": "Una persona por función S1–S6. Cada puesto termina una acción antes de pasar el producto. Si la hoja se rompe al moverla cargada, reagrupar S2–S5 alrededor de la misma superficie: no sacrificar integridad para sostener una línea rígida."
+      },
+      {
+        "title": "Colores e intercambio",
+        "text": "S1 verde: hoja. S2 amarillo: masa. S3 terracota: guiso. S4 violeta: adornos. S5 azul: plegado. S6 coral: pabilo. Herrajes grises. Cambiar colores no cambia geometría; imprimir placas S1–S6 y agregar nombre/ingrediente. Evitar depender solo del color."
+      },
+      {
+        "title": "Apilar para guardar",
+        "text": "Cuatro postes unen dos baldosas mediante alojamientos de 12,6 mm y extremos de 12 mm. Poste de 104 mm: deja 96 mm libres entre la cara superior inferior y las patas del piso superior; separación entre baldosas equivalentes: 112 mm. Retirar alas del plegador, rodillo, volcador, comida y piezas altas. Comprobar espacio y estabilidad antes de soltar. Solo dos niveles descargados; nunca rodillar, volcar ni tirar del pabilo en la torre.",
+        "image": "storage.png"
+      }
+    ]
+  },
+  "assembly": {
+    "title": "Montaje, conjunto por conjunto",
+    "intro": "Las imágenes son renders de los STL entregados. Las holguras son valores iniciales: el CAD no simula deformación, rozamiento ni estabilidad con carga. Desbarbar fuera de la zona de comida y lavar según el procedimiento documentado.",
+    "sections": [
+      {
+        "title": "Dock · 1 / Preparar las baldosas",
+        "text": "Retirar soportes sin redondear tetones ni abrir alojamientos a ojo. Colocar K01 con patas abajo y alojamientos arriba. Confirmar cuatro apoyos firmes. No poner sobre una mesa combada. Antes de imprimir ocho, probar una baldosa, una tapa y dos llaves.",
+        "image": "dock_tile.png"
+      },
+      {
+        "title": "Dock · 2 / Unir bordes",
+        "text": "Presentar baldosas al mismo nivel e introducir dos K02 por borde compartido. La llave alinea en el plano; no es una manija ni un cierre contra levantamiento. En la mesa única, unir los diez bordes internos con 20 llaves. En la mesa de preparación del equipo, cuatro bordes internos llevan ocho llaves.",
+        "image": "dock_joiner.png"
+      },
+      {
+        "title": "Dock · 3 / Montar adaptadores",
+        "text": "Alinear los cuatro tetones Ø8 con alojamientos Ø8,6 en paso de 100 mm. Bajar verticalmente sin golpes. La tapa asienta sobre la cara superior de K01, no sobre el fondo de los alojamientos. Colocar una etiqueta S en el rebaje. Sujetar ambas piezas al moverlas: la unión es por gravedad.",
+        "image": "dock.png"
+      },
+      {
+        "title": "Rodillo · 1 / Unir el eje",
+        "text": "W03 y W04 tienen planos complementarios. Solapar 24 mm: el extremo del eje derecho comienza en x=160 del izquierdo y los agujeros coinciden en x=172. Insertar W05 Ø4 hasta dejarlo a ras del eje. Largo resultante: 344 mm. No usar si el eje unido flexiona o se abre en el ensayo con una carga simulada.",
+        "image": "wide-exploded.png"
+      },
+      {
+        "title": "Rodillo · 2 / Cerrar las camisas",
+        "text": "Deslizar W01 y W02 sobre el eje. Acoplar el perfil D macho con el hembra hasta juntar las caras; el pasador queda encerrado bajo el tambor. El cuerpo completo mide 280 mm. No pegar: tiene que poder desarmarse e inspeccionarse. Si hay escalón en la unión, detener y corregir encastre.",
+        "image": "wide_roller_left.png"
+      },
+      {
+        "title": "Rodillo · 3 / Retener y regular",
+        "text": "Colocar un mango R03 por extremo, dos aros W06 en ranuras externas, arandela R04 y chaveta H04 en la ranura final. Los aros abiertos llevan interferencia diametral nominal de 0,2 mm: no simula fuerza de encastre. Giro libre sin roce de mangos y sin salida del tambor. Ancho libre entre ranuras: 266 mm. Cubrir con barrera continua, sin pliegues bajo la masa.",
+        "image": "wide.png"
+      },
+      {
+        "title": "Plegador · 1 / Colocar base y alas",
+        "text": "Apoyar F01 centrado en el adaptador K04: x=5…195, y=50…150. Presentar ala norte H02N y sur H02S en sus bisagras. Los brazos de indexado quedan del mismo lado derecho. No intercambiar las dos alas. Dejar libre el recorrido fuera del Dock.",
+        "image": "family.png"
+      },
+      {
+        "title": "Plegador · 2 / Retener e indexar",
+        "text": "Introducir dos H03 desde el lado de las cabezas. Retener con una H04 por extremo. Insertar H05 en cada posición indexada: 0°, 70° o 100°. Para mover: sacar ambos H05, acompañar las alas a mano, volver a insertar. No usar los pasadores como palancas ni prensar la hallaca contra las alas."
+      },
+      {
+        "title": "Ingredientes · 1 / Vasos y medidas",
+        "text": "K06 recibe las medidas de guiso 40/60 ml; orientar ambos mangos hacia atrás, paralelos, hacia y=200. K07 aloja seis vasos individuales. Forrar cada recipiente destinado a alimentos con una barrera íntegra adecuada. El forro reduce volumen útil; pesar repeticiones si se busca dosificación consistente. Tapas son antipolvo, no herméticas ni para conservar comida.",
+        "image": "dock_adornos_mount.png"
+      },
+      {
+        "title": "Volcador · 1 / Fijar los soportes",
+        "text": "K08: pies I02 en x=48/144 y y=140…196, contra topes laterales y delanteros. Dos I04 abrazan desde atrás el pie y la placa; la abertura mira hacia el frente y la pared cerrada queda detrás del borde de 200 mm. Las guías ubican, las abrazaderas retienen. Probar sin vaso, sin carga y sin levantar el conjunto por los brazos.",
+        "image": "tipper_side.png"
+      },
+      {
+        "title": "Volcador · 2 / Eje fuera de la comida",
+        "text": "Presentar las orejas de I01 entre soportes e introducir I03 desde la izquierda; retener con H04. El eje queda detrás del vaso, fuera de su cavidad, para no atravesar el forro ni la comida. Verificar giro libre en todo el recorrido antes de colocar forro. No hay resorte: volver a posición de carga con la mano.",
+        "image": "tipper.png"
+      },
+      {
+        "title": "Volcador · 3 / Cargar y volcar",
+        "text": "Fijar el forro con pinzas I05 solo si ajustan sin soltarse ni obstruir el giro. Contar/cargar una porción; posicionar la hoja delante y sostener la base. Girar lentamente, recoger lo servido y volver. No inclinar varios niveles apilados ni intentar dosificar desde un depósito lleno. Los giros de 0/45/90/135° son muestras digitales, no ensayos de servicio.",
+        "image": "tipper-pour.png"
+      },
+      {
+        "title": "Pabilo · 1 / Base independiente o compartida",
+        "text": "En mesa única usar los canales de F01. En equipo poner F02 sobre K05, centrado en y=35…165. Pasar aguja roma por canales libres, sin atravesar la hoja. Anudar a mano. La base y el medidor no traen cuchilla.",
+        "image": "tie_base_family.png"
+      },
+      {
+        "title": "Guardado · 1 / Desmontar y apilar",
+        "text": "Sacar alimentos y barreras usadas, limpiar, secar, retirar las alas del plegador y todas las piezas que sobresalen. Insertar cuatro K09 en alojamientos de esquina de la baldosa inferior, después presentar arriba otra baldosa. Comprobar los cuatro encastres. Si el módulo toca el piso superior, desmontarlo: no aumentar la altura con postes encadenados.",
+        "image": "storage.png"
+      }
+    ]
+  },
+  "use": {
+    "title": "De la hoja al pabilo, paso a paso",
+    "intro": "La técnica de cierre depende de la receta familiar. El punto corregido respecto del boceto es unir la masa sobre el relleno antes de terminar la envoltura de hoja. Estos dibujos son esquemas propios, no fotos de una prueba realizada.",
+    "sections": [
+      {
+        "title": "1 · Preparar la hoja",
+        "text": "Lavar, ablandar y secar como indique la receta elegida. Revisar venas, cortes y roturas a contraluz. Preparar hoja principal, refuerzo y faja antes de servir comida. Para el primer ensayo Familiar usar hoja de 350–400 mm como hipótesis; comprobar que permite hacer la costura y doblar extremos. No hay un tamaño universal.",
+        "image": "use-1.png"
+      },
+      {
+        "title": "2 · Extender la masa",
+        "text": "Colocar hoja aceitada según receta o barrera alimentaria íntegra sobre la superficie de 400 × 400. Forrar medida, llenar y enrasar. Empezar con 80 ml a 2,5 mm (202 mm ideales) o 100 ml (226 mm). Pasar el rodillo sin aplastar las juntas de las baldosas. Medir disco real; el cálculo supone espesor y densidad uniformes.",
+        "image": "use-2.png"
+      },
+      {
+        "title": "3 · Servir guiso y adornos",
+        "text": "Mantener borde suficiente de masa libre alrededor del relleno. Medida abierta para guiso con trozos; reducir carga si impide cerrar. Aceitunas, pasas, alcaparras y tiras se cuentan o acomodan a mano. El volcador sirve la porción precargada, no selecciona ni corta ingredientes. Seguir tiempos y temperaturas de fuentes de seguridad alimentaria, no usar el montaje como conservación.",
+        "image": "use-3.png"
+      },
+      {
+        "title": "4 · Juntar la masa",
+        "text": "Transferir la hoja cargada con ambas manos al plegador, centrada. Retirar pasadores. Elevar alas con suavidad y sostener la hoja para aproximar los bordes de masa. Unirlos sobre el guiso a mano, sin que quede hoja atrapada dentro de la masa. Las alas ayudan a levantar: no sellan automáticamente ni fuerzan el tamaño del paquete.",
+        "image": "use-4.png"
+      },
+      {
+        "title": "5 · Cerrar la hoja",
+        "text": "Juntar los bordes largos de la hoja y hacer el doblez central según la receta. Doblar la costura sobre sí misma y acomodarla. Si la masa está abierta, corregir antes de cerrar la hoja. Si falta margen, abrir y reducir relleno o usar hoja mayor; no compensar tirando contra el pasador.",
+        "image": "use-5.png"
+      },
+      {
+        "title": "6 · Doblar extremos y reforzar",
+        "text": "Bajar alas cuando estorben; acompañar los extremos con la pala, sin cortar la hoja. Plegar ambos extremos, envolver con hoja de refuerzo y colocar faja. La receta de referencia usa piezas de hoja de distintos tamaños; calibrar a las hojas disponibles. No calentar ni hervir el paquete con piezas impresas dentro.",
+        "image": "use-6.png"
+      },
+      {
+        "title": "7 · Atar",
+        "text": "Colocar el paquete sobre los canales. Pasar pabilo en dos direcciones y anudar a mano sin desgarrar la hoja. Para paquete supuesto de 160 × 90 × 35 mm, tres vueltas por eje más 300 mm de reserva dan 2.220 mm geométricos; empezar la prueba con unos 2,4 m y medir sobrante. La receta puede usar menos vueltas. Cocción fuera de la estación.",
+        "image": "use-7.png"
+      }
+    ]
+  },
+  "printing": {
+    "title": "Guía técnica de impresión y ajuste",
+    "intro": "Perfil inicial propuesto para FDM con boquilla de 0,4 mm; todavía no validado en una impresora. Los STL están en milímetros. El límite geométrico de cama es 220 × 220 × 250 mm; el brim también tiene que entrar.",
+    "sections": [
+      {
+        "title": "Material y perfil inicial",
+        "text": "PETG como candidato para útiles mecánicos a temperatura ambiente; PLA sirve para maquetas de encastre, sin atribuir resistencia térmica o aptitud alimentaria. Capa 0,20 mm; 4 perímetros y 5 capas superior/inferior para placas y vasos; 5–6 perímetros y 40–60% de relleno para ejes, soportes y chavetas. Son ajustes de partida, no resultados de ensayo. Temperatura y ventilación según fabricante y calibración de tu filamento."
+      },
+      {
+        "title": "Orden de impresión",
+        "text": "Primero cupones. Después una unión de bisagra/eje/chaveta y una muestra de Dock. Luego F01 y dos alas para probar papel. Después el eje partido y acople del rodillo. Recién al final las ocho o nueve baldosas. Este orden evita gastar material en un sistema cuyo encastre todavía no se probó."
+      },
+      {
+        "title": "Orientación por pieza",
+        "text": "Cada ficha del catálogo muestra el STL en su orientación de exportación, dimensiones, soportes y cantidades. Ejes con plano D apoyado; no imprimir vertical por comodidad si cambia la resistencia. Camisas del rodillo en vertical: la derecha tiene la cavidad D hacia arriba. Los brazos del volcador van planos; su largo es 214 mm y permite brim de hasta 2 mm en cama de 220 mm.",
+        "image": "tipper_side.png"
+      },
+      {
+        "title": "Adaptadores y soportes",
+        "text": "Las tapas se exportan invertidas para imprimir los tetones hacia arriba. K04/K05 tienen topes de 3 mm y K08 de 5 mm que dejan parte de la placa elevada: requieren soportes bajo esa placa. Inspeccionar la vista previa y retirar soportes sin modificar los apoyos. Los adaptadores lisos y con alojamientos no necesitan ese soporte de placa. Orejas del plegador requieren soporte local según el laminador.",
+        "image": "dock_fold_mount.png"
+      },
+      {
+        "title": "Holguras que no son intercambiables",
+        "text": "Bisagra/eje Ø8,5/8: 0,5 mm diametral. Dock Ø8,6/8: 0,6 mm diametral, entrada 4,4 en 5 mm. Postes Ø12,6/12: 0,6 mm. Camisas D: Ø30/29,4 y planos 11,6/11. Aros de rodillo: Ø39,2 interior sobre asiento Ø39,4: 0,2 mm de interferencia intencional, requiere elasticidad real. No aplicar un único porcentaje de escala a todo el conjunto."
+      },
+      {
+        "title": "Cambiar tolerancia sin cambiar medidas",
+        "text": "La opción --clearance del exportador ajusta únicamente los elementos del archivo Compact que usan ese parámetro; Dock y los acoples Familiar tienen cotas nominales explícitas en cad/modular.scad. Para cambiarlas hay que modificar pares macho/hembra en esa fuente y volver a exportar/verificar. No afirmar que --clearance recalibra toda la máquina."
+      },
+      {
+        "title": "Aceptación antes del uso",
+        "text": "Superficies sin filos, grietas, soportes ni partículas sueltas. Cuatro patas firmes, llaves al ras, adaptadores que asientan. Ejes entran sin golpes, chavetas quedan retenidas, alas giran sin rozar y aguja atraviesa canales sin atascarse. Rodillo no presenta escalón ni abertura en la unión; brazo volcador no flexiona ni vuelca con carga simulada. Registrar y corregir cualquier fallo antes de comida."
+      },
+      {
+        "title": "Qué no incluyen las descargas",
+        "text": "Sin G-code: depende de impresora, material y perfil. Sin tiempos de impresión ni gramos inventados: obtenerlos del laminador y registrarlos. Sin certificación alimentaria; el filamento y una superficie lisa por sí solos no garantizan un objeto higienizable."
+      }
+    ]
+  },
+  "care": {
+    "title": "Contacto alimentario, limpieza y límites",
+    "intro": "Que las piezas mecánicas sean imprimibles no significa que una impresión FDM sea apta para tocar alimentos. Hoja, pabilo y barreras alimentarias son consumibles, separados del hardware permanente.",
+    "sections": [
+      {
+        "title": "Barrera alimentaria íntegra",
+        "text": "Para pruebas con comida usar barreras adecuadas a alimento, grasa, temperatura y tiempo de contacto, siguiendo indicación del fabricante. Cubrir superficies de rodillo, medidas y vasos sin crear pliegues que alteren dosis o enganchen bisagras. Una hoja rota no es una barrera íntegra. No usar recubrimientos de resina o pintura como atajo sin validación de ese sistema completo."
+      },
+      {
+        "title": "Limpiar desarmado",
+        "text": "Sacar pasadores, ejes, tapas y recipientes. Retirar barreras y residuos; lavar componentes compatibles con agua templada y detergente, enjuagar, secar completamente y revisar grietas y capas abiertas. El método propuesto no es una validación microbiológica. No usar lavavajillas, agua hirviendo ni químicos agresivos sin comprobar compatibilidad y eficacia de todo el material."
+      },
+      {
+        "title": "Separación y temperatura",
+        "text": "Mantener materias primas crudas separadas de ingredientes cocidos y del área de montaje. El sistema no controla temperatura. Seguir las recomendaciones de USDA/autoridad local para manipulación, cocción y enfriamiento; no extrapolar tiempos de conservación de una receta de internet. Ninguna pieza se introduce en la olla ni se usa como molde durante la cocción."
+      },
+      {
+        "title": "Retirar una pieza",
+        "text": "Descartar o dedicar a maqueta si hay grietas, delaminación, deformación, suciedad persistente, olor o desprendimiento. Evitar piezas pequeñas sueltas en la zona de comida. No usar aceite alimentario para disimular un eje trabado: resolver la causa del roce y el protocolo de limpieza."
+      },
+      {
+        "title": "Sin ensayos físicos todavía",
+        "text": "No hay medidas de fuerza, vida útil, repetibilidad, inocuidad ni hallacas por hora. Las mallas y muestras de movimiento son evidencia digital limitada. La torre, el eje partido y el volcador requieren especialmente ensayos de estabilidad y carga antes de usarse en producción."
+      }
+    ]
+  },
+  "troubleshooting": {
+    "title": "Si algo no funciona",
+    "intro": "Detené el ciclo, vaciá el módulo y resolvé la causa con una prueba sin comida. No fuerces una pieza hasta romperla.",
+    "sections": [
+      {
+        "title": "El eje no entra",
+        "text": "Medir cupón y agujero. Revisar primera capa, rebabas y orientación. Limpiar soporte; si la cota sigue corta, corregir el par de cotas del CAD y reimprimir muestra. No agrandar al azar una bisagra ensamblada."
+      },
+      {
+        "title": "El adaptador se levanta",
+        "text": "El encastre Dock200 actual registra por gravedad. Sujetar la base para moverla y para volcar. Si una tarea genera levantamiento o vuelco, interrumpir el uso y registrar un requisito de retención positiva para la siguiente iteración. No llamar seguro a este encastre."
+      },
+      {
+        "title": "La masa no cierra",
+        "text": "Verificar primero diámetro real, espesor, carga de guiso y borde libre. Las alas no prensan ni sellan. Unir masa manualmente antes de doblar hoja. Reducir relleno o aumentar disco dentro del ancho útil de 266 mm; si todavía falla, rediseñar formato con una prueba de receta."
+      },
+      {
+        "title": "La hoja se rompe",
+        "text": "Revisar ablandado, venas, aceite según receta, esquinas y rebabas. Acompañar hoja sin arrastrarla contra bisagra. Aumentar margen/refuerzo o disminuir carga. Una hoja pegada a un ala se despega a mano; no tirar contra el pasador."
+      },
+      {
+        "title": "Queda marca en la masa o una cresta en el rodillo",
+        "text": "Mirar unión de camisas, espesor del forro y arrugas. El acople D debe cerrar a ras. Detener si se abre bajo presión. Una barrera continua no corrige un tambor desalineado."
+      },
+      {
+        "title": "Las porciones cambian",
+        "text": "La cavidad mide volumen; cambian densidad, trozos, compactación y pliegues del forro. Usar la misma técnica y pesar al menos diez porciones para caracterizar variación. Para adornos contar a mano; el volcador no tiene mecanismo de conteo."
+      },
+      {
+        "title": "La cuerda se traba",
+        "text": "Con paquete retirado, pasar aguja por los seis canales. Quitar soportes o residuos. Las vueltas transversales del plegador pasan por huecos de bisagra; no llevar la aguja a través de un nudillo ni punzar la hoja. Revisar que las alas no obstruyan el recorrido."
+      }
+    ]
+  },
+  "research": {
+    "title": "Qué se investigó y qué cambió",
+    "intro": "No existe una receta o tamaño único. Se compararon instrucciones de cocineros, recetas de fabricantes, máquinas reales y recomendaciones de impresión y manipulación. Las decisiones siguientes son inferencias de diseño propias, no validaciones de esas organizaciones.",
+    "sections": [
+      {
+        "title": "Hallaca: no basta envolver como un burrito",
+        "text": "Nuestra Hallaca, de Amantes de la Cocina, describe disco de masa de 20–25 cm y 2–3 mm, aproximación de sus bordes sobre el guiso, costura de hoja, extremos, segunda hoja y faja. GOYA también separa costura, extremos y refuerzo. Se corrigió la guía para explicitar el cierre de masa y la intervención manual; las alas solo ayudan a elevar."
+      },
+      {
+        "title": "Del Compact al Familiar",
+        "text": "El rodillo anterior tenía 186 mm libres y recomendaba disco de unos 160 mm. Se conserva como Compact de ensayo, no como tamaño familiar universal. El nuevo tiene 266 mm libres y aros de 2,5 mm: 80/100 ml producen discos ideales de 202/226 mm. La masa de referencia culinaria no equivale directamente a esos volúmenes; se debe pesar y ajustar."
+      },
+      {
+        "title": "La extrusión de tamales no resuelve los adornos",
+        "text": "BESCO muestra una máquina manual de extrusión de masa y carne. AERSA y Unifiller muestran dosificación para productos con propiedades y boquillas específicas. No se trasladaron sus rendimientos ni se asumió que un dosificador sirve igual guiso con trozos, tiras, aceitunas y pasas. Se eligieron medidas abiertas y un volcador de porción precargada."
+      },
+      {
+        "title": "Modularidad propia y verificable",
+        "text": "Se agregó una interfaz común de baldosas de 200 mm, tetones sobre retícula de 100 mm y llaves de borde. La elección busca fabricar en cama de 220 mm y distribuir puestos. No es una implementación de Gridfinity/Multiboard ni se declara compatibilidad dimensional. Se evita una torre operativa porque mezclar presión de rodillo, carga alta y vasos abiertos exige estabilidad y retención no demostradas."
+      },
+      {
+        "title": "Separar hipótesis de evidencia",
+        "text": "Se publican fuentes CAD, STL, cotas, perfiles propuestos, comprobaciones de malla y muestras booleanas de movimiento. No se publica una productividad supuesta. Pasan a ensayos pendientes la fuerza sobre eje partido, vuelco del volcador, limpieza, repetibilidad de dosis, integridad de hoja y tiempo total frente a un montaje manual de referencia."
+      }
+    ]
+  }
+}

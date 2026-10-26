@@ -26,15 +26,21 @@
 
 `tests/test_design.py` verifica combinaciones de dosis/espesor, cálculo de cuerda, canales dentro del paquete y en huecos de bisagra, manifiesto e inputs inválidos. Un control automático pasado no significa que una persona pueda usar la máquina con éxito.
 
+## Extensión Familiar 0.3
+
+Las muestras nuevas comprueban base/alas a 0/30/70/100°, copa/soportes y copa/eje a 0/45/90/135°, acople de camisas, solape de eje, adaptadores y abrazaderas. La aguja del Familiar y el apilado tienen comprobaciones propias. Las caras de apoyo con espesor y volumen exactamente nulos se registran como contacto plano intencional, no como choque. Consultar los pares y ángulos exactos en el JSON; no confundir esta lista con cobertura de todas las combinaciones.
+
+El constructor del sitio verifica los destinos locales de todas las páginas y que cada pieza tenga ficha, imagen y STL. La revisión de interfaz cubre búsqueda, filtro, calculadora, lectura de una ficha y lista de lectura. No demuestra compatibilidad con todos los navegadores o impresoras.
+
 ## Protocolo de banco
 
 | Etapa | Muestra | Aceptación inicial propuesta |
 |---|---|---|
 | A - Encaje | Cupones y un segmento de eje por diámetro | Entra sin golpe, gira sin atasco y no requiere flexionar la pieza receptora |
 | B - Movimiento | 20 ciclos sin hoja ni carga | Sin choque, grieta, roce creciente ni salida de chaveta; pasadores entran libres |
-| C - Atado simulado | 10 paquetes de papel de 140×80×35 mm | Seis vueltas, salida por arriba de canales y nudo que no se deshace al manipular |
+| C - Atado simulado | 10 paquetes de papel de 160×90×35 mm | Seis vueltas, salida por arriba de canales y nudo que no se deshace al manipular |
 | D - Hoja | 10 envoltorios sin comida | Cierre con margen, sin roturas causadas por la herramienta |
-| E - Masa | 10 porciones con barrera íntegra | Registrar peso, diámetro y espesor; objetivo exploratorio 4±0,5 mm |
+| E - Masa | 10 porciones con barrera íntegra | Registrar peso, diámetro y espesor; objetivo exploratorio Familiar 2,5±0,5 mm |
 | F - Hallaca | 10 paquetes completos, luego cocción externa | Registrar pérdidas, roturas y estado del nudo; no consumir si falló el procedimiento alimentario |
 | G - Tiempo | 10 armados usuales y 10 asistidos, misma persona | Registrar tiempos por etapa y mediana; no exigir ventaja antes de medir |
 
@@ -45,3 +51,11 @@ No se establece una carga segura en newtons ni un ritmo de producción. Si el m�
 Copiar [bench_log.csv](../examples/bench_log.csv), completar impresora, material, perfil, versión y ajustes. **La planilla está vacía a propósito:** el repositorio no contiene datos de ensayos físicos inventados. Agregar fotos con escala y abrir una incidencia mediante [Contribuir](../CONTRIBUTING.md).
 
 Después de modificar bisagras, índices, aguja o canales, repetir comprobaciones y etapas A–D. Después de cambiar material o barrera, repetir desde los cupones correspondientes y las pruebas alimentarias necesarias.
+
+## Ensayos específicos pendientes de 0.3
+
+- Medir flexión del eje partido y escalón de camisas con cargas crecientes, registrando fuerza/desplazamiento; definir límite solo después de medir.
+- Volcador: vacío, simulante ligero y porción real; verificar vuelco, desplazamiento del pie, pérdida de chaveta y desprendimiento de forro/pinzas.
+- Dock: asentamiento y levantamiento accidental durante cada tarea. La unión actual es por gravedad.
+- Guardado: dos niveles, cuatro postes, módulos descargados y alas retiradas; comprobar interferencias y estabilidad. No es prueba de torre operativa.
+- Equipo: comparar transferencias de hoja cargada frente a mesa única y contabilizar roturas, retrabajos y limpieza además del tiempo.

@@ -1,5 +1,19 @@
 # Cambios
 
+## 0.3.0 - Familiar y estaciones modulares
+
+- Se corrige la secuencia: cierre de masa antes de terminar la envoltura de hoja.
+- Dos distribuciones con cantidades verificadas: mesa única 800 × 400 y puestos repartidos.
+- Dock200 propio, llaves de borde, seis etiquetas y postes para dos niveles descargados.
+- Rodillo de 266 mm útiles, dos camisas D y eje partido con pasador encerrado; aros de 2,5 mm.
+- Base Familiar y base independiente de atado; reutilización explícita de piezas Compact.
+- Volcador de porción precargada con eje detrás de la cavidad; no cuenta ingredientes.
+- 29 tipos de pieza nuevos, 61 totales; manual estático de 72 páginas con catálogo ilustrado por pieza.
+- Fuentes primarias, PDF Familiar, perfiles propuestos, resolución de problemas y verificaciones ampliadas.
+- Continúa sin impresión ni ensayo físico, alimentario o de productividad.
+
+# Cambios
+
 ## 0.2.0 - 2026-10-25
 
 Revisión del concepto inicial para publicar el primer repositorio. **Estado CAD alpha; no ensayado físicamente.**

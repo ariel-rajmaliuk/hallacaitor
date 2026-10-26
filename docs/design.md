@@ -1,86 +1,38 @@
-# Diseño y decisiones - v0.2.0
+# Diseño Familiar 0.3
 
-[Inicio](../README.md) · [Montaje](assembly.md) · [Ensayos](testing.md)
+[Investigación y correcciones](research.md) · [Configuraciones](configurations.md) · [Geometría Compact heredada](compact-design.md)
 
-## Requisitos y alcance
+## Dos configuraciones, una interfaz
 
-- Ayudar a una persona a armar hallacas con tamaños repetibles.
-- Toda pieza permanente se fabrica por FDM: pasadores, llaves, ejes, mangos y uniones incluidos.
-- Sin alimentación eléctrica, metal, adhesivos ni mecanismos cerrados difíciles de desarmar.
-- Barreras alimentarias, hojas, cuerda y comida son consumibles; no cuentan como piezas impresas.
-- El proceso térmico, lavado/ablandado y recorte de hojas quedan fuera. La dosificación, el doblez central y el nudo son manuales.
-- No se promete velocidad, productividad industrial, carga máxima ni aptitud alimentaria certificada.
+Mesa única: 800 × 400 mm, ocho Dock200, cuatro tapas lisas, dos bandejas de ingredientes y un plegador que también permite atar. El octavo puesto queda para hojas y útiles sin adaptador. Equipo: nueve bases, cuatro de ellas juntas para hoja/masa y cinco repartidas para guiso, banco de adornos, volcador, plegado y atado. Ninguna promete movimiento automático ni ausencia de traslados.
 
-## Arquitectura
+## Cotas de interfaz
 
-```mermaid
-flowchart TD
-  A["Masa porcionada + hoja preparada"] --> B["Extendido con rodillo"]
-  B --> C["Guiso + adornos"]
-  C --> D["Base de plegado y atado"]
-  D --> E["Doblez + refuerzo manual"]
-  E --> F["Seis vueltas + nudo manual"]
-```
+| Par | Macho | Hembra | Condición |
+|---|---:|---:|---|
+| Tetón / Dock | Ø8 × 4,4 | Ø8,6 × 5 | 0,6 mm diametral, gravedad |
+| Poste / alojamiento | Ø12 × 4 | Ø12,6 × 4,5 inferior o 5 superior | almacenamiento descargado |
+| Acople de camisas | Ø29,4, plano x=11 | Ø30, plano x=11,6 | entrada 24 mm |
+| Eje / tambor | Ø12 | Ø12,5 | giro con holgura |
+| Solape del eje partido | 24 mm | planos separados 0,3 mm | pasador Ø4 en Ø4,4 |
+| Aro / asiento | Ø39,2 interior | Ø39,4 de asiento | interferencia 0,2 mm intencional |
 
-El tamaño de paquete de referencia es **140 × 80 × 35 mm**, centrado en **x=91 mm, y=0** de la base. Es un punto de partida geométrico; la receta real manda. No debe tratarse como una cavidad que obliga a comprimir la hallaca hasta esas medidas.
+Dock: placa 200 × 200 × 8 sobre patas de 8. Adaptador: placa de 4 con cuatro tetones sobre cuadrícula de 100. No hay retención contra levantamiento. Llaves de borde 7,8 mm en placa de 8. No compatible declarado con estándares de terceros.
 
-| Elemento | Valor inicial | Motivo |
-|---|---:|---|
-| Soporte central | 190 × 80 × 20 mm, esquinas redondeadas | Apoyo y canales de atado accesibles |
-| Ejes de alas | y=±54 mm, z=10 mm | Separación para recorrer hasta 100° sin invadir el apoyo en las muestras comprobadas |
-| Ejes de bisagra | Ø8 mm, una cara plana | Pieza horizontal, desmontable y retenida por chaveta |
-| Agujeros de giro | Ø8,5 mm | Holgura diametral inicial 0,5 mm, se calibra |
-| Nudillos | 22 mm de largo, huecos de 10 mm | Los huecos permiten entrar con aguja de 6 mm |
-| Pasos transversales | x=59 / 91 / 123 mm | Coinciden con huecos axiales de las bisagras |
-| Pasos longitudinales | y=-25 / 0 / 25 mm | Tres líneas dentro del paquete objetivo |
-| Canales | 10 mm de ancho, 12 mm de profundidad | Deja espacio geométrico a aguja y cruces de cuerda |
-| Índice de alas | 0°, 70°, 100° | Preparación, toma de hoja y posición final asistida |
-| Rodillo | Ø40 mm, 200 mm de cuerpo | Mayor ancho útil que en v0.1 |
-| Rodillo útil | 186 mm entre ranuras interiores | Evita que el disco invada los aros |
-| Eje de rodillo | Ø12 mm con plano, 264 mm de largo | Dos mangos, cuerpo y retención en un solo eje; se imprime diagonal |
-| Ranuras de aros | 6 mm de ancho, Ø39,4 mm | Asiento axial que reduce el desplazamiento del aro |
-| Aro abierto | 5,6 mm de ancho, Ø39,2 mm interior | 0,2 mm de interferencia diametral de partida |
-| Tabla | 4 baldosas de 180 × 180 × 6 mm | 360 × 360 mm, apoyada directamente en la mesa |
-| Llaves de tabla | Perfil mariposa pasante, 5,8 mm alto | Unión en el plano, desmontable; sin pies ni conectores ocultos |
+Poste: 104 mm total = 4 + 96 + 4. Apoya entre cara superior inferior y patas superiores, por lo que el espacio libre es 96 mm y dos baldosas equivalentes se desplazan 112 mm (96 + 16). Usar solo dos niveles; sacar alas, rodillo, volcador y piezas que invadan postes o techo. No hay validación de vuelco.
 
-Los pines de posición **no son topes automáticos**: hay que quitarlos para mover el ala y volverlos a colocar. No se verificó el movimiento por encima de 100°. El nudo requiere dos manos; las alas se pueden fijar arriba o dejar abiertas, siempre que no estorben.
+Familiar: base central 190 × 100, eje de alas y=±64. Se reutilizan alas y ejes Compact, en nueva separación. Paquete supuesto 160 × 90 × 35, sujeto a receta. La envolvente de la base con orejas es mayor que el apoyo central; consultar informe del STL. Las alas abiertas sobresalen de un Dock; dejar perímetro libre.
 
-## Porción y espesor
+Rodillo: cuerpo 280, 266 útiles entre límites de ranuras, dos mitades de 140 con acople D. Eje completo 344 mediante solape de 24 entre dos tramos de 184. El pasador del solape se encierra bajo el cuerpo. Es una hipótesis mecánica pendiente de medir flexión y escalón bajo carga, no un eje validado.
 
-Para una cavidad cilíndrica de diámetro d y volumen V:
+Volcador: una porción precargada. Pivote y=-8, z=104 sobre referencia del adaptador. La copa queda por delante y el eje detrás de la cavidad alimentaria; dos soportes con pies y abrazaderas. No tiene tolva, conteo, temporización ni resorte. Muestreo de giro no simula comida ni estabilidad.
 
-`h = 4000 × V / (π × d²)` con V en ml y d/h en mm.
+## Cálculos
 
-Para un disco ideal de espesor t:
+Disco ideal: `D = sqrt(4000 V / (pi t))`; 80/100 ml a 2,5 mm → 202/226 mm. No hay equivalencia universal ml/g. Con forro arrugado o masa no uniforme cambia el resultado.
 
-`D = sqrt(4000 × V / (π × t))`.
+Pabilo: `L = n*2*(l+h) + n*2*(w+h) + reserva`. Supuesto 160 × 90 × 35, n=3, reserva=300 → 2.220 mm. Probar 2,4 m y medir sobrante. La reserva no modela todas las diagonales ni cruces.
 
-| Volumen | Diámetro interior | Altura útil |
-|---:|---:|---:|
-| Masa 60 ml | 60 mm | 21,22 mm |
-| Masa 80 ml | 60 mm | 28,29 mm |
-| Masa 100 ml | 60 mm | 35,37 mm |
-| Guiso 40 ml | 50 mm | 20,37 mm |
-| Guiso 60 ml | 50 mm | 30,56 mm |
+## Lo que la simulación no demuestra
 
-No hay una equivalencia fija ml → g. El forro reduce la capacidad útil y las arrugas dificultan enrasar. No se ha medido la repetibilidad de porciones. Para estudiar pérdidas, pesar varias porciones con una balanza externa y registrar la dispersión; la balanza no forma parte de la máquina.
-
-## Hoja y plegado
-
-La hoja inicial de **350 × 350 mm** es una hipótesis para este paquete. Puede necesitar más margen o refuerzo según roturas y rigidez. Se incorpora una plantilla a escala real que solo ayuda a medir; no sustituye el recorte ni el tratamiento previo de la hoja.
-
-Las alas levantan material: **no forman por sí solas la costura**. Tomar los bordes, juntarlos, doblarlos y acomodarlos es trabajo manual. No se debe forzar una hoja pegada al ala ni tirar contra un pasador. Si la hoja no alcanza para cerrar y doblar, aumentar su tamaño o reducir la carga.
-
-## Longitud de pabilo
-
-Aproximación para tres vueltas por cada eje de un prisma:
-
-`L = n × 2 × (l+h) + n × 2 × (w+h) + reserva`.
-
-Para 140 × 80 × 35 mm, n=3 y reserva=300 mm: **2.040 mm**. Las conexiones entre vueltas, diagonales y el espesor de hoja no están modelados. Empezar el ensayo con **2,2 m** y ajustar desde una cuerda sobrante medida. El medidor tiene centros separados 180 mm y postes Ø12: una vuelta ideal es **397,7 mm**. Cinco vueltas ≈1.989 mm; para 2,2 m agregar aproximadamente 211 mm con la regla. No trae cuchilla.
-
-## Cargas, desgaste y límites
-
-No se hizo FEA ni ensayo de resistencia. Los pasadores mantienen posiciones, no están dimensionados para soportar el peso de una persona ni para prensar con palanca. Los aros y ejes se calibran; un material frágil o un ajuste forzado puede romperlos. Las chavetas son retirables y no tienen un seguro elástico validado: comprobar que siguen insertadas antes de cada tanda.
-
-La base no incluye mordaza ni goma antideslizante porque todo su hardware es imprimible. Debe mantenerse estable sobre una mesa firme y sujetarse a mano cuando haga falta. Si se mueve durante el uso, parar y registrar la condición; no compensar apretando más fuerte.
+Se comprueban mallas, envolventes, muestras de intersección y enlaces del sitio. El contacto plano de apoyo puede exportar una superficie de espesor cero: se registra como contacto, no como volumen de colisión. La pequeña interferencia de aros se trata por separado. No se prueba elasticidad, desgaste, carga admisible, limpieza, estanqueidad, rendimiento ni facilidad de uso. Ver [ensayos](testing.md).

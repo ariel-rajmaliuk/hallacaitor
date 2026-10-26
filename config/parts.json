@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "units": "mm",
   "bed_mm": [
     220,
@@ -16,9 +16,19 @@
       "quantities": {
         "minimum": 1,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Plano inferior; soportes locales bajo orejas de índice"
+      "orientation": "Plano inferior; soportes locales bajo orejas de índice",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Apoyo Compact de 190 × 80 para plegar y pasar cuerda; no es la base Familiar.",
+      "use": "Montar con las dos alas de distinta mano; ejes en y=±54, no ±64 como Familiar. Paquete geométrico de partida 140 × 80 × 35. No usar en K04 Familiar sin rediseñar posición de topes.",
+      "guide": "Archivo Compact",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S5",
+      "color": "#4e81a0"
     },
     {
       "sku": "H02N",
@@ -28,9 +38,19 @@
       "quantities": {
         "minimum": 1,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Cara amplia ya apoyada; revisar puentes de bisagra"
+      "orientation": "Cara amplia ya apoyada; revisar puentes de bisagra",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Ala norte con brazo de indexado en el extremo derecho. Se reutiliza en Familiar.",
+      "use": "Colocar del lado +Y de la base elegida, con brazo de índice junto a las orejas fijas del lado derecho. Introducir H03 por bisagras alternadas. H05 mantiene 0/70/100°; retirarlo antes de mover.",
+      "guide": "Plegador: pasos 1 y 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S5",
+      "color": "#4e81a0"
     },
     {
       "sku": "H02S",
@@ -40,9 +60,19 @@
       "quantities": {
         "minimum": 1,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Cara amplia ya apoyada; revisar puentes de bisagra"
+      "orientation": "Cara amplia ya apoyada; revisar puentes de bisagra",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Ala sur, de mano opuesta a H02N. Se reutiliza en Familiar.",
+      "use": "Colocar del lado -Y; el brazo de indexado queda también a la derecha. No sustituir por otra ala norte ni reflejar un STL sin revisar brazo y taladros. Retirar H05 antes de girar.",
+      "guide": "Plegador: pasos 1 y 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S5",
+      "color": "#4e81a0"
     },
     {
       "sku": "H03",
@@ -52,9 +82,19 @@
       "quantities": {
         "minimum": 2,
         "standard": 2,
-        "full": 2
+        "full": 2,
+        "hub": 2,
+        "team": 2
       },
-      "orientation": "Plano D hacia cama; brim 2 mm"
+      "orientation": "Plano D hacia cama; brim 2 mm",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Eje D de 212 mm para bisagra; la cabeza y chaveta evitan salida axial.",
+      "use": "Dos por plegador. Introducir desde el lado izquierdo de la base en alas correctamente presentadas; la ranura sale al otro extremo para H04. Probar giro libre sin golpear. No confundir con I03 de 122 mm.",
+      "guide": "Plegador: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "H04",
@@ -64,9 +104,19 @@
       "quantities": {
         "minimum": 3,
         "standard": 3,
-        "full": 5
+        "full": 5,
+        "hub": 4,
+        "team": 5
       },
-      "orientation": "Vertical, base pequeña; brim 3 mm"
+      "orientation": "Vertical, base pequeña; brim 3 mm",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Chaveta rígida con cabeza para retener un eje; no es un clip elástico certificado.",
+      "use": "Insertar por la ranura transversal del eje hasta que asiente la cabeza. Comprobar retención antes de cada tanda y después de mover el conjunto. Se usa en bisagras, final del rodillo y volcador; los kits incluyen una de repuesto.",
+      "guide": "Plegador / rodillo / volcador",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "H05",
@@ -76,9 +126,19 @@
       "quantities": {
         "minimum": 2,
         "standard": 2,
-        "full": 2
+        "full": 2,
+        "hub": 2,
+        "team": 2
       },
-      "orientation": "Cabeza a cama"
+      "orientation": "Cabeza a cama",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Pasador de posición del ala a 0°, 70° o 100°.",
+      "use": "Alinear brazo móvil y oreja fija; insertar a mano. Para cambiar ángulo sacar ambos pasadores y acompañar las alas. No prensar, no palanquear y no forzar una perforación desalineada.",
+      "guide": "Plegador: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "R01",
@@ -88,9 +148,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Vertical; brim 5 mm"
+      "orientation": "Vertical; brim 5 mm",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Tambor Compact de 200 mm de largo y 186 mm libres entre límites de ranuras.",
+      "use": "Usar exclusivamente con R02 y aros Compact elegidos. Para Familiar se reemplaza por W01/W02. No montar un disco de 226 mm en este rodillo; consultar calculadora.",
+      "guide": "Archivo Compact",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "R02",
@@ -100,9 +170,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Diagonal en cama ya aplicada; brim 2 mm"
+      "orientation": "Diagonal en cama ya aplicada; brim 2 mm",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Eje Compact de una pieza, 264 mm, ya orientado a 45° para caber en la cama.",
+      "use": "Montar cabeza, primer mango, cuerpo, segundo mango, arandela y chaveta según plano Compact. Mantener diagonal en el laminador; no reemplaza las dos mitades W03/W04.",
+      "guide": "Archivo Compact",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "R03",
@@ -112,9 +192,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 2,
-        "full": 2
+        "full": 2,
+        "hub": 2,
+        "team": 2
       },
-      "orientation": "Base circular"
+      "orientation": "Base circular",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Mango giratorio reutilizable por ambos rodillos, con taladro Ø12,5.",
+      "use": "Dos por rodillo, uno por extremo, fuera del tambor. No debe rozar una camisa ni impedir insertar arandela y chaveta. Sujetar por mangos y comprobar que el tambor gira antes de masa.",
+      "guide": "Rodillo: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "R04",
@@ -124,9 +214,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Plana"
+      "orientation": "Plana",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Arandela que separa mango final y chaveta del eje.",
+      "use": "Una por rodillo, entre el segundo mango y la chaveta final. Revisar que no quede apretada al punto de trabar giro ni pueda escapar sobre la chaveta.",
+      "guide": "Rodillo: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "R05A",
@@ -136,9 +236,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 2
+        "full": 2,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Plano"
+      "orientation": "Plano",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Aro abierto para espesor nominal 3 mm en rodillo de Ø40.",
+      "use": "Dos iguales por rodillo, uno en cada ranura externa. Asiento Ø39,4 y aro Ø39,2: interferencia intencional de 0,2 mm diametral. Montar solo después de calibrar elasticidad; no forzar hasta rajar. Familiar de partida usa W06 de 2,5 mm.",
+      "guide": "Rodillo: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "R05B",
@@ -148,9 +258,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 2,
-        "full": 2
+        "full": 2,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Plano"
+      "orientation": "Plano",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Aro abierto para espesor nominal 4 mm en rodillo de Ø40.",
+      "use": "Dos iguales por rodillo, uno en cada ranura externa. Asiento Ø39,4 y aro Ø39,2: interferencia intencional de 0,2 mm diametral. Montar solo después de calibrar elasticidad; no forzar hasta rajar. Familiar de partida usa W06 de 2,5 mm.",
+      "guide": "Rodillo: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "R05C",
@@ -160,9 +280,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 2
+        "full": 2,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Plano"
+      "orientation": "Plano",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Aro abierto para espesor nominal 5 mm en rodillo de Ø40.",
+      "use": "Dos iguales por rodillo, uno en cada ranura externa. Asiento Ø39,4 y aro Ø39,2: interferencia intencional de 0,2 mm diametral. Montar solo después de calibrar elasticidad; no forzar hasta rajar. Familiar de partida usa W06 de 2,5 mm.",
+      "guide": "Rodillo: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "B01",
@@ -172,9 +302,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 4,
-        "full": 4
+        "full": 4,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Cara plana a cama"
+      "orientation": "Cara plana a cama",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Baldosa Compact de 180 × 180 × 6; cuatro forman 360 × 360.",
+      "use": "Unir con B02 sobre mesa plana. No es un Dock200 y no recibe adaptadores K. En Familiar usar K01/K03. Cubrir juntas con barrera continua para extender masa.",
+      "guide": "Archivo Compact",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S1",
+      "color": "#588963"
     },
     {
       "sku": "B02",
@@ -184,9 +324,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 8,
-        "full": 8
+        "full": 8,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Plana"
+      "orientation": "Plana",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Llave de 5,8 mm de alto para la tabla Compact de 6 mm.",
+      "use": "Dos por borde compartido entre B01; ocho para tabla de cuatro baldosas. No sustituir K02, de 7,8 mm, por esta llave más baja. No levantar la tabla por una unión.",
+      "guide": "Archivo Compact",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S1",
+      "color": "#588963"
     },
     {
       "sku": "D01A",
@@ -196,9 +346,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 1
+        "full": 1,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Aro abierto; usar forro"
+      "orientation": "Aro abierto; usar forro",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Aro abierto de Ø60 interior, volumen nominal 60 ml; no mide gramos.",
+      "use": "Forrar, apoyar sobre una superficie protegida, llenar y enrasar. El espesor del forro reduce volumen útil. Liberar con empujador D02. Familiar usa 80/100 ml a 2,5 mm; Compact combina 60 ml y 3 mm para disco de unos 160 mm.",
+      "guide": "Masa: uso paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "D01B",
@@ -208,9 +368,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Aro abierto; usar forro"
+      "orientation": "Aro abierto; usar forro",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Aro abierto de Ø60 interior, volumen nominal 80 ml; no mide gramos.",
+      "use": "Forrar, apoyar sobre una superficie protegida, llenar y enrasar. El espesor del forro reduce volumen útil. Liberar con empujador D02. Familiar usa 80/100 ml a 2,5 mm; Compact combina 80 ml y 4 mm para disco de unos 160 mm.",
+      "guide": "Masa: uso paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "D01C",
@@ -220,9 +390,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Aro abierto; usar forro"
+      "orientation": "Aro abierto; usar forro",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Aro abierto de Ø60 interior, volumen nominal 100 ml; no mide gramos.",
+      "use": "Forrar, apoyar sobre una superficie protegida, llenar y enrasar. El espesor del forro reduce volumen útil. Liberar con empujador D02. Familiar usa 80/100 ml a 2,5 mm; Compact combina 100 ml y 5 mm para disco de unos 160 mm.",
+      "guide": "Masa: uso paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "D02",
@@ -232,9 +412,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Disco a cama; cubrir con barrera"
+      "orientation": "Disco a cama; cubrir con barrera",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Empujador común de Ø59 para medidas de masa de Ø60 interior.",
+      "use": "Forrar aro y empujador con barrera adecuada. Llenar/enrasar la medida sobre superficie protegida; levantar aro y ayudar a liberar porción con el empujador sin comprimir de más. El forro debe caber sin arrugarse ni trabarse.",
+      "guide": "Masa: uso paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
     },
     {
       "sku": "G01A",
@@ -244,9 +434,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Base a cama; usar forro"
+      "orientation": "Base a cama; usar forro",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Medida abierta de Ø50 interior y 40 ml nominales para guiso con trozos.",
+      "use": "Forrar sin agujerear, servir y enrasar con técnica constante, llevar al centro de la masa. En K06 orientar ambos mangos paralelos hacia atrás (y=200) para que no se superpongan. No es una tolva ni una bomba de pistón.",
+      "guide": "Ingredientes: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S3",
+      "color": "#b96143"
     },
     {
       "sku": "G01B",
@@ -256,9 +456,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Base a cama; usar forro"
+      "orientation": "Base a cama; usar forro",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Medida abierta de Ø50 interior y 60 ml nominales para guiso con trozos.",
+      "use": "Forrar sin agujerear, servir y enrasar con técnica constante, llevar al centro de la masa. En K06 orientar ambos mangos paralelos hacia atrás (y=200) para que no se superpongan. No es una tolva ni una bomba de pistón.",
+      "guide": "Ingredientes: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S3",
+      "color": "#b96143"
     },
     {
       "sku": "O01",
@@ -268,9 +478,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Base a cama"
+      "orientation": "Base a cama",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Organizador Compact de seis vasos; no se necesita además de K07.",
+      "use": "Apoyar O02 en seis alojamientos, usar nombres por ingrediente y tapas antipolvo. En Familiar K07 integra esta función al Dock; no apilar ambos organizadores.",
+      "guide": "Archivo Compact",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
     },
     {
       "sku": "O02",
@@ -280,9 +500,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 6,
-        "full": 6
+        "full": 6,
+        "hub": 6,
+        "team": 6
       },
-      "orientation": "Base a cama; usar forro"
+      "orientation": "Base a cama; usar forro",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Vaso individual para un adorno; seis en el banco K07.",
+      "use": "Forrar y cargar un solo ingrediente por vaso. Contar porción de aceitunas/pasas o tomar tiras a mano. No es dispensador ni recipiente de conservación. Sacar del banco para limpiar completamente.",
+      "guide": "Ingredientes: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
     },
     {
       "sku": "O03",
@@ -292,9 +522,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 6
+        "full": 6,
+        "hub": 6,
+        "team": 6
       },
-      "orientation": "Cara cerrada a cama; invertir en laminador"
+      "orientation": "Cara cerrada a cama; invertir en laminador",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Tapa antipolvo para O02, sin sello hermético.",
+      "use": "El STL original requiere invertir la cara cerrada hacia la cama en el laminador. Colocar sobre vaso vacío/seco para guardar útiles; no asumir estanqueidad ni tiempos de conservación de comida.",
+      "guide": "Ingredientes: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
     },
     {
       "sku": "M01",
@@ -304,9 +544,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 1
+        "full": 1,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Base a cama"
+      "orientation": "Base a cama",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Bandeja opcional que contiene una bolsa de amasado; no amasa automáticamente.",
+      "use": "Amasar con manos dentro de una bolsa alimentaria cerrada y resistente, apoyada en la bandeja. Revisar que no haya aristas ni roturas. No incluida en kits Familiar de referencia; el amasado puede hacerse con útiles habituales.",
+      "guide": "Opcional: preparación de masa",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "T01",
@@ -316,9 +566,19 @@
       "quantities": {
         "minimum": 1,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Plana; brim 2 mm"
+      "orientation": "Plana; brim 2 mm",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Aguja roma plana para guiar el pabilo por canales; no cose la hoja.",
+      "use": "Enhebrar la punta de la cuerda, pasar por los canales libres debajo del paquete y retornar por arriba. Sacar aguja antes de tensar y anudar. Si se traba, levantar y recolocar; nunca punzar la hoja.",
+      "guide": "Pabilo: uso paso 7",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S6",
+      "color": "#ce776c"
     },
     {
       "sku": "T02",
@@ -328,9 +588,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Base a cama"
+      "orientation": "Base a cama",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Medidor sin cuchilla, centros separados 180 mm y postes Ø12.",
+      "use": "Una vuelta ideal mide 2×180+π×12 = 397,7 mm. Seis vueltas aproximan 2.386 mm como arranque Familiar; espesor y tensión de cuerda cambian la medida. Medir sobrante y ajustar. Cortar aparte con herramienta habitual.",
+      "guide": "Pabilo: uso paso 7",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S6",
+      "color": "#ce776c"
     },
     {
       "sku": "T03",
@@ -340,9 +610,19 @@
       "quantities": {
         "minimum": 1,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Plana"
+      "orientation": "Plana",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Pala roma para acompañar extremos de hoja sin introducir dedos en bisagras.",
+      "use": "Despegar y acompañar el extremo desde afuera, con hoja apoyada. No cortar, palanquear contra un pasador ni empujar comida expuesta con plástico sin barrera.",
+      "guide": "Uso paso 6",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "T04",
@@ -352,9 +632,19 @@
       "quantities": {
         "minimum": 0,
         "standard": 0,
-        "full": 1
+        "full": 1,
+        "hub": 0,
+        "team": 0
       },
-      "orientation": "Base a cama"
+      "orientation": "Base a cama",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Cuña opcional para mantener una cola de cuerda mientras se acomoda el nudo.",
+      "use": "Probar agarre con el pabilo real; no tiene resorte ni corte. Sacar la cuerda y completar nudo manual antes de retirar hallaca. No incluida en kits Familiar ni validada como tensador.",
+      "guide": "Opcional: atado",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S6",
+      "color": "#ce776c"
     },
     {
       "sku": "C01",
@@ -364,9 +654,19 @@
       "quantities": {
         "minimum": 1,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Plano"
+      "orientation": "Plano",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Muestra de agujeros/ejes para caracterizar ajuste de diámetros antes de imprimir todo.",
+      "use": "Imprimir con material, orientación y perfil finales. Anotar qué par entra y gira sin golpes. El resultado no calibra por sí solo acoples D ni tetones Dock: probar también una muestra de esos pares.",
+      "guide": "Inicio: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "C02",
@@ -376,9 +676,19 @@
       "quantities": {
         "minimum": 1,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Plano"
+      "orientation": "Plano",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Muestra de ranuras para probar una chaveta y retención sin imprimir un eje largo.",
+      "use": "Imprimir junto con H04; limpiar brim y rebabas sin cambiar cotas. Anotar ranura que acepta inserción manual y retiene la chaveta. No confundir entrada libre con cierre automático.",
+      "guide": "Inicio: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
     },
     {
       "sku": "C03",
@@ -388,9 +698,657 @@
       "quantities": {
         "minimum": 0,
         "standard": 1,
-        "full": 1
+        "full": 1,
+        "hub": 1,
+        "team": 1
       },
-      "orientation": "Plana"
+      "orientation": "Plana",
+      "source": "cad/hallacaitor.scad",
+      "purpose": "Regla impresa de 200 mm para referencias y control de plantilla.",
+      "use": "Verificar distancia entre marcas con regla externa antes de usarla para calibrar; contracción y primera capa cambian longitud. Medir hoja sin cortar sobre la pieza.",
+      "guide": "Hoja: uso paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S1",
+      "color": "#588963"
+    },
+    {
+      "sku": "K01",
+      "name": "dock_tile",
+      "label": "Base común Dock 200",
+      "file": "stl/dock_tile.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 9,
+        "hub": 8,
+        "team": 9
+      },
+      "orientation": "Sin soportes salvo detalles; verificar pegs en cupón",
+      "purpose": "Soporte común con cuatro alojamientos para adaptadores y cuatro para postes.",
+      "use": "Presentar sobre mesa plana. Insertar llaves sin martillar; las patas deben apoyar todas.",
+      "guide": "Dock: paso 1",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "K02",
+      "name": "dock_joiner",
+      "label": "Llave entre bases",
+      "file": "stl/dock_joiner.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 20,
+        "hub": 20,
+        "team": 8
+      },
+      "orientation": "Plana",
+      "purpose": "Llave mariposa que alinea baldosas adyacentes en el plano.",
+      "use": "Colocar dos por unión de 200 mm. No levantar la mesa por las llaves.",
+      "guide": "Dock: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "K03",
+      "name": "dock_worktop",
+      "label": "Cubierta plana de masa/hoja",
+      "file": "stl/dock_worktop.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 4,
+        "hub": 4,
+        "team": 4
+      },
+      "orientation": "Invertida ya en STL",
+      "purpose": "Tapa lisa para formar una superficie de preparación de 400 × 400.",
+      "use": "Insertar cuatro tetones en una baldosa. Cubrir juntas con barrera alimentaria continua.",
+      "guide": "Dock: paso 3",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "K04",
+      "name": "dock_fold_mount",
+      "label": "Adaptador del plegador",
+      "file": "stl/dock_fold_mount.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.",
+      "purpose": "Adaptador con topes de ubicación del plegador familiar.",
+      "use": "Base centrada en x=5…195, y=50…150; alas libres fuera de la baldosa. No sujeta contra levantamiento.",
+      "guide": "Plegador: paso 1",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S5",
+      "color": "#4e81a0"
+    },
+    {
+      "sku": "K05",
+      "name": "dock_tie_mount",
+      "label": "Adaptador de atado separado",
+      "file": "stl/dock_tie_mount.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 0,
+        "team": 1
+      },
+      "orientation": "STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.",
+      "purpose": "Adaptador de la base de atado de 200 × 130.",
+      "use": "Centrar base en y=35…165; comprobar seis canales y estabilidad.",
+      "guide": "Pabilo: paso 1",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S6",
+      "color": "#ce776c"
+    },
+    {
+      "sku": "K06",
+      "name": "dock_guiso_mount",
+      "label": "Adaptador de guiso",
+      "file": "stl/dock_guiso_mount.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.",
+      "purpose": "Bandeja con dos alojamientos para medidas de guiso.",
+      "use": "Colocar medidas forradas; levantar para servir. No es dosificador de tolva.",
+      "guide": "Ingredientes: paso 1",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S3",
+      "color": "#b96143"
+    },
+    {
+      "sku": "K07",
+      "name": "dock_adornos_mount",
+      "label": "Banco de seis adornos",
+      "file": "stl/dock_adornos_mount.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.",
+      "purpose": "Seis alojamientos para recipientes individuales.",
+      "use": "Colocar vasos por ingrediente; etiquetar también con texto.",
+      "guide": "Ingredientes: paso 1",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "K08",
+      "name": "dock_tipper_mount",
+      "label": "Adaptador de un ingrediente",
+      "file": "stl/dock_tipper_mount.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 0,
+        "team": 1
+      },
+      "orientation": "STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.",
+      "purpose": "Adaptador con guías para dos soportes del volcador.",
+      "use": "Pies en x=48/144, y=140…196. Colocar dos abrazaderas traseras.",
+      "guide": "Volcador: paso 1",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "K09",
+      "name": "stack_post",
+      "label": "Columna de guardado",
+      "file": "stl/stack_post.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 4,
+        "hub": 4,
+        "team": 4
+      },
+      "orientation": "Vertical; no usar como columna de prensa",
+      "purpose": "Poste de separación para guardar dos baldosas descargadas.",
+      "use": "Cuatro por nivel, 4 mm de encastre en cada extremo; 96 mm libres y 112 mm entre baldosas equivalentes. Retirar alas, rodillo y volcador antes de guardar; solo útiles bajos descargados.",
+      "guide": "Guardado: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "K10",
+      "name": "hub_side_top",
+      "label": "Apoyo lateral opcional del plegador",
+      "file": "stl/hub_side_top.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 0,
+        "team": 0
+      },
+      "orientation": "Invertido ya en STL",
+      "purpose": "Apoyo lateral experimental de 96 × 200, no incluido en los dos kits recomendados.",
+      "use": "Solo variante de estudio. No tapa el plegador; no está validado para presión de rodillo.",
+      "guide": "Opcional",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "F01",
+      "name": "fold_base_family",
+      "label": "Plegador familiar",
+      "file": "stl/fold_base_family.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Horizontal; soportes en orejas",
+      "purpose": "Base familiar de 190 × 100 con ejes separados 128 mm.",
+      "use": "Usar alas norte y sur, dos ejes H03, dos chavetas y dos pasadores. No intercambiar con base Compact sin revisar montaje.",
+      "guide": "Plegador: paso 1",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S5",
+      "color": "#4e81a0"
+    },
+    {
+      "sku": "F02",
+      "name": "tie_base_family",
+      "label": "Atado independiente",
+      "file": "stl/tie_base_family.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 0,
+        "team": 1
+      },
+      "orientation": "Plano",
+      "purpose": "Base independiente de 200 × 130 con seis canales.",
+      "use": "Para un equipo con persona dedicada al atado. Retirar envoltorio de los pasos antes de introducir la aguja.",
+      "guide": "Pabilo: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S6",
+      "color": "#ce776c"
+    },
+    {
+      "sku": "W01",
+      "name": "wide_roller_left",
+      "label": "Rodillo ancho: mitad con espiga D",
+      "file": "stl/wide_roller_left.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Vertical",
+      "purpose": "Media camisa de 140 mm con acople D macho de 24 mm.",
+      "use": "Encastre con W02; el eje partido mantiene alineación. Barrera continua por encima de la unión.",
+      "guide": "Rodillo: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
+    },
+    {
+      "sku": "W02",
+      "name": "wide_roller_right",
+      "label": "Rodillo ancho: mitad con alojamiento D",
+      "file": "stl/wide_roller_right.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Boca D hacia arriba, ya en STL",
+      "purpose": "Media camisa con cavidad D hembra.",
+      "use": "Retirar rebabas del acople; unión cerrada sin forzar. No pegar.",
+      "guide": "Rodillo: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
+    },
+    {
+      "sku": "W03",
+      "name": "wide_axle_left",
+      "label": "Eje ancho: mitad con cabeza",
+      "file": "stl/wide_axle_left.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Tumbado, plano D a cama",
+      "purpose": "Eje izquierdo con cabeza y solape plano de 24 mm.",
+      "use": "Solapar W04 en x=160…184; alinear perforaciones en x=172.",
+      "guide": "Rodillo: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "W04",
+      "name": "wide_axle_right",
+      "label": "Eje ancho: mitad con chaveta",
+      "file": "stl/wide_axle_right.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Tumbado, plano D a cama",
+      "purpose": "Eje derecho con plano complementario y ranura final.",
+      "use": "El largo total unido es 344 mm. Revisar holgura y flexión antes de aplicar presión.",
+      "guide": "Rodillo: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "W05",
+      "name": "axle_joint_pin",
+      "label": "Pasador oculto del eje ancho",
+      "file": "stl/axle_joint_pin.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Vertical; brim pequeño",
+      "purpose": "Pasador de 4 mm que atraviesa el solape de los ejes.",
+      "use": "Insertar a ras: luego queda encerrado dentro del tambor. Desarmar el rodillo para retirarlo.",
+      "guide": "Rodillo: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "común",
+      "color": "#7b8c83"
+    },
+    {
+      "sku": "W06",
+      "name": "ring_2_5mm",
+      "label": "Aro de espesor 2,5 mm",
+      "file": "stl/ring_2_5mm.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 2,
+        "hub": 2,
+        "team": 2
+      },
+      "orientation": "Plano",
+      "purpose": "Aro abierto de 45 mm exterior para espesor nominal 2,5 mm.",
+      "use": "Dos unidades en ranuras externas. Ajuste intencional 0,2 mm diametral; calibrar antes de forzar.",
+      "guide": "Rodillo: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
+    },
+    {
+      "sku": "I01",
+      "name": "tipper_cup",
+      "label": "Copa basculante de porción precargada",
+      "file": "stl/tipper_cup.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 0,
+        "team": 1
+      },
+      "orientation": "Base a cama; soportes locales en orejas",
+      "purpose": "Vaso basculante de una porción precargada con orejas de giro.",
+      "use": "Forrar, fijar forro sin bloquear eje, precargar una porción, girar y volver. No contiene tolva ni conteo.",
+      "guide": "Volcador: paso 2",
+      "supports": "locales; revisar vista previa del laminador",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "I02",
+      "name": "tipper_side",
+      "label": "Lateral del soporte basculante",
+      "file": "stl/tipper_side.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 2,
+        "hub": 0,
+        "team": 2
+      },
+      "orientation": "Cara lateral plana; 214 mm en Y. Brim máximo 2 mm para cama de 220 mm.",
+      "purpose": "Brazo lateral plano con pie trasero y pivote frontal.",
+      "use": "Dos iguales, cara plana apoyada en cama. Comprobar deformación y vuelco con carga simulada.",
+      "guide": "Volcador: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "I03",
+      "name": "tipper_axle",
+      "label": "Eje de copa basculante",
+      "file": "stl/tipper_axle.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 0,
+        "team": 1
+      },
+      "orientation": "Plano D a cama",
+      "purpose": "Eje desmontable de 122 mm para las orejas y brazos.",
+      "use": "Insertar desde x=45; cabeza afuera y chaveta al otro extremo. Debe girar libre sin comida.",
+      "guide": "Volcador: paso 2",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "I04",
+      "name": "tipper_foot_clip",
+      "label": "Clip del pie del soporte",
+      "file": "stl/tipper_foot_clip.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 2,
+        "hub": 0,
+        "team": 2
+      },
+      "orientation": "Plano; revisar luz de 12,6 mm",
+      "purpose": "Abrazadera C desmontable del pie y placa de montaje.",
+      "use": "Dos unidades: abertura hacia el frente, pared cerrada detrás del borde de la placa. No levantar por el vaso.",
+      "guide": "Volcador: paso 1",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "mecánica",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "I05",
+      "name": "liner_clip",
+      "label": "Clip del forro",
+      "file": "stl/liner_clip.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 4,
+        "hub": 0,
+        "team": 4
+      },
+      "orientation": "Plano; verificar que no perfore forro",
+      "purpose": "Pinza rígida para mantener el forro de un vaso.",
+      "use": "Probar con el espesor real del borde y forro; no forzar ni dejar piezas sueltas sobre comida.",
+      "guide": "Volcador: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "S1",
+      "name": "station_tag_1",
+      "label": "Identificación estación S1",
+      "file": "stl/station_tag_1.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Texto hacia arriba",
+      "purpose": "Identificador S1: Hoja.",
+      "use": "Insertar a mano en el rebaje frontal. Color más texto; retirar antes de limpiar.",
+      "guide": "Dock: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S1",
+      "color": "#588963"
+    },
+    {
+      "sku": "S2",
+      "name": "station_tag_2",
+      "label": "Identificación estación S2",
+      "file": "stl/station_tag_2.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Texto hacia arriba",
+      "purpose": "Identificador S2: Masa.",
+      "use": "Insertar a mano en el rebaje frontal. Color más texto; retirar antes de limpiar.",
+      "guide": "Dock: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S2",
+      "color": "#d7a52c"
+    },
+    {
+      "sku": "S3",
+      "name": "station_tag_3",
+      "label": "Identificación estación S3",
+      "file": "stl/station_tag_3.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Texto hacia arriba",
+      "purpose": "Identificador S3: Guiso.",
+      "use": "Insertar a mano en el rebaje frontal. Color más texto; retirar antes de limpiar.",
+      "guide": "Dock: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S3",
+      "color": "#b96143"
+    },
+    {
+      "sku": "S4",
+      "name": "station_tag_4",
+      "label": "Identificación estación S4",
+      "file": "stl/station_tag_4.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Texto hacia arriba",
+      "purpose": "Identificador S4: Adornos.",
+      "use": "Insertar a mano en el rebaje frontal. Color más texto; retirar antes de limpiar.",
+      "guide": "Dock: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S4",
+      "color": "#8063a5"
+    },
+    {
+      "sku": "S5",
+      "name": "station_tag_5",
+      "label": "Identificación estación S5",
+      "file": "stl/station_tag_5.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Texto hacia arriba",
+      "purpose": "Identificador S5: Plegado.",
+      "use": "Insertar a mano en el rebaje frontal. Color más texto; retirar antes de limpiar.",
+      "guide": "Dock: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S5",
+      "color": "#4e81a0"
+    },
+    {
+      "sku": "S6",
+      "name": "station_tag_6",
+      "label": "Identificación estación S6",
+      "file": "stl/station_tag_6.stl",
+      "source": "cad/modular.scad",
+      "quantities": {
+        "minimum": 0,
+        "standard": 0,
+        "full": 1,
+        "hub": 1,
+        "team": 1
+      },
+      "orientation": "Texto hacia arriba",
+      "purpose": "Identificador S6: Pabilo.",
+      "use": "Insertar a mano en el rebaje frontal. Color más texto; retirar antes de limpiar.",
+      "guide": "Dock: paso 3",
+      "supports": "no previstos; revisar puentes y primera capa",
+      "print_profile": "general",
+      "station": "S6",
+      "color": "#ce776c"
     }
   ]
 }

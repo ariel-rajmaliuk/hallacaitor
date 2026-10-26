@@ -1,0 +1,12 @@
+[
+ {"name":"Nuestra Hallaca · Amantes de la Cocina","url":"https://amantesdelacocina.com/cocina/2010/12/nuestra-hallaca/","used":"Proceso de masa, hoja, refuerzo y faja; orden de magnitud del disco. Es una receta particular, no un estándar dimensional."},
+ {"name":"Hallacas · GOYA","url":"https://www.goya.com/en/recipes/hallacas/","used":"Contraste del cierre de hoja, extremos y refuerzo. Sin copiar receta ni imágenes."},
+ {"name":"Manual Tamale Machine · BESCO","url":"https://bescomfg.com/equipment/tamale-equipment/manual-tamale-machine/","used":"Distinguir extrusión manual de masa/carne del armado de una hallaca con adornos. No se transfieren cifras de rendimiento."},
+ {"name":"Dosificadora · AERSA","url":"https://aersa.net/portfolio/dosificadora/","used":"Dosificación depende de consistencia del producto. Referencia de principio, sin copiar piezas."},
+ {"name":"Multi Piston · Unifiller","url":"https://www.unifiller.com/food-machine/multi-piston","used":"Importancia de producto, cilindro y boquilla; no justifica un dosificador universal."},
+ {"name":"Food safe FDM printing · Prusa","url":"https://help.prusa3d.com/article/food-safe-fdm-printing_112313","used":"Límites de contacto alimentario de impresiones FDM, no equivalencia filamento/pieza certificada."},
+ {"name":"PETG · Prusa","url":"https://help.prusa3d.com/article/petg_2059","used":"Material candidato para prototipo mecánico, con perfil dependiente del filamento."},
+ {"name":"Keep Your Traditions Safe at Your Next Tamalada · USDA FSIS","url":"https://www.fsis.usda.gov/news-events/news-press-releases/keep-your-traditions-safe-your-next-tamalada","used":"Manipulación, separación y control térmico. El aparato no conserva ni cocina."},
+ {"name":"OpenSCAD User Manual","url":"https://openscad.org/documentation.html","used":"Fuente CAD paramétrica y exportación reproducible."},
+ {"name":"Configuring a publishing source for GitHub Pages · GitHub","url":"https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site","used":"Activación de Pages con GitHub Actions; el conector no tiene administración de Pages."}
+]

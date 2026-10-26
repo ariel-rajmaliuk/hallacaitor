@@ -1,0 +1,62 @@
+sku,name,label,hub,team,compact_minimum,compact_standard,dimensions_mm,orientation,supports
+H01,fold_base,Base de plegado y atado,0,0,1,1,200 × 164 × 37.6658,Plano inferior; soportes locales bajo orejas de índice,locales; revisar vista previa del laminador
+H02N,fold_wing_north,Ala norte con brazo de indexado,1,1,1,1,194.7 × 137 × 20,Cara amplia ya apoyada; revisar puentes de bisagra,no previstos; revisar puentes y primera capa
+H02S,fold_wing_south,Ala sur con brazo de indexado,1,1,1,1,194.7 × 137 × 20,Cara amplia ya apoyada; revisar puentes de bisagra,no previstos; revisar puentes y primera capa
+H03,hinge_axle,Eje de bisagra con cara plana,2,2,2,2,212 × 12 × 9.2,Plano D hacia cama; brim 2 mm,no previstos; revisar puentes y primera capa
+H04,lock_key,Chaveta de retención,4,5,3,3,6 × 6 × 14,"Vertical, base pequeña; brim 3 mm",no previstos; revisar puentes y primera capa
+H05,index_pin,Pasador de posición 0/70/100°,2,2,2,2,7 × 7 × 15,Cabeza a cama,no previstos; revisar puentes y primera capa
+R01,roller_body,Cuerpo de rodillo 200 mm,0,0,0,1,40 × 40 × 200,Vertical; brim 5 mm,no previstos; revisar puentes y primera capa
+R02,roller_axle,Eje de rodillo retenido,0,0,0,1,197.99 × 197.99 × 15.2,Diagonal en cama ya aplicada; brim 2 mm,no previstos; revisar puentes y primera capa
+R03,roller_grip,Mango del rodillo,2,2,0,2,29 × 29 × 24,Base circular,no previstos; revisar puentes y primera capa
+R04,roller_washer,Arandela de retención,1,1,0,1,21 × 21 × 2,Plana,no previstos; revisar puentes y primera capa
+R05A,ring_3mm,Aro de espesor 3 mm,0,0,0,0,46 × 45.9017 × 5.6,Plano,no previstos; revisar puentes y primera capa
+R05B,ring_4mm,Aro de espesor 4 mm,0,0,0,2,48 × 47.9017 × 5.6,Plano,no previstos; revisar puentes y primera capa
+R05C,ring_5mm,Aro de espesor 5 mm,0,0,0,0,50 × 49.9017 × 5.6,Plano,no previstos; revisar puentes y primera capa
+B01,board_tile,Baldosa plana 180 mm,0,0,0,4,180 × 180 × 6,Cara plana a cama,no previstos; revisar puentes y primera capa
+B02,board_key,Llave mariposa de unión,0,0,0,8,24 × 14 × 5.8,Plana,no previstos; revisar puentes y primera capa
+D01A,dose_60ml,Dosificador de masa 60 ml,0,0,0,0,88 × 68 × 21.2207,Aro abierto; usar forro,no previstos; revisar puentes y primera capa
+D01B,dose_80ml,Dosificador de masa 80 ml,1,1,0,1,88 × 68 × 28.2942,Aro abierto; usar forro,no previstos; revisar puentes y primera capa
+D01C,dose_100ml,Dosificador de masa 100 ml,1,1,0,0,88 × 68 × 35.3678,Aro abierto; usar forro,no previstos; revisar puentes y primera capa
+D02,dose_plunger,Empujador común,1,1,0,1,59 × 59 × 42,Disco a cama; cubrir con barrera,no previstos; revisar puentes y primera capa
+G01A,guiso_40ml,Medida de guiso 40 ml,1,1,0,0,95 × 58 × 23.3718,Base a cama; usar forro,no previstos; revisar puentes y primera capa
+G01B,guiso_60ml,Medida de guiso 60 ml,1,1,0,1,95 × 58 × 33.5577,Base a cama; usar forro,no previstos; revisar puentes y primera capa
+O01,ingredient_caddy,Organizador de seis recipientes,0,0,0,1,194 × 128 × 8,Base a cama,no previstos; revisar puentes y primera capa
+O02,ingredient_cup,Recipiente desmontable,6,6,0,6,56 × 56 × 44,Base a cama; usar forro,no previstos; revisar puentes y primera capa
+O03,ingredient_lid,Tapa de protección sin sello,6,6,0,0,60 × 60 × 5,Cara cerrada a cama; invertir en laminador,no previstos; revisar puentes y primera capa
+M01,knead_tray,Bandeja de amasado en bolsa,0,0,0,0,194 × 174 × 50,Base a cama,no previstos; revisar puentes y primera capa
+T01,thread_needle,Aguja roma para pabilo,1,1,1,1,212 × 6 × 2.4,Plana; brim 2 mm,no previstos; revisar puentes y primera capa
+T02,cord_gauge,Medidor de pabilo,1,1,0,1,200 × 36 × 30,Base a cama,no previstos; revisar puentes y primera capa
+T03,end_paddle,Pala para extremos de hoja,1,1,1,1,100 × 130 × 5,Plana,no previstos; revisar puentes y primera capa
+T04,cord_cleat,Cuña de ayuda al nudo,0,0,0,0,50 × 30 × 12,Base a cama,no previstos; revisar puentes y primera capa
+C01,fit_coupon,Cupón de diámetros,1,1,1,1,118 × 78 × 7,Plano,no previstos; revisar puentes y primera capa
+C02,key_coupon,Cupón de chavetas,1,1,1,1,64 × 36 × 7,Plano,no previstos; revisar puentes y primera capa
+C03,rule,Regla de 200 mm,1,1,0,1,200 × 24 × 3.5,Plana,no previstos; revisar puentes y primera capa
+K01,dock_tile,Base común Dock 200,8,9,0,0,200 × 200 × 16,Sin soportes salvo detalles; verificar pegs en cupón,locales; revisar vista previa del laminador
+K02,dock_joiner,Llave entre bases,20,8,0,0,24 × 14 × 7.8,Plana,no previstos; revisar puentes y primera capa
+K03,dock_worktop,Cubierta plana de masa/hoja,4,4,0,0,200 × 200 × 8.4,Invertida ya en STL,locales; revisar vista previa del laminador
+K04,dock_fold_mount,Adaptador del plegador,1,1,0,0,200 × 200 × 11.4,STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.,locales; revisar vista previa del laminador
+K05,dock_tie_mount,Adaptador de atado separado,0,1,0,0,200 × 200 × 11.4,STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.,locales; revisar vista previa del laminador
+K06,dock_guiso_mount,Adaptador de guiso,1,1,0,0,200 × 200 × 8.4,STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.,locales; revisar vista previa del laminador
+K07,dock_adornos_mount,Banco de seis adornos,1,1,0,0,200 × 200 × 8.4,STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.,locales; revisar vista previa del laminador
+K08,dock_tipper_mount,Adaptador de un ingrediente,0,1,0,0,200 × 200 × 13.4,STL invertido; soportes bajo la placa para variantes con topes. Retirar soportes sin modificar tetones.,locales; revisar vista previa del laminador
+K09,stack_post,Columna de guardado,4,4,0,0,18 × 18 × 104,Vertical; no usar como columna de prensa,no previstos; revisar puentes y primera capa
+K10,hub_side_top,Apoyo lateral opcional del plegador,0,0,0,0,96 × 200 × 28.4,Invertido ya en STL,locales; revisar vista previa del laminador
+F01,fold_base_family,Plegador familiar,1,1,0,0,200 × 184 × 37.6658,Horizontal; soportes en orejas,locales; revisar vista previa del laminador
+F02,tie_base_family,Atado independiente,0,1,0,0,200 × 130 × 18,Plano,no previstos; revisar puentes y primera capa
+W01,wide_roller_left,Rodillo ancho: mitad con espiga D,1,1,0,0,40 × 40 × 164,Vertical,no previstos; revisar puentes y primera capa
+W02,wide_roller_right,Rodillo ancho: mitad con alojamiento D,1,1,0,0,40 × 40 × 140,"Boca D hacia arriba, ya en STL",no previstos; revisar puentes y primera capa
+W03,wide_axle_left,Eje ancho: mitad con cabeza,1,1,0,0,184 × 20 × 15.2,"Tumbado, plano D a cama",no previstos; revisar puentes y primera capa
+W04,wide_axle_right,Eje ancho: mitad con chaveta,1,1,0,0,184 × 12 × 11.2,"Tumbado, plano D a cama",no previstos; revisar puentes y primera capa
+W05,axle_joint_pin,Pasador oculto del eje ancho,1,1,0,0,4 × 4 × 11.8,Vertical; brim pequeño,no previstos; revisar puentes y primera capa
+W06,ring_2_5mm,"Aro de espesor 2,5 mm",2,2,0,0,45 × 44.9017 × 5.6,Plano,no previstos; revisar puentes y primera capa
+I01,tipper_cup,Copa basculante de porción precargada,0,1,0,0,80 × 103 × 44,Base a cama; soportes locales en orejas,locales; revisar vista previa del laminador
+I02,tipper_side,Lateral del soporte basculante,0,2,0,0,110 × 214 × 8,Cara lateral plana; 214 mm en Y. Brim máximo 2 mm para cama de 220 mm.,no previstos; revisar puentes y primera capa
+I03,tipper_axle,Eje de copa basculante,0,1,0,0,122 × 12 × 9.2,Plano D a cama,no previstos; revisar puentes y primera capa
+I04,tipper_foot_clip,Clip del pie del soporte,0,2,0,0,16 × 28 × 18.6,"Plano; revisar luz de 12,6 mm",no previstos; revisar puentes y primera capa
+I05,liner_clip,Clip del forro,0,4,0,0,10 × 12 × 12,Plano; verificar que no perfore forro,no previstos; revisar puentes y primera capa
+S1,station_tag_1,Identificación estación S1,1,1,0,0,40 × 16 × 2,Texto hacia arriba,no previstos; revisar puentes y primera capa
+S2,station_tag_2,Identificación estación S2,1,1,0,0,40 × 16 × 2,Texto hacia arriba,no previstos; revisar puentes y primera capa
+S3,station_tag_3,Identificación estación S3,1,1,0,0,40 × 16 × 2,Texto hacia arriba,no previstos; revisar puentes y primera capa
+S4,station_tag_4,Identificación estación S4,1,1,0,0,40 × 16 × 2,Texto hacia arriba,no previstos; revisar puentes y primera capa
+S5,station_tag_5,Identificación estación S5,1,1,0,0,40 × 16 × 2,Texto hacia arriba,no previstos; revisar puentes y primera capa
+S6,station_tag_6,Identificación estación S6,1,1,0,0,40 × 16 × 2,Texto hacia arriba,no previstos; revisar puentes y primera capa

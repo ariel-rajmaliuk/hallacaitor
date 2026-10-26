@@ -1,21 +1,25 @@
-# Referencias y atribución
+# Fuentes y alcance
 
-Consulta: **25 de octubre de 2026**. Se enlazan fuentes primarias. No se redistribuyen recetas, fotografías ni archivos CAD ajenos. Las piezas, diagramas y textos explicativos del repositorio son propios de este proyecto; las fuentes no avalan el prototipo.
+Consultadas para la revisión 0.3. Inferencias y CAD propios; no se redistribuyen imágenes, recetas ni piezas de terceros.
 
-| ID | Fuente | Qué respalda | Qué NO respalda |
-|---|---|---|---|
-| R1 | [GOYA Europa - Hallacas venezolanas](https://goya.es/recetas/hallacas-venezolanas) | Orden general de masa, relleno, unión de hoja, extremos, refuerzo y pabilo | Dimensiones, dosis, rendimiento o funcionamiento de Hallacaitor |
-| R2 | [Prusa - Food safe FDM printing](https://help.prusa3d.com/article/food-safe-fdm-printing_112313) | Problemas de superficies por capas, aditivos y proceso de fabricación | Certificación de PETG, bolsas o barreras utilizadas aquí |
-| R3 | [Prusa - PETG](https://help.prusa3d.com/article/petg_2059) | Uso estructural habitual y limitaciones de contacto alimentario | Parámetros universales de impresión o limpieza |
-| R4 | [Prusa - Modeling with 3D printing in mind](https://help.prusa3d.com/article/modeling-with-3d-printing-in-mind_164135) | Importancia de orientación, soportes, puentes y encajes | Garantía de impresión sin soportes de todas estas piezas |
-| R5 | [USDA FSIS - Keep Your Traditions Safe at Your Next Tamalada](https://www.fsis.usda.gov/news-events/news-press-releases/keep-your-traditions-safe-your-next-tamalada) | Higiene y control alimentario durante una preparación colectiva; menciona hallacas | Validación de una máquina o vida útil específica de una receta |
-| R6 | [OpenSCAD - Documentación oficial](https://openscad.org/documentation.html) | Lenguaje, modelos paramétricos y exportación por línea de comandos | Resistencia de una impresión o precisión de sus encajes |
-| R7 | [OpenSCAD - Using OpenSCAD in a command line environment](https://files.openscad.org/documentation/manual/Using_OpenSCAD_in_a_command_line_environment.html) | Uso de `-o`, parámetros `-D` y ejecución automatizada | Reproducibilidad byte a byte entre todas las versiones de CGAL |
+- [Nuestra Hallaca · Amantes de la Cocina](https://amantesdelacocina.com/cocina/2010/12/nuestra-hallaca/): Proceso de masa, hoja, refuerzo y faja; orden de magnitud del disco. Es una receta particular, no un estándar dimensional.
 
-## Cálculos propios
+- [Hallacas · GOYA](https://www.goya.com/en/recipes/hallacas/): Contraste del cierre de hoja, extremos y refuerzo. Sin copiar receta ni imágenes.
 
-Los volúmenes de cilindro, diámetros ideales de discos, perímetros de paquete y medidor de pabilo proceden de geometría elemental. Se declaran como aproximaciones en [Diseño](design.md); no son recomendaciones culinarias tomadas de las fuentes.
+- [Manual Tamale Machine · BESCO](https://bescomfg.com/equipment/tamale-equipment/manual-tamale-machine/): Distinguir extrusión manual de masa/carne del armado de una hallaca con adornos. No se transfieren cifras de rendimiento.
 
-## Licencia
+- [Dosificadora · AERSA](https://aersa.net/portfolio/dosificadora/): Dosificación depende de consistencia del producto. Referencia de principio, sin copiar piezas.
 
-Se conserva íntegra la [MIT elegida por Ariel](../LICENSE). Las referencias enlazadas mantienen sus propias licencias y derechos. Que una fuente esté citada no autoriza a copiarla dentro de un archivo bajo MIT.
+- [Multi Piston · Unifiller](https://www.unifiller.com/food-machine/multi-piston): Importancia de producto, cilindro y boquilla; no justifica un dosificador universal.
+
+- [Food safe FDM printing · Prusa](https://help.prusa3d.com/article/food-safe-fdm-printing_112313): Límites de contacto alimentario de impresiones FDM, no equivalencia filamento/pieza certificada.
+
+- [PETG · Prusa](https://help.prusa3d.com/article/petg_2059): Material candidato para prototipo mecánico, con perfil dependiente del filamento.
+
+- [Keep Your Traditions Safe at Your Next Tamalada · USDA FSIS](https://www.fsis.usda.gov/news-events/news-press-releases/keep-your-traditions-safe-your-next-tamalada): Manipulación, separación y control térmico. El aparato no conserva ni cocina.
+
+- [OpenSCAD User Manual](https://openscad.org/documentation.html): Fuente CAD paramétrica y exportación reproducible.
+
+- [Configuring a publishing source for GitHub Pages · GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site): Activación de Pages con GitHub Actions; el conector no tiene administración de Pages.
+
+Ver [qué se corrigió](research.md).

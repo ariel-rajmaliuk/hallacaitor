@@ -1,55 +1,41 @@
-# Impresión y calibración
+# Guía técnica de impresión y ajuste
 
-[Inicio](../README.md) · [BOM y orientaciones](bom.md)
+[Manual web](https://hallacaitor-manual.rajmaliuk.chatgpt.site/printing.html) · [Inicio](../README.md)
 
-## Referencia inicial, no perfil validado
+Perfil inicial propuesto para FDM con boquilla de 0,4 mm; todavía no validado en una impresora. Los STL están en milímetros. El límite geométrico de cama es 220 × 220 × 250 mm; el brim también tiene que entrar.
 
-| Ajuste | Punto de partida |
-|---|---|
-| Impresora | Cama 220 × 220 mm, altura 250 mm |
-| Material estructural | PETG; PLA solo para pruebas geométricas |
-| Boquilla / capa | 0,4 / 0,2 mm |
-| Perímetros | 4; revisar ejes y chavetas con el laminador |
-| Tapas y bases | 5 capas |
-| Relleno | 20–30%; ajustar según pieza |
-| Aros abiertos | PETG tenaz; revisar la pequeña flexión de montaje |
-| Soportes | Revisar en orejas de índice y agujeros horizontales |
+## Material y perfil inicial
 
-Elegir temperaturas y ventilación del fabricante del filamento y del perfil de la impresora. No se suministra G-code: depende de máquina, boquilla, material y laminador. Usar PETG no habilita por sí solo el contacto con alimentos.
+PETG como candidato para útiles mecánicos a temperatura ambiente; PLA sirve para maquetas de encastre, sin atribuir resistencia térmica o aptitud alimentaria. Capa 0,20 mm; 4 perímetros y 5 capas superior/inferior para placas y vasos; 5–6 perímetros y 40–60% de relleno para ejes, soportes y chavetas. Son ajustes de partida, no resultados de ensayo. Temperatura y ventilación según fabricante y calibración de tu filamento.
 
-## Orden que evita imprimir todo de entrada
+## Orden de impresión
 
-1. C01 y C02.
-2. Kit mínimo del plegador; prueba sin alimentos.
-3. Rodillo y dos aros de 4 mm; comprobar giro y retención.
-4. Tabla, dosis de 80 ml y medida de guiso de 60 ml.
-5. Organizador y accesorios opcionales.
+Primero cupones. Después una unión de bisagra/eje/chaveta y una muestra de Dock. Luego F01 y dos alas para probar papel. Después el eje partido y acople del rodillo. Recién al final las ocho o nueve baldosas. Este orden evita gastar material en un sistema cuyo encastre todavía no se probó.
 
-El conjunto mínimo tiene 14 piezas contando cupones; la cantidad de cada modelo se publica en [parts.json](../config/parts.json). No hace falta imprimir los tres juegos de aros ni los tres dosificadores al principio.
+## Orientación por pieza
 
-## Orientaciones que importan
+Cada ficha del catálogo muestra el STL en su orientación de exportación, dimensiones, soportes y cantidades. Ejes con plano D apoyado; no imprimir vertical por comodidad si cambia la resistencia. Camisas del rodillo en vertical: la derecha tiene la cavidad D hacia arriba. Los brazos del volcador van planos; su largo es 214 mm y permite brim de hasta 2 mm en cama de 220 mm.
 
-- **Alas:** el STL está invertido para apoyar la cara amplia en la cama. Limpiar puentes de los agujeros sin cambiar su posición. No reorientar verticalmente por ahorrar espacio.
-- **Ejes largos:** tienen una cara plana para imprimirse tumbados. El eje del rodillo ya está girado 45° en la cama y entra por su proyección diagonal. Usar un brim pequeño de 2 mm y comprobar que la purga/prime line no invada la pieza.
-- **Cuerpo de rodillo:** vertical, 200 mm de altura. Brim sugerido 5 mm. Comprobar estabilidad; no lanzar la impresión si el perfil no resuelve esa altura con seguridad.
-- **Chavetas:** con cabeza arriba; base pequeña y brim. Limpiar el brim antes de probar. No engrosar para forzarlas dentro del eje.
-- **Tapas opcionales:** invertir en el laminador con la cara cerrada sobre la cama. Así no necesitan puentear toda la abertura.
-- **Tabla:** plana sobre la cama. Deformación o esquinas levantadas arruinan el espesor repetible del rodillo; medir sobre una mesa plana.
+![Orientación por pieza](assets/v3/tipper_side.png)
 
-## Ajustes editables
+## Adaptadores y soportes
 
-`cad/hallacaitor.scad` expone `clearance` (diámetro), `key_clearance` (por lado), `angle` y `facets`. Los volúmenes y espesores se seleccionan por nombre de pieza. No hay garantía de compatibilidad con v0.1 ni con cualquier escalado global del STL.
+Las tapas se exportan invertidas para imprimir los tetones hacia arriba. K04/K05 tienen topes de 3 mm y K08 de 5 mm que dejan parte de la placa elevada: requieren soportes bajo esa placa. Inspeccionar la vista previa y retirar soportes sin modificar los apoyos. Los adaptadores lisos y con alojamientos no necesitan ese soporte de placa. Orejas del plegador requieren soporte local según el laminador.
 
-```bash
-python scripts/export.py --part fold_base --part fold_wing_north --part fold_wing_south --clearance 0.6
-```
+![Adaptadores y soportes](assets/v3/dock_fold_mount.png)
 
-Reexportar **las dos piezas de un encaje** cuando cambies un parámetro. No escalar un eje para corregir su diámetro: también cambia su longitud y la posición de la chaveta. No escalar todo un dosificador para cambiar capacidad: cambia el encaje del empujador.
+## Holguras que no son intercambiables
 
-## Coste y material
+Bisagra/eje Ø8,5/8: 0,5 mm diametral. Dock Ø8,6/8: 0,6 mm diametral, entrada 4,4 en 5 mm. Postes Ø12,6/12: 0,6 mm. Camisas D: Ø30/29,4 y planos 11,6/11. Aros de rodillo: Ø39,2 interior sobre asiento Ø39,4: 0,2 mm de interferencia intencional, requiere elasticidad real. No aplicar un único porcentaje de escala a todo el conjunto.
 
-Laminar el kit elegido y tomar los gramos/horas de ese trabajo. El informe de geometría contiene **volumen de sólido CAD**, no gramos de una impresión con relleno. No se publica un costo ni una duración inventada. Registrar filamento, boquilla, orientación y masa estimada en la planilla de ensayo.
+## Cambiar tolerancia sin cambiar medidas
 
-## Piezas fuera de tolerancia
+La opción --clearance del exportador ajusta únicamente los elementos del archivo Compact que usan ese parámetro; Dock y los acoples Familiar tienen cotas nominales explícitas en cad/modular.scad. Para cambiarlas hay que modificar pares macho/hembra en esa fuente y volver a exportar/verificar. No afirmar que --clearance recalibra toda la máquina.
 
-No martillar pasadores, doblar brazos para hacer coincidir agujeros ni usar una herramienta como palanca. Una impresión que solo encaja a la fuerza no pasa el criterio inicial. Eliminar rebabas pequeñas, medir y repetir el cupón. Si es necesario agrandar un agujero, documentar cuánto; no asumir que el resto de la máquina conserva su precisión.
+## Aceptación antes del uso
+
+Superficies sin filos, grietas, soportes ni partículas sueltas. Cuatro patas firmes, llaves al ras, adaptadores que asientan. Ejes entran sin golpes, chavetas quedan retenidas, alas giran sin rozar y aguja atraviesa canales sin atascarse. Rodillo no presenta escalón ni abertura en la unión; brazo volcador no flexiona ni vuelca con carga simulada. Registrar y corregir cualquier fallo antes de comida.
+
+## Qué no incluyen las descargas
+
+Sin G-code: depende de impresora, material y perfil. Sin tiempos de impresión ni gramos inventados: obtenerlos del laminador y registrarlos. Sin certificación alimentaria; el filamento y una superficie lisa por sí solos no garantizan un objeto higienizable.

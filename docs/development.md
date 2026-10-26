@@ -16,8 +16,10 @@ python scripts/check_motion.py
 
 # Opcional, redibujar documentación después de exportar:
 pip install -r requirements-docs.txt
-python scripts/illustrate.py
+python scripts/illustrate_v3.py
+python scripts/manual_v3.py
 python scripts/manual.py
+python scripts/build_site.py
 ```
 
 En macOS se puede indicar el ejecutable sin agregarlo al PATH:
@@ -32,7 +34,7 @@ Para generar gráficos/PDF fuera de Linux, instalar DejaVu Sans y definir `HALLA
 
 ## Cambiar geometría
 
-`config/parts.json` declara las piezas, sus kits y orientación. `cad/hallacaitor.scad` define el sólido y las vistas de conjunto. Los scripts de imagen transforman las mallas exportadas para representar esos conjuntos: si cambian los ejes o transformaciones de montaje, actualizar también los dibujos y comprobaciones que los describen.
+`config/parts.json` declara las piezas, sus kits y orientación. `cad/hallacaitor.scad` y `cad/modular.scad` definen el sólido y las vistas de conjunto. Los scripts de imagen transforman las mallas exportadas para representar esos conjuntos: si cambian los ejes o transformaciones de montaje, actualizar también los dibujos y comprobaciones que los describen.
 
 La prueba de movimiento muestrea ángulos, no calcula toda trayectoria continua. Los informes llevan hashes para identificar los archivos exactos auditados. Los STL no incluyen unidades; el manifiesto y todas las cotas usan mm.
 

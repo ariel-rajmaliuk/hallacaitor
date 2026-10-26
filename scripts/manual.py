@@ -71,12 +71,12 @@ table([['Masa nominal','Espesor','Disco ideal'],['60 ml','3 mm','159,6 mm'],['80
 p('Los aros de masa tienen diámetro interior de 60 mm. Alturas útiles: 21,22 / 28,29 / 35,37 mm. Los vasos de guiso tienen diámetro interior de 50 mm y volumen nominal de 40 o 60 ml. El forro resta capacidad y las arrugas afectan el enrasado. No equivalen a gramos fijos.')
 p('<b>No combinar 100 ml con 3 mm:</b> el disco ideal de 206 mm no cabe entre los aros. No compensar presionando más fuerte ni dejando que la masa se monte sobre los topes.')
 p('Fórmula: D = sqrt(4000 x V / (pi x t)). Geometría ideal, con V en ml y t/D en mm. Densidad, elasticidad y adherencia no están modeladas.','SmallH')
-new();title('05 / ENVOLVER','La hoja manda')
+new();title('05 / ENVOLVER','Compact: la hoja manda')
 for h,t in [
 ('Preparar por tandas','Tener masa, guiso, adornos, hojas limpias/flexibles/recortadas, refuerzos, fajas y tramos de pabilo. La receta y el tratamiento de hoja no se automatizan.'),
 ('Mantener la barrera','Amasar en bolsa cerrada resistente; forrar medidas y recipientes cubriendo también el borde; cubrir el empujador. En el extendido se usa una barrera superior; durante el plegado separa la hoja íntegra. Un filamento PETG no certifica el útil.'),
 ('Presentar y rellenar','La hoja inicial sugerida es de 350 x 350 mm para un paquete cercano a 140 x 80 x 35 mm. Aceptar que quizá necesite más margen. Servir a mano y dejar masa libre alrededor del guiso.'),
-('Elevar y tomar los bordes','Fijar un ala a 70°, tomar la hoja y repetir del otro lado. Si ayuda, pasar a 100°. Retirar los bordes de la hoja del apoyo de las alas y juntarlos con las manos; no tirar contra una hoja pegada.'),
+('Elevar y tomar los bordes','Fijar un ala a 70°, tomar la hoja y repetir del otro lado. Si ayuda, pasar a 100°. Juntar primero los bordes de MASA sobre el guiso; luego juntar y doblar la hoja. No tirar contra una hoja pegada.'),
 ('Cerrar y reforzar','Hacer el doblez central, acomodar extremos con la pala por fuera y poner hoja de refuerzo/faja. Si no alcanza la hoja, usar otra mayor o reducir carga. No comprimir para ocultar una rotura.'),
 ('Cuidar preparación y limpieza','No colocar impresiones en cocción, caldo/guiso calientes o lavavajillas. Las tapas no son herméticas ni sirven para conservación. Control térmico y cocción van fuera. Si falla una barrera, detener el ensayo alimentario.')]:p(h,'Heading2');p(t)
 p('La combinación de barreras, hoja y limpieza necesita validación en las condiciones de uso reales. Sin barreras viables, usar solamente simulantes no destinados a consumo. Fuentes y alcance en docs/food-contact.md.','SmallH')
@@ -104,7 +104,7 @@ p('Plan mínimo','Heading2')
 for t in ['A. Cupones y segmentos cortos: giro y entrada sin golpe.','B. Veinte ciclos sin carga: no debe salir una chaveta ni aparecer roce creciente.','C. Diez paquetes simulados: seis vueltas y liberación sin capturar la base.','D. Diez hojas sin comida: observar roturas y margen de cierre.','E. Diez porciones con barrera: peso, diámetro y espesor medidos.','F. Diez hallacas de prueba: registrar fugas después de cocinar fuera de la estación.','G. Diez armados habituales frente a diez asistidos, misma persona y condiciones.']:p(t)
 p('La planilla examples/bench_log.csv está vacía: no hay resultados físicos inventados. Cada archivo de validación identifica la fuente y las piezas con hashes. No se hizo FEA ni se establece una carga segura o una productividad garantizada.','SmallH')
 new();title('08 / PIEZAS','Tres kits, una fuente')
-m=json.loads((ROOT/'config/parts.json').read_text());g={r['name']:r for r in json.loads((ROOT/'docs/validation/geometry.json').read_text())['parts']}
+m=json.loads((ROOT/'config/parts.json').read_text());m['parts']=[x for x in m['parts'] if x['source']=='cad/hallacaitor.scad'];g={r['name']:r for r in json.loads((ROOT/'docs/validation/geometry.json').read_text())['parts']}
 rows=[['SKU','Nombre de archivo (sin .stl)','Mín.','Est.','Todo']]
 for r in m['parts']:rows.append([r['sku'],r['name'],r['quantities']['minimum'],r['quantities']['standard'],r['quantities']['full']])
 table(rows,[55,295,50,50,50],small=True)

@@ -14,8 +14,14 @@
 - Hacer índices con retención más cómoda si los pasadores se pierden o se desplazan.
 - Estudiar una hoja guía flexible solo si puede imprimirse y limpiarse sin complicar el uso.
 - Crear perfiles y disposición de camas a partir de impresiones reales, sin entregar G-code genérico.
-- Considerar un tamaño mayor si hay demanda y la receta lo requiere; no resolverlo escalando los STL existentes.
+- Validar el nuevo formato Familiar 0.3, sus camisas acopladas y eje partido; no escalar STL sin recalcular interfaces.
 
 ## Fuera de esta versión
 
 Anudador automático, alimentación de hojas por rodillos, cuchilla impresa, dosificador cerrado de guiso con trozos, cocción y homologación comercial. Esas funciones necesitan desarrollo y pruebas propios; no son prestaciones ocultas del prototipo actual.
+
+## Interfaces futuras, condicionadas a ensayos
+
+- Retención positiva de adaptadores si los esfuerzos de uso levantan el encastre por gravedad.
+- Solo estudiar una torre operativa después de medir cargas, estabilidad y limpieza; el apilado actual es de guardado.
+- Dosificación mecánica de un ingrediente específico después de caracterizar tamaño, adherencia y variación. No prometer conteo universal.

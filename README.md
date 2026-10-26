@@ -1,117 +1,97 @@
-<div align="center">
-
 # HALLACAITOR
 
-### Menos improvisación en la mesa. Más hallacas.
+**Una mesa para hacerlo todo. O estaciones para compartir la hallacada.**
 
-**Estación manual, mecánica e imprimible en 3D para ayudar a armar hallacas venezolanas.**
+Sistema manual, mecánico y abierto de útiles imprimibles en 3D para preparar y armar hallacas venezolanas.
 
-[![MIT](https://img.shields.io/badge/licencia-MIT-355E53)](LICENSE)
-[![CAD alpha](https://img.shields.io/badge/estado-CAD_alpha-DFAE68)](docs/testing.md)
-[![Validación](https://github.com/ariel-rajmaliuk/hallacaitor/actions/workflows/validate.yml/badge.svg)](https://github.com/ariel-rajmaliuk/hallacaitor/actions/workflows/validate.yml)
+[**Abrir el manual web →**](https://hallacaitor-manual.rajmaliuk.chatgpt.site) · [Empezar](docs/start.md) · [STL](stl) · [Montaje](docs/assembly.md) · [PDF Familiar](docs/manual/Hallacaitor_v03.pdf)
 
-[Empezar](#empezá-por-el-kit-mínimo) · [STL](stl) · [Montaje](docs/assembly.md) · [Manual PDF](docs/manual/Hallacaitor_v02.pdf) · [English](docs/README.en.md)
+![Plegador familiar: render de los STL reales](docs/assets/v3/family.png)
 
-![Vista de las piezas reales del CAD](docs/assets/hero.png)
+**Familiar 0.3 / CAD alpha, todavía sin fabricar ni probar con comida.** Hay modelos, cálculos y comprobaciones digitales; no hay velocidad, resistencia ni aptitud alimentaria demostradas. Las alas ayudan a levantar: el cierre de masa/hoja y el nudo son manuales.
 
-</div>
+## Las dos formas
 
-Hallacaitor organiza el trabajo de **masa → hoja → relleno → plegado → pabilo**. Usa un rodillo con espesor controlado, porciones intercambiables, alas con posiciones fijables y una base que sirve tanto para plegar como para pasar la cuerda. Todo se mueve con las manos.
-
-**Es un prototipo de CAD v0.2.0, todavía sin fabricar ni probar con comida.** Las comprobaciones digitales y sus límites están en [Validación](docs/testing.md). No se afirma que sea más rápido que una persona experta: eso se mide en las pruebas de uso.
-
-## Qué hace
-
-| Etapa | Ayuda incluida | Qué hacés vos |
+| | Mesa única | Estaciones repartidas |
 |---|---|---|
-| Masa | Aros de 60 / 80 / 100 ml, empujador y bandeja para amasar en bolsa | Mezclar la receta, amasar y llenar la medida |
-| Hoja | Tabla de 360 × 360 mm, regla y plantilla A4 de 350 × 350 mm | Limpiar, ablandar, recortar, aceitar y presentar |
-| Extendido | Rodillo con eje retenido y aros de 3 / 4 / 5 mm | Pasar el rodillo sobre una barrera alimentaria |
-| Relleno | Medidas de 40 / 60 ml, seis recipientes y tapas desmontables | Servir guiso y adornos |
-| Plegado | Alas fijables a 0°, 70° o 100°; pala para los extremos | Juntar la hoja, hacer el doblez central y poner el refuerzo/faja |
-| Pabilo | Misma base, seis pasos inferiores, aguja roma y medidor | Pasar las vueltas, tensar y hacer el nudo |
+| Para empezar | Una o dos personas | Tres o seis personas; ampliar por ingrediente |
+| Organización | 800 × 400 mm, ocho baldosas | Preparación 400 × 400 y cinco puestos separados |
+| Plegado y pabilo | Comparten la base | Una base para cada tarea |
+| Ingredientes | Medidas abiertas y seis recipientes | Lo mismo, más un volcador de porción precargada |
+| Uniones | Dock200 común, 20 llaves de borde | Dock200 común, 8 llaves en preparación |
+| Archivo de cantidades | `hub` | `team` |
 
-**100% imprimible se refiere a las piezas permanentes:** no requiere motores, metal, rodamientos, pegamento ni resortes comprados. Comida, hojas, pabilo y barreras alimentarias son consumibles. No cocina, no corta y no anuda automáticamente.
+![Distribución de mesa única](docs/assets/v3/layout-hub.svg)
 
-## El módulo que conviene probar primero
+![Distribución de estaciones repartidas](docs/assets/v3/layout-team.svg)
 
-![Movimiento del plegador: posiciones y chavetas](docs/assets/folding.gif)
+S1 verde: hoja · S2 amarillo: masa · S3 terracota: guiso · S4 violeta: adornos · S5 azul: plegado · S6 coral: pabilo. Cada color lleva también número y nombre. Se pueden duplicar módulos para dedicar uno a cada ingrediente.
 
-Las alas se sostienen con pasadores de posición removibles. **Sacá ambos pasadores antes de moverlas y volvé a ponerlos en una posición indexada.** El eje largo se retiene con una cabeza y una chaveta transversal. Los pasos de cuerda coinciden con los huecos entre los nudillos de las bisagras.
+Los adaptadores se encastran **por gravedad**, sin retención al levantar. Las baldosas se unen en el plano. Los postes permiten **guardar dos niveles descargados**, retirando alas y piezas altas; no se trabaja con rodillo ni vasos abiertos en una torre. [Cotas y límites](docs/design.md).
 
-![Plano del plegador y recorrido de la aguja](docs/drawings/folding.svg)
+## Qué se corrigió tras investigar
 
-## Empezá por el kit mínimo
+- **Proceso:** cerrar primero los bordes de masa sobre el guiso, después terminar costura de hoja, extremos, refuerzo y faja.
+- **Tamaño:** el rodillo Compact de 186 mm útiles resultaba pequeño respecto de las recetas consultadas. Familiar tiene 266 mm útiles, dos camisas imprimibles y aros de 2,5 mm: 80/100 ml dan discos ideales de 202/226 mm. No son gramos.
+- **Ingredientes:** guiso con trozos usa medidas abiertas. Aceitunas/pasas se cuentan previamente; el volcador entrega una porción cargada a mano. No se afirma que exista un dosificador universal.
+- **Documentación:** manual web con 72 páginas, 61 fichas ilustradas, búsqueda por pieza/kit, calculadora, guías de uso, montaje, impresión, limpieza y problemas.
 
-1. Leé [Impresión y calibración](docs/printing.md) y [Contacto alimentario](docs/food-contact.md).
-2. Imprimí los cupones `fit_coupon` y `key_coupon`. Probá los diámetros antes de imprimir ejes completos.
-3. Imprimí base, dos alas, dos ejes, tres chavetas (una de repuesto), dos pasadores de posición, aguja y pala: **14 piezas contando los dos cupones**.
-4. [Armá el plegador](docs/assembly.md) y probá primero con papel y un paquete simulado.
-5. Comprobá el movimiento, la entrada de la aguja y la salida de las cuerdas. Recién después probá hojas reales, sin comida.
-6. Si funciona, completá el [kit estándar](docs/bom.md) con rodillo, tabla y dosificadores.
+[Investigación y decisiones](docs/research.md) · [Fuentes primarias](docs/references.md) · [Compatibilidad Compact](docs/compact-design.md).
 
-Los [STL](stl) ya están exportados en **milímetros** y en orientación de impresión, salvo la tapa opcional que se invierte en el laminador. Cama de referencia: **220 × 220 × 250 mm**. El eje del rodillo se suministra en diagonal para que entre en la cama; no lo vuelvas a colocar paralelo al borde.
+## Imprimir sin empezar por toda la máquina
 
-> Para ensayar con alimentos, la masa y el guiso deben quedar separados de las impresiones mediante barreras alimentarias adecuadas e íntegras. PETG no equivale a una pieza apta para contacto alimentario. [Criterio y fuentes](docs/food-contact.md).
+1. Leer [impresión](docs/printing.md) y [contacto alimentario](docs/care.md).
+2. Imprimir `fit_coupon` y `key_coupon`; probar con material y perfil finales.
+3. Montar F01, las dos alas distintas, dos ejes, chavetas y pasadores. Probar papel y paquete simulado.
+4. Probar una unión Dock y el rodillo partido. Comprobar giro, estabilidad y ausencia de escalón.
+5. Con encastres resueltos, completar la [lista de fabricación](docs/bom.md) elegida.
 
-## Elegí una porción compatible
+Todo el hardware permanente se imprime: sin motores, tornillos, metal, rodamientos ni resortes comprados. Comida, hoja, pabilo y barreras alimentarias son consumibles. La preparación térmica, recorte y cocción quedan fuera. PETG no convierte la pieza en un objeto certificado para alimentos.
 
-| Masa nominal | Aro del rodillo | Disco ideal | Uso de partida |
-|---|---:|---:|---|
-| 60 ml | 3 mm | 160 mm | Masa fina |
-| **80 ml** | **4 mm** | **160 mm** | **Configuración inicial** |
-| 100 ml | 5 mm | 160 mm | Masa más gruesa |
-| 100 ml | 4 mm | 178 mm | Disco más grande, ajustar relleno y hoja |
+## Archivos
 
-Son **volúmenes de cavidad**, no gramos. La densidad, el forro y la técnica cambian la cantidad real. No uses 100 ml con 3 mm: el disco ideal de 206 mm supera los 186 mm libres del rodillo.
-
-![Relación entre dosis, espesor y diámetro](docs/assets/sizing.png)
-
-## Archivos para fabricar y entender
-
-| Carpeta / archivo | Contenido |
+| Recurso | Contenido |
 |---|---|
-| [cad/hallacaitor.scad](cad/hallacaitor.scad) | Fuente paramétrica; vistas de conjuntos y piezas |
-| [stl/](stl) | 32 tipos de pieza, sin archivos de relleno |
-| [config/parts.json](config/parts.json) | Identificadores, cantidades por kit y orientación |
-| [Lista de piezas](docs/bom.md) | Dimensiones, kits mínimo / estándar / completo y CSV |
-| [Manual PDF](docs/manual/Hallacaitor_v02.pdf) | Guía ilustrada de montaje y uso |
-| [Plantilla A4](docs/manual/Plantilla_hoja_350mm_A4.pdf) | Cuatro hojas para armar una guía de 350 mm, a escala 100% |
-| [Planos SVG](docs/drawings) | Plegador, rodillo, despiece y recorrido del pabilo |
-| [Diseño](docs/design.md) | Dimensiones, decisiones, cálculos y límites |
-| [Referencias](docs/references.md) | Fuentes primarias y qué se tomó de cada una |
-| [Ensayos](docs/testing.md) | Qué está comprobado y cómo registrar lo que falta |
+| [Manual web](https://hallacaitor-manual.rajmaliuk.chatgpt.site) | Inicio guiado, configuraciones, montaje y uso ilustrados |
+| [Catálogo web](https://hallacaitor-manual.rajmaliuk.chatgpt.site/parts.html) | Imagen, cotas, orientación, cantidad y STL por pieza |
+| [PDF Familiar](docs/manual/Hallacaitor_v03.pdf) | Compañero sin conexión del manual |
+| [Plantilla A4 de hoja](docs/manual/Plantilla_hoja_350mm_A4.pdf) | Guía de 350 mm en cuatro hojas; imprimir al 100% |
+| [cad/modular.scad](cad/modular.scad) | Dock, Familiar, eje partido y volcador |
+| [cad/hallacaitor.scad](cad/hallacaitor.scad) | Compact y piezas reutilizadas |
+| [config/parts.json](config/parts.json) | 61 tipos, cantidades, orientación y función |
+| [config/stations.json](config/stations.json) | Colores, roles, interfaz y distribuciones |
+| [BOM CSV](docs/bom-v3.csv) | Cantidades Familiar y medidas de impresión |
+| [Informes](docs/validation) | Mallas y muestras booleanas de movimiento |
+| [Ensayos](docs/testing.md) | Pruebas pendientes y registro sin datos inventados |
+
+`minimum`/`standard` conservan los kits Compact de ensayo; `hub`/`team` son Familiar. `full` reúne máximos por tipo y opcionales: no es un montaje recomendado. El [manual Compact](docs/manual/Hallacaitor_v02.pdf) queda como archivo técnico; no mezclar sus ajustes de 4 mm con la configuración Familiar de 2,5 mm.
 
 ## Modificar y verificar
 
-Necesitás [OpenSCAD](https://openscad.org/downloads.html) y Python 3.10 o posterior. No hacen falta librerías de Python para exportar, calcular o comprobar las mallas.
+OpenSCAD 2021.01 o posterior y Python 3.10+. Los controles y la web usan solo la biblioteca estándar; gráficos/PDF usan [requirements-docs.txt](requirements-docs.txt).
 
 ```bash
-# Exportar un kit, con dos procesos como máximo por defecto
-python scripts/export.py --kit minimum
-
-# Exportar todo
-python scripts/export.py
-
-# Auditar mallas, cama y enlaces; ejecutar pruebas de diseño
-python scripts/validate.py
+python scripts/export.py --kit hub
+python scripts/export.py --kit team
+python scripts/export.py                 # todos los tipos
 python -m unittest discover -s tests -v
-
-# Comprobar muestras del recorrido y pasos de cuerda con booleanas CGAL
+python scripts/validate.py
 python scripts/check_motion.py
-
-# Estimar diámetro de masa y longitud de pabilo
-python scripts/calculator.py --volume 80 --thickness 4
+python scripts/build_site.py             # build/site; comprueba enlaces locales
 ```
 
-Para redibujar imágenes, planos y PDFs: `pip install -r requirements-docs.txt`, luego `python scripts/illustrate.py` y `python scripts/manual.py`. [Instrucciones y controles](docs/development.md).
+Gráficos y PDF: `python scripts/illustrate_v3.py`, `python scripts/manual_v3.py`. El manual Compact y plantilla se regeneran con `python scripts/manual.py`. No se entrega G-code.
 
-## Qué mejoró desde el primer boceto
+## Publicar el manual
 
-**Plegado y atado integrados · posiciones de alas · ejes con chavetas · mangos retenidos · aros en ranuras · tres dosis compatibles · tabla plana con llaves · aguja con pasos despejados · planos y despiece · controles reproducibles.** Los detalles y la incompatibilidad de piezas están en [CHANGELOG](CHANGELOG.md).
+![Vista verificada del manual público](docs/assets/v3/manual-web.jpg)
 
-## Participar
+La web es estática y no depende de servicios para consultar instrucciones. Su contenido está en [web/](web), el constructor en [scripts/build_site.py](scripts/build_site.py) y el flujo [Pages](.github/workflows/pages.yml) publica el mismo sitio. [Instrucciones de alojamiento y réplica](docs/website.md).
 
-Se agradecen fotos de impresiones, mediciones de encaje y pruebas con hojas reales. [Cómo contribuir](CONTRIBUTING.md) · [Próximas mejoras](docs/roadmap.md) · [Planilla vacía de ensayos](examples/bench_log.csv).
+La instancia pública también usa [Sites](https://hallacaitor-manual.rajmaliuk.chatgpt.site). Para activar la dirección de GitHub Pages hace falta una vez **Settings → Pages → Source: GitHub Actions**, y volver a ejecutar `Build and publish manual`; el conector usado para subir archivos no tiene administración de Pages. El flujo siempre construye y verifica el manual aunque Pages todavía no esté activo.
 
-Proyecto iniciado por [Ariel](https://github.com/ariel-rajmaliuk). Archivos del proyecto bajo [licencia MIT](LICENSE): podés usarlos, modificarlos y compartirlos, también comercialmente, conservando los avisos correspondientes. No se incluyen recetas, fotografías ni diseños de terceros. Las referencias enlazadas conservan sus propios derechos.
+## Contribuir
+
+[Cómo contribuir](CONTRIBUTING.md) · [Plan de ensayos](docs/testing.md) · [Registro vacío](examples/bench_log.csv) · [Problemas](https://github.com/ariel-rajmaliuk/hallacaitor/issues).
+
+Proyecto iniciado por [Ariel](https://github.com/ariel-rajmaliuk). Licencia [MIT](LICENSE): se puede usar, modificar, compartir y comercializar conservando los avisos. Referencias externas conservan sus derechos; no se incluyen recetas, fotos ni CAD de terceros.

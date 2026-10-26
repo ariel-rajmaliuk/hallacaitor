@@ -1,0 +1,165 @@
+{
+  "version": "0.3.0",
+  "interface": {
+    "name": "Dock200",
+    "tile_mm": 200,
+    "grid_mm": 100,
+    "peg_diameter_mm": 8,
+    "socket_diameter_mm": 8.6,
+    "peg_depth_mm": 4.4,
+    "socket_depth_mm": 5,
+    "retention": "gravedad; no retenido al levantar",
+    "stacking": "solo almacenamiento descargado, dos niveles, módulos cerrados, comprobar estabilidad"
+  },
+  "stations": [
+    {
+      "id": "S1",
+      "slug": "hoja",
+      "name": "Hoja",
+      "color": "#588963",
+      "purpose": "Preparar, revisar y presentar la hoja.",
+      "instruction": "Lavar y preparar siguiendo una receta fiable; secar, revisar roturas y orientar las fibras.",
+      "example": "rule"
+    },
+    {
+      "id": "S2",
+      "slug": "masa",
+      "name": "Masa",
+      "color": "#d7a52c",
+      "purpose": "Porcionar y extender con el rodillo ancho.",
+      "instruction": "Forrar la medida; enrasar sin compactar excesivamente y extender sobre hoja o barrera íntegra.",
+      "example": "dose_80ml"
+    },
+    {
+      "id": "S3",
+      "slug": "guiso",
+      "name": "Guiso",
+      "color": "#b96143",
+      "purpose": "Servir una porción de guiso.",
+      "instruction": "Usar medida abierta para guiso con trozos; no presionar contra una boquilla.",
+      "example": "guiso_60ml"
+    },
+    {
+      "id": "S4",
+      "slug": "adornos",
+      "name": "Adornos",
+      "color": "#8063a5",
+      "purpose": "Una estación por ingrediente si hay varias personas.",
+      "instruction": "Precargar y contar aceitunas/pasas. Volcar una porción; el vaso no cuenta automáticamente.",
+      "example": "tipper_cup"
+    },
+    {
+      "id": "S5",
+      "slug": "plegado",
+      "name": "Plegado",
+      "color": "#4e81a0",
+      "purpose": "Cerrar la masa y después envolver la hoja.",
+      "instruction": "Levantar sin arrastrar; unir bordes de masa. Cerrar la hoja, doblar extremos y añadir refuerzo/faja.",
+      "example": "fold_base_family"
+    },
+    {
+      "id": "S6",
+      "slug": "pabilo",
+      "name": "Pabilo",
+      "color": "#ce776c",
+      "purpose": "Pasar vueltas, tensar suavemente y anudar.",
+      "instruction": "Retirar pasadores antes de mover alas. Usar canales libres; nudo manual, sin aplastar el paquete.",
+      "example": "thread_needle"
+    }
+  ],
+  "layouts": {
+    "hub": {
+      "name": "Mesa única",
+      "size_mm": [
+        800,
+        400
+      ],
+      "people": "1–2",
+      "tile_origins": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          200
+        ],
+        [
+          200,
+          0
+        ],
+        [
+          200,
+          200
+        ],
+        [
+          400,
+          0
+        ],
+        [
+          400,
+          200
+        ],
+        [
+          600,
+          0
+        ],
+        [
+          600,
+          200
+        ]
+      ],
+      "joiners": 20,
+      "notes": "Una mesa reúne todos los útiles. Transferir la hoja desde la superficie de 400 × 400 al plegador. No es una máquina automática ni un ciclo sin traslados.",
+      "zones": [
+        {
+          "name": "S1 / S2 · hoja y masa",
+          "x": 0,
+          "y": 0,
+          "w": 400,
+          "h": 400,
+          "color": "#d7a52c"
+        },
+        {
+          "name": "S5 / S6 · plegar y atar",
+          "x": 400,
+          "y": 0,
+          "w": 200,
+          "h": 200,
+          "color": "#4e81a0"
+        },
+        {
+          "name": "S4 · adornos",
+          "x": 400,
+          "y": 200,
+          "w": 200,
+          "h": 200,
+          "color": "#8063a5"
+        },
+        {
+          "name": "S3 · guiso",
+          "x": 600,
+          "y": 0,
+          "w": 200,
+          "h": 200,
+          "color": "#b96143"
+        },
+        {
+          "name": "S1 · hojas y útiles",
+          "x": 600,
+          "y": 200,
+          "w": 200,
+          "h": 200,
+          "color": "#588963"
+        }
+      ]
+    },
+    "team": {
+      "name": "Estaciones repartidas",
+      "people": "3–6 o más",
+      "tiles": 9,
+      "joiners": 8,
+      "notes": "Cuatro baldosas forman la mesa de extendido. Las otras cinco se separan para guiso, adornos, volcador, plegado y atado. Duplicar volcadores y recipientes por ingrediente con su propia lista de piezas."
+    }
+  }
+}
