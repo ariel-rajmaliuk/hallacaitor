@@ -1,0 +1,569 @@
+{
+  "version": "0.4.0-cad-alpha",
+  "name": "Hallacaitor Rect",
+  "frame_mm": [
+    400,
+    300
+  ],
+  "bed_mm": [
+    220,
+    220,
+    250
+  ],
+  "working_stack_levels": 2,
+  "frame_vertical_pitch_mm": 186,
+  "column_total_mm": 180,
+  "column_body_mm": 174,
+  "interface": {
+    "stud_mm": [
+      16,
+      16,
+      6
+    ],
+    "socket_mm": [
+      16.6,
+      16.6,
+      6.6
+    ],
+    "lock_pin_mm": [
+      3.6,
+      3.6
+    ],
+    "lock_channel_mm": [
+      4.4,
+      4.4
+    ],
+    "compatible_with_lego": false
+  },
+  "parts": [
+    {
+      "id": "R01",
+      "name": "rect_tile",
+      "label": "Cuarto de base rectangular",
+      "file": "stl/rect_tile.stl",
+      "hub_quantity": 4,
+      "color": "#588963",
+      "station": "marco común, imprimir con color de estación",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R02",
+      "name": "rect_frame",
+      "label": "Cuarto de marco abierto",
+      "file": "stl/rect_frame.stl",
+      "hub_quantity": 4,
+      "color": "#588963",
+      "station": "marco común, imprimir con color de estación",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R03",
+      "name": "rect_key",
+      "label": "Llave de unión de marco",
+      "file": "stl/rect_key.stl",
+      "hub_quantity": 12,
+      "color": "#588963",
+      "station": "marco común, imprimir con color de estación",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R04",
+      "name": "tower_post",
+      "label": "Columna de encastre de 180 mm",
+      "file": "stl/tower_post.stl",
+      "hub_quantity": 4,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R05",
+      "name": "tower_pin",
+      "label": "Pasador transversal de retención",
+      "file": "stl/tower_pin.stl",
+      "hub_quantity": 8,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R06",
+      "name": "short_wing_north",
+      "label": "Ala corta norte",
+      "file": "stl/short_wing_north.stl",
+      "hub_quantity": 1,
+      "color": "#4e81a0",
+      "station": "plegado",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R07",
+      "name": "short_wing_south",
+      "label": "Ala corta sur",
+      "file": "stl/short_wing_south.stl",
+      "hub_quantity": 1,
+      "color": "#4e81a0",
+      "station": "plegado",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R08",
+      "name": "dry_housing",
+      "label": "Cuerpo del dosificador por corredera",
+      "file": "stl/dry_housing.stl",
+      "hub_quantity": 2,
+      "color": "#8063a5",
+      "station": "ingrediente por corredera",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R09",
+      "name": "dry_lid",
+      "label": "Tapa de guía del dosificador",
+      "file": "stl/dry_lid.stl",
+      "hub_quantity": 2,
+      "color": "#8063a5",
+      "station": "ingrediente por corredera",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R10",
+      "name": "dry_shuttle",
+      "label": "Corredera de cámara 22 × 22 × 24",
+      "file": "stl/dry_shuttle.stl",
+      "hub_quantity": 1,
+      "color": "#8063a5",
+      "station": "ingrediente por corredera",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R11",
+      "name": "dry_shuttle_small",
+      "label": "Corredera de cámara 14 × 14 × 24",
+      "file": "stl/dry_shuttle_small.stl",
+      "hub_quantity": 1,
+      "color": "#8063a5",
+      "station": "ingrediente por corredera",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R12",
+      "name": "dry_hopper",
+      "label": "Depósito rectangular desmontable",
+      "file": "stl/dry_hopper.stl",
+      "hub_quantity": 2,
+      "color": "#8063a5",
+      "station": "ingrediente por corredera",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R13",
+      "name": "dry_lid_cap",
+      "label": "Tapa antipolvo del depósito",
+      "file": "stl/dry_lid_cap.stl",
+      "hub_quantity": 2,
+      "color": "#8063a5",
+      "station": "ingrediente por corredera",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R14",
+      "name": "dry_guide_pin",
+      "label": "Pasador guía que limita el recorrido",
+      "file": "stl/dry_guide_pin.stl",
+      "hub_quantity": 2,
+      "color": "#8063a5",
+      "station": "ingrediente por corredera",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R15",
+      "name": "guiso_body",
+      "label": "Cartucho rectangular para guiso",
+      "file": "stl/guiso_body.stl",
+      "hub_quantity": 1,
+      "color": "#b96143",
+      "station": "guiso",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R16",
+      "name": "guiso_gate",
+      "label": "Compuerta manual de cierre",
+      "file": "stl/guiso_gate.stl",
+      "hub_quantity": 1,
+      "color": "#b96143",
+      "station": "guiso",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R17",
+      "name": "guiso_piston",
+      "label": "Émbolo rectangular",
+      "file": "stl/guiso_piston.stl",
+      "hub_quantity": 1,
+      "color": "#b96143",
+      "station": "guiso",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R18",
+      "name": "piston_stop_20",
+      "label": "Calibre de recorrido de 20 mm",
+      "file": "stl/piston_stop_20.stl",
+      "hub_quantity": 1,
+      "color": "#b96143",
+      "station": "guiso",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R19",
+      "name": "piston_stop_13",
+      "label": "Calibre de recorrido de 13,33 mm",
+      "file": "stl/piston_stop_13.stl",
+      "hub_quantity": 1,
+      "color": "#b96143",
+      "station": "guiso",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R20",
+      "name": "strip_magazine",
+      "label": "Cassette de cuatro porciones de tiras",
+      "file": "stl/strip_magazine.stl",
+      "hub_quantity": 0,
+      "color": "#d7a52c",
+      "station": "tiras precargadas",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R21",
+      "name": "strip_drawer",
+      "label": "Bandejita extraíble de una porción de tiras",
+      "file": "stl/strip_drawer.stl",
+      "hub_quantity": 0,
+      "color": "#d7a52c",
+      "station": "tiras precargadas",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R22",
+      "name": "strip_lid",
+      "label": "Tapa del cassette de tiras",
+      "file": "stl/strip_lid.stl",
+      "hub_quantity": 0,
+      "color": "#d7a52c",
+      "station": "tiras precargadas",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R23",
+      "name": "spool_box",
+      "label": "Caja rectangular de bobina vertical",
+      "file": "stl/spool_box.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R24",
+      "name": "spool_left",
+      "label": "Media bobina con acople macho",
+      "file": "stl/spool_left.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R25",
+      "name": "spool_right",
+      "label": "Media bobina con acople hembra",
+      "file": "stl/spool_right.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R26",
+      "name": "spool_adapter",
+      "label": "Adaptador de núcleo comercial Ø25",
+      "file": "stl/spool_adapter.stl",
+      "hub_quantity": 0,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R27",
+      "name": "spool_axle",
+      "label": "Eje vertical de bobina",
+      "file": "stl/spool_axle.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R28",
+      "name": "spool_cover",
+      "label": "Tapa desmontable de portabobina",
+      "file": "stl/spool_cover.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R29",
+      "name": "spool_washer",
+      "label": "Arandela de apoyo de bobina",
+      "file": "stl/spool_washer.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R30",
+      "name": "cutter_base",
+      "label": "Base con alojamiento para hoja de afeitar",
+      "file": "stl/cutter_base.stl",
+      "hub_quantity": 1,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R31",
+      "name": "cutter_cover",
+      "label": "Guarda superior del cortahilo",
+      "file": "stl/cutter_cover.stl",
+      "hub_quantity": 1,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R32",
+      "name": "cutter_clamp",
+      "label": "Collar exterior de cierre de guarda",
+      "file": "stl/cutter_clamp.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R33",
+      "name": "cutter_pin",
+      "label": "Pasador corto de la guarda",
+      "file": "stl/cutter_pin.stl",
+      "hub_quantity": 0,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R34",
+      "name": "cutter_mount_pin",
+      "label": "Pasador largo de montaje sobre portabobina",
+      "file": "stl/cutter_mount_pin.stl",
+      "hub_quantity": 2,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R35",
+      "name": "cutter_pedestal",
+      "label": "Pedestal del cortahilo",
+      "file": "stl/cutter_pedestal.stl",
+      "hub_quantity": 1,
+      "color": "#ce776c",
+      "station": "pabilo",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R36",
+      "name": "blade_dummy",
+      "label": "Lámina plástica sin filo para probar montaje",
+      "file": "stl/blade_dummy.stl",
+      "hub_quantity": 1,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R37",
+      "name": "bridge_half",
+      "label": "Media traviesa del puente",
+      "file": "stl/bridge_half.stl",
+      "hub_quantity": 6,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R38",
+      "name": "bridge_joiner",
+      "label": "Cuna inferior de unión de traviesas",
+      "file": "stl/bridge_joiner.stl",
+      "hub_quantity": 4,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R39",
+      "name": "bridge_dry_front",
+      "label": "Traviesa delantera con paso de descarga",
+      "file": "stl/bridge_dry_front.stl",
+      "hub_quantity": 1,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R40",
+      "name": "bridge_dry_back",
+      "label": "Traviesa trasera con paso de descarga",
+      "file": "stl/bridge_dry_back.stl",
+      "hub_quantity": 1,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R41",
+      "name": "guiso_mount",
+      "label": "Soporte elevado del cartucho de guiso",
+      "file": "stl/guiso_mount.stl",
+      "hub_quantity": 1,
+      "color": "#b96143",
+      "station": "guiso",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R42",
+      "name": "funnel_quarter",
+      "label": "Cuarto de embudo receptor rectangular",
+      "file": "stl/funnel_quarter.stl",
+      "hub_quantity": 4,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    },
+    {
+      "id": "R43",
+      "name": "funnel_hanger",
+      "label": "Gancho de apoyo del embudo",
+      "file": "stl/funnel_hanger.stl",
+      "hub_quantity": 4,
+      "color": "#7b8c83",
+      "station": "común",
+      "status": "prototipo CAD sin fabricar"
+    }
+  ],
+  "reused_parts": [
+    {
+      "name": "fold_base_family",
+      "quantity": 1,
+      "file": "../../stl/fold_base_family.stl"
+    },
+    {
+      "name": "hinge_axle",
+      "quantity": 2,
+      "file": "../../stl/hinge_axle.stl"
+    },
+    {
+      "name": "lock_key",
+      "quantity": 4,
+      "file": "../../stl/lock_key.stl"
+    },
+    {
+      "name": "index_pin",
+      "quantity": 2,
+      "file": "../../stl/index_pin.stl"
+    },
+    {
+      "name": "wide_roller_left",
+      "quantity": 1,
+      "file": "../../stl/wide_roller_left.stl"
+    },
+    {
+      "name": "wide_roller_right",
+      "quantity": 1,
+      "file": "../../stl/wide_roller_right.stl"
+    },
+    {
+      "name": "wide_axle_left",
+      "quantity": 1,
+      "file": "../../stl/wide_axle_left.stl"
+    },
+    {
+      "name": "wide_axle_right",
+      "quantity": 1,
+      "file": "../../stl/wide_axle_right.stl"
+    },
+    {
+      "name": "axle_joint_pin",
+      "quantity": 1,
+      "file": "../../stl/axle_joint_pin.stl"
+    },
+    {
+      "name": "roller_grip",
+      "quantity": 2,
+      "file": "../../stl/roller_grip.stl"
+    },
+    {
+      "name": "roller_washer",
+      "quantity": 1,
+      "file": "../../stl/roller_washer.stl"
+    },
+    {
+      "name": "ring_2_5mm",
+      "quantity": 2,
+      "file": "../../stl/ring_2_5mm.stl"
+    },
+    {
+      "name": "dose_80ml",
+      "quantity": 1,
+      "file": "../../stl/dose_80ml.stl"
+    },
+    {
+      "name": "dose_100ml",
+      "quantity": 1,
+      "file": "../../stl/dose_100ml.stl"
+    },
+    {
+      "name": "dose_plunger",
+      "quantity": 1,
+      "file": "../../stl/dose_plunger.stl"
+    },
+    {
+      "name": "thread_needle",
+      "quantity": 1,
+      "file": "../../stl/thread_needle.stl"
+    },
+    {
+      "name": "end_paddle",
+      "quantity": 1,
+      "file": "../../stl/end_paddle.stl"
+    },
+    {
+      "name": "tie_base_family",
+      "quantity": 1,
+      "file": "../../stl/tie_base_family.stl"
+    }
+  ],
+  "bought_consumables": [
+    "pabilo",
+    "hojas de plátano",
+    "barreras de contacto alimentario adecuadas",
+    "hoja de afeitar compatible, opcional"
+  ],
+  "validation_scope": "mallas y muestras discretas; sin ensayo de carga, alimentación, corte ni contacto alimentario"
+}

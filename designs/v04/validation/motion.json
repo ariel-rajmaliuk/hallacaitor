@@ -1,0 +1,381 @@
+{
+  "source_sha256": "8215bbc4bc523b5a3c0a7e6d504d3b889c74476a7ef637a33a12aa056b7773a1",
+  "dependencies_sha256": {
+    "hallacaitor.scad": "9e6cf043fae85eaa2ea328d3a83176297fea8acca987dd5cbbb28368babc9fa3",
+    "modular.scad": "7a093385361e8630ee044907fd97e1346e78a2e64f34eda651062dde2cb32dce"
+  },
+  "method": "sampled OpenSCAD intersections; planar seating contacts distinguished; no load/friction/food simulation",
+  "results": [
+    {
+      "name": "check_column_frame",
+      "angle": 0,
+      "travel": 0,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        24.0,
+        24.0,
+        0.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_column_upper",
+      "angle": 0,
+      "travel": 0,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        24.0,
+        24.0,
+        0.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_lock_pin",
+      "angle": 0,
+      "travel": 0,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        0.0,
+        7.0,
+        7.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_guiso_gate",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_spool_coupling",
+      "angle": 0,
+      "travel": 0,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        26.0,
+        26.0,
+        0.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_spool_box",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_cutter_clamps",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_guiso_mount",
+      "angle": 0,
+      "travel": 0,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        90.0,
+        80.0,
+        0.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_funnel_hangers",
+      "angle": 0,
+      "travel": 0,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        230.0,
+        248.0,
+        0.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_bridge_funnel",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_cutter_mount",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_shuttle",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_shuttle",
+      "angle": 0,
+      "travel": 14,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_shuttle",
+      "angle": 0,
+      "travel": 28,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_shuttle",
+      "angle": 0,
+      "travel": 42,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_shuttle",
+      "angle": 0,
+      "travel": 56,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_pin",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_pin",
+      "angle": 0,
+      "travel": 14,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_pin",
+      "angle": 0,
+      "travel": 28,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_pin",
+      "angle": 0,
+      "travel": 42,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_dry_pin",
+      "angle": 0,
+      "travel": 56,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_hangers_dosers",
+      "angle": 0,
+      "travel": 0,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        30.0,
+        230.0,
+        4.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_hangers_dosers",
+      "angle": 0,
+      "travel": 14,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        30.0,
+        230.0,
+        4.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_hangers_dosers",
+      "angle": 0,
+      "travel": 28,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        30.0,
+        230.0,
+        4.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_hangers_dosers",
+      "angle": 0,
+      "travel": 42,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        30.0,
+        230.0,
+        4.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_hangers_dosers",
+      "angle": 0,
+      "travel": 56,
+      "intersection_empty": false,
+      "volume_cm3": 0.0,
+      "bbox_mm": [
+        30.0,
+        230.0,
+        4.0
+      ],
+      "passed": true,
+      "contact": "seating planes only"
+    },
+    {
+      "name": "check_short_base",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_short_base",
+      "angle": 30,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_short_base",
+      "angle": 70,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_short_base",
+      "angle": 100,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_short_wings",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_short_wings",
+      "angle": 30,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_short_wings",
+      "angle": 70,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_short_wings",
+      "angle": 100,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_pods",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_pods",
+      "angle": 30,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_pods",
+      "angle": 70,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_pods",
+      "angle": 100,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_funnel",
+      "angle": 0,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_funnel",
+      "angle": 30,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_funnel",
+      "angle": 70,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    },
+    {
+      "name": "check_fold_funnel",
+      "angle": 100,
+      "travel": 0,
+      "passed": true,
+      "intersection_empty": true
+    }
+  ]
+}

@@ -13,3 +13,7 @@
 
 - Web content lives in web/content.json; build with scripts/build_site.py. All 61 part pages must have a local image, STL and source link. Keep config/stations.json, kit quantities and layout drawings consistent.
 - Dock is gravity registration, storage posts are for two unloaded tiers only. Never describe them as captive locks or a validated working tower.
+
+- Rect 0.4 is isolated in cad/rectangular.scad and designs/v04. Run scripts/rect_v04.py to export and audit. Rect uses pinned rectangular interfaces, not Dock200. Digital samples are not proof of load, cutting, hygiene or dosing repeatability.
+- The optional bought razor is an explicitly requested consumable. Keep its guard closed in use views; distinguish the plastic blade dummy.
+- Rect web page sources live in web/rect; build_site.py copies them and links the CAD assets via build_rect_site.py. Preserve the legacy 0.3 pages as an archive.

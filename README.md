@@ -1,5 +1,17 @@
 # HALLACAITOR
 
+## Nuevo: Rect 0.4
+
+[**Diseño rectangular: encastres, dispensadores y doble bobina**](designs/v04/README.md) · [**Manual web**](https://hallacaitor-manual.rajmaliuk.chatgpt.site)
+
+![Rect 0.4: conjunto de dos niveles](designs/v04/assets/hub.png)
+
+Estaciones de 400 × 300 mm, apiladas con pasadores o repartidas por función. Incluye bobina activa y reserva, cartucho cubierto para hoja de afeitar y depósitos con corredera o émbolo. 43 tipos nuevos de STL y 42 muestras de intersección comprobadas. Prototipo CAD sin fabricar ni validar con alimentos, carga o cuchilla real.
+
+---
+
+## Familiar 0.3: versión anterior
+
 **Una mesa para hacerlo todo. O estaciones para compartir la hallacada.**
 
 Sistema manual, mecánico y abierto de útiles imprimibles en 3D para preparar y armar hallacas venezolanas.

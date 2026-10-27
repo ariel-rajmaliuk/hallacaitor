@@ -1,0 +1,784 @@
+{
+  "source_sha256": "8215bbc4bc523b5a3c0a7e6d504d3b889c74476a7ef637a33a12aa056b7773a1",
+  "dependencies_sha256": {
+    "hallacaitor.scad": "9e6cf043fae85eaa2ea328d3a83176297fea8acca987dd5cbbb28368babc9fa3",
+    "modular.scad": "7a093385361e8630ee044907fd97e1346e78a2e64f34eda651062dde2cb32dce"
+  },
+  "parts": [
+    {
+      "name": "rect_tile",
+      "sha256": "cdd8e0d2cc7eb64097bbbbfc11d90d3034840f0349b76c0a3212e4c43bbc8855",
+      "triangles": 164,
+      "vertices": 80,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 352.358907,
+      "surface_cm2": 699.1975,
+      "bbox_mm": [
+        200.0,
+        150.0,
+        18.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "rect_frame",
+      "sha256": "6d751e8a96a2d1d805f3eb98d09596ab67a34608cbf165d6d08ff39f9af05f95",
+      "triangles": 140,
+      "vertices": 68,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 89.698819,
+      "surface_cm2": 253.869,
+      "bbox_mm": [
+        200.0,
+        150.0,
+        18.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "rect_key",
+      "sha256": "adcb4062ad16bbf96da505e6484397480aee74752e12e4431c6c1ab519d25961",
+      "triangles": 20,
+      "vertices": 12,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 3.1152,
+      "surface_cm2": 14.4223,
+      "bbox_mm": [
+        24.0,
+        14.0,
+        11.8
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "tower_post",
+      "sha256": "2bd05c25cab391c7a7b9e854dde30f2f611ea83495075cf58f7b6a69837e448a",
+      "triangles": 104,
+      "vertices": 48,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 99.488281,
+      "surface_cm2": 189.7392,
+      "bbox_mm": [
+        24.0,
+        24.0,
+        180.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "tower_pin",
+      "sha256": "90258fc39fce7ccc4a54bb3bb5143f4fb2dd8de8660c93618ef2ea8d890a8731",
+      "triangles": 28,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.49692,
+      "surface_cm2": 5.708,
+      "bbox_mm": [
+        30.0,
+        7.0,
+        7.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "short_wing_north",
+      "sha256": "b3eba6377eeac9371b22416438a2a5963600cd0ad48b6974cd961d5ccc53206d",
+      "triangles": 2546,
+      "vertices": 1263,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 71.121912,
+      "surface_cm2": 353.7459,
+      "bbox_mm": [
+        194.7,
+        95.0,
+        20.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "short_wing_south",
+      "sha256": "1b8089f32f953725d47e6627231ac359d5740a8a3e5655d800eab7bed14cace9",
+      "triangles": 2546,
+      "vertices": 1263,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 71.121912,
+      "surface_cm2": 353.746,
+      "bbox_mm": [
+        194.7,
+        95.0,
+        20.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dry_housing",
+      "sha256": "748d70d4a80e47853c90d601d03c54c109ebe336ac8ae285da87238f6babb54f",
+      "triangles": 240,
+      "vertices": 120,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 137.68839,
+      "surface_cm2": 358.6311,
+      "bbox_mm": [
+        140.0,
+        70.0,
+        28.6
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dry_lid",
+      "sha256": "af0de12e9bf4ea4d65933441015061513c5cc7b0013d40670d2924fafbcf1b0d",
+      "triangles": 228,
+      "vertices": 112,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 55.644469,
+      "surface_cm2": 216.9344,
+      "bbox_mm": [
+        140.0,
+        70.0,
+        6.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dry_shuttle",
+      "sha256": "c7d40a60489f6b2641a2c6fc4a0d5196a8db2bf1c9e68770e8926df1f3fedd58",
+      "triangles": 252,
+      "vertices": 124,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 105.466512,
+      "surface_cm2": 220.8039,
+      "bbox_mm": [
+        130.0,
+        40.0,
+        24.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dry_shuttle_small",
+      "sha256": "29436d339b2043a8c50d1f7f3e248b8d860e9291c4884c3beffcde398937e8a0",
+      "triangles": 252,
+      "vertices": 124,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 112.378512,
+      "surface_cm2": 218.8839,
+      "bbox_mm": [
+        130.0,
+        40.0,
+        24.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dry_hopper",
+      "sha256": "1c2f8c91fc48e1fb2212e7e22119e89607b86fc24950628134f234fecef4d4ef",
+      "triangles": 56,
+      "vertices": 28,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 108.902302,
+      "surface_cm2": 557.3666,
+      "bbox_mm": [
+        70.0,
+        70.0,
+        102.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dry_lid_cap",
+      "sha256": "1fe1668d2d2361d35e8663b735f54eb239df10c1bda41a53d865f622fc7f7ad9",
+      "triangles": 12,
+      "vertices": 8,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 19.6,
+      "surface_cm2": 109.2,
+      "bbox_mm": [
+        70.0,
+        70.0,
+        4.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "dry_guide_pin",
+      "sha256": "74e50db2c1ef8741ad9a31d46d8586294d93b547ec9b77141ceb3a922404e334",
+      "triangles": 380,
+      "vertices": 192,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.487828,
+      "surface_cm2": 5.3101,
+      "bbox_mm": [
+        7.0,
+        7.0,
+        34.6
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "guiso_body",
+      "sha256": "4e9aa5174bea6c2cb1b69aa676b4c6389b3d0a8f5fed8758f2381fdddc0171c5",
+      "triangles": 136,
+      "vertices": 64,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 170.450049,
+      "surface_cm2": 719.0902,
+      "bbox_mm": [
+        90.0,
+        80.0,
+        120.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "guiso_gate",
+      "sha256": "44eb5c94826da9cc43fb47994acae7cba1727c72f212ed2e02d89b07d28eb23a",
+      "triangles": 36,
+      "vertices": 20,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 21.46848,
+      "surface_cm2": 113.8304,
+      "bbox_mm": [
+        97.9,
+        48.8,
+        12.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "guiso_piston",
+      "sha256": "7c9f38e54475455f34af61e983d5c9ea9f1ffb3369b632eea276f57a5d1f33d9",
+      "triangles": 44,
+      "vertices": 24,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 78.612001,
+      "surface_cm2": 221.4,
+      "bbox_mm": [
+        59.0,
+        49.0,
+        121.8
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "piston_stop_20",
+      "sha256": "439be25f8563215eb158a3abf9755ad9065346281b64a0d9c3f4760d9b4b498d",
+      "triangles": 32,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 9.5128,
+      "surface_cm2": 49.9928,
+      "bbox_mm": [
+        30.0,
+        30.0,
+        20.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "piston_stop_13",
+      "sha256": "e69b0f53c4eb68a9594e744bf0d10a2bdd41fb9ece1dd5d42bb373c00dc79416",
+      "triangles": 32,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 6.341851,
+      "surface_cm2": 36.4994,
+      "bbox_mm": [
+        30.0,
+        30.0,
+        13.3333
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "strip_magazine",
+      "sha256": "bd1468484382c1cd6949d571618c8e4c963b3c70c29528c7ca8853249cdeadf7",
+      "triangles": 124,
+      "vertices": 56,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 139.84,
+      "surface_cm2": 731.52,
+      "bbox_mm": [
+        160.0,
+        80.0,
+        44.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "strip_drawer",
+      "sha256": "66f6a948156acb8b657531f0665f242fb9bb1bcf98f8d23af06e8ccb12adcba0",
+      "triangles": 36,
+      "vertices": 20,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 17.639839,
+      "surface_cm2": 90.944,
+      "bbox_mm": [
+        33.8,
+        88.0,
+        12.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "strip_lid",
+      "sha256": "57f78bbc16fa01a6dea5a2fc22d18860e1afd6a3bc5d49c16a2a801be9f783bb",
+      "triangles": 28,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 25.128072,
+      "surface_cm2": 316.6251,
+      "bbox_mm": [
+        164.0,
+        84.0,
+        5.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "spool_box",
+      "sha256": "9ac66a237ee0ff0197e557d4101b9b459eede6e9ef96010952dbee68db4aaba1",
+      "triangles": 1040,
+      "vertices": 520,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 246.433165,
+      "surface_cm2": 958.9514,
+      "bbox_mm": [
+        90.0,
+        120.0,
+        114.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "spool_left",
+      "sha256": "800bd5f0952cd7f6aa71f9427f7aa66478c70b27790ece0a15913a1e6afa5a6e",
+      "triangles": 768,
+      "vertices": 384,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 38.96664,
+      "surface_cm2": 157.8263,
+      "bbox_mm": [
+        76.0,
+        76.0,
+        56.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "spool_right",
+      "sha256": "5ad54e950c4eb85eac9fa600b0dc3c80a25e28190495c64815ed9f5603fb6bce",
+      "triangles": 768,
+      "vertices": 384,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 35.063135,
+      "surface_cm2": 152.841,
+      "bbox_mm": [
+        76.0,
+        76.0,
+        48.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "spool_adapter",
+      "sha256": "f6c58ea74b92f17b774c56d2904b5a789d2b98b0edb7b4969498c0aaa7a2b5bb",
+      "triangles": 384,
+      "vertices": 192,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 8.029553,
+      "surface_cm2": 30.3817,
+      "bbox_mm": [
+        25.0,
+        25.0,
+        20.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "spool_axle",
+      "sha256": "f08a1f417869d3c407bbd020100cd8e370411b1581052b8bab3698a5acfbf308",
+      "triangles": 380,
+      "vertices": 192,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 9.219325,
+      "surface_cm2": 40.6751,
+      "bbox_mm": [
+        18.0,
+        18.0,
+        111.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "spool_cover",
+      "sha256": "032b6b501d78862f14e840c35692692b4d5b02f210585b572e0a9d06a0781719",
+      "triangles": 1172,
+      "vertices": 584,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 64.992093,
+      "surface_cm2": 245.1325,
+      "bbox_mm": [
+        90.0,
+        120.0,
+        12.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "spool_washer",
+      "sha256": "f734aac617013d2b35576390b1fae0e981770459daa506b9f48f95701c2f3a43",
+      "triangles": 384,
+      "vertices": 192,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.331495,
+      "surface_cm2": 5.1107,
+      "bbox_mm": [
+        18.0,
+        18.0,
+        2.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cutter_base",
+      "sha256": "7567668c890e779a5af2c130a6b87c2916b3cd9033cd8bc6015f055343164cd7",
+      "triangles": 444,
+      "vertices": 220,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 17.723586,
+      "surface_cm2": 68.4921,
+      "bbox_mm": [
+        62.0,
+        42.0,
+        7.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cutter_cover",
+      "sha256": "c0629a20e883f1e18e47d85ac4aaf3ece5bb4f6db4811981c3d02e28b81aa005",
+      "triangles": 420,
+      "vertices": 208,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 17.89831,
+      "surface_cm2": 68.8836,
+      "bbox_mm": [
+        62.0,
+        42.0,
+        7.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cutter_clamp",
+      "sha256": "632b76700d7e8da42835685007d722e60f31a5cd4caee5cf5d5a45dd71791418",
+      "triangles": 424,
+      "vertices": 208,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 2.783787,
+      "surface_cm2": 30.5848,
+      "bbox_mm": [
+        10.0,
+        48.6,
+        18.6
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cutter_pin",
+      "sha256": "bad5341a394702b1d96b65ae660aa06ee78e7a03ee3936f095b09122f2893d7b",
+      "triangles": 380,
+      "vertices": 192,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.186783,
+      "surface_cm2": 2.6829,
+      "bbox_mm": [
+        6.0,
+        6.0,
+        20.5
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cutter_mount_pin",
+      "sha256": "ab6f34080290cc6a09930940057773e1562c897716acd4628f05a7fb248d74eb",
+      "triangles": 380,
+      "vertices": 192,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.236122,
+      "surface_cm2": 3.3422,
+      "bbox_mm": [
+        6.0,
+        6.0,
+        27.5
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "cutter_pedestal",
+      "sha256": "cf49badcce879f03e1674ee2a1d1ff87f49f3376439e2b0bbe1850761e93dc01",
+      "triangles": 12,
+      "vertices": 8,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 4.32,
+      "surface_cm2": 33.36,
+      "bbox_mm": [
+        40.0,
+        36.0,
+        3.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "blade_dummy",
+      "sha256": "acacac3442f1bf00822f7cecc4901a6e3885130e3b63842ee53807e229864baa",
+      "triangles": 12,
+      "vertices": 8,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 0.1892,
+      "surface_cm2": 19.18,
+      "bbox_mm": [
+        43.0,
+        22.0,
+        0.2
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "bridge_half",
+      "sha256": "202b011bcfece2bb864bf7cdc21328693e3f0e8a81e5c26313a13b9dba61ae94",
+      "triangles": 12,
+      "vertices": 8,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 86.4,
+      "surface_cm2": 200.64,
+      "bbox_mm": [
+        200.0,
+        36.0,
+        12.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "bridge_joiner",
+      "sha256": "7e51fa53a722a074b2472230c4b667f94d9996db09ccd57543148f3661033b66",
+      "triangles": 28,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 16.464,
+      "surface_cm2": 92.608,
+      "bbox_mm": [
+        60.0,
+        44.6,
+        16.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "bridge_dry_front",
+      "sha256": "4382ae00d3d7928b9cdbb77c34e420e710e4bc4f86502eb93f64b87e37fddbf9",
+      "triangles": 28,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 81.639361,
+      "surface_cm2": 196.8816,
+      "bbox_mm": [
+        200.0,
+        36.0,
+        12.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "bridge_dry_back",
+      "sha256": "2748c0966fe39ff616bc415b76b83c689d8dfbf5ea68d50e4859c65c01719b06",
+      "triangles": 28,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 80.544959,
+      "surface_cm2": 196.0176,
+      "bbox_mm": [
+        200.0,
+        36.0,
+        12.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "guiso_mount",
+      "sha256": "5a430888044956c80e5b15b3e927970a88e13d44f61e23959908f7ce60601aad",
+      "triangles": 80,
+      "vertices": 40,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 73.421117,
+      "surface_cm2": 259.5848,
+      "bbox_mm": [
+        100.0,
+        100.0,
+        56.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "funnel_quarter",
+      "sha256": "70da3c1e6173a77f3fe380e11a7387ab8cb140c5b3406ff69d71ebd5f003be36",
+      "triangles": 36,
+      "vertices": 20,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 32.515149,
+      "surface_cm2": 366.9815,
+      "bbox_mm": [
+        120.0,
+        124.0,
+        70.0
+      ],
+      "min_z_mm": 0.0
+    },
+    {
+      "name": "funnel_hanger",
+      "sha256": "ed8bec6ca931bd21ab08f67e6bb494c15c4ec4b658a4c236a2c8f671b8cc98cb",
+      "triangles": 28,
+      "vertices": 16,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_triangles": 0,
+      "components": 1,
+      "volume_cm3": 6.8,
+      "surface_cm2": 42.4,
+      "bbox_mm": [
+        20.0,
+        59.0,
+        25.0
+      ],
+      "min_z_mm": 0.0
+    }
+  ],
+  "method": "STL closed oriented one-component and bed envelope audit; no physical tests"
+}
